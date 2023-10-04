@@ -5,7 +5,30 @@
     "**/.hg": true,
     "**/CVS": true,
     "**/.DS_Store": true,
-    "**/Thumbs.db": true
+    "**/Thumbs.db": true,
+    "tsconfig.json": true,
+    "README.md": true,
+    "package-lock.json": true,
+    "next.config.js": true,
+    "next-env.d.ts": true,
+    ".gitignore": true,
+    ".eslintrc.json": true,
+    "src/app/globals.css": true,
+    ".next": true,
+    "node_modules": true,
+    "postcss.config.js": true
   },
-  "hide-files.files": []
+  "hide-files.files": [
+    "tsconfig.json",
+    "README.md",
+    "package-lock.json",
+    "next.config.js",
+    "next-env.d.ts",
+    ".gitignore",
+    ".eslintrc.json",
+    "src/app/globals.css",
+    ".next",
+    "node_modules",
+    "postcss.config.js"
+  ]
 }

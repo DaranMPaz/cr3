@@ -25,8 +25,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br" className="scroll-smooth">
-      <body className={PlusJakartaSans.className}>
-        <main className="bg-theme-gray2-900">{children}</main>
+      <body className={`bg-theme-texture bg-theme-gray2-900 ${PlusJakartaSans.className}`}>
+        <main>{children}</main>
         <FooterContainer>
           <FooterLogo />
 

@@ -1,13 +1,7 @@
-import Link from "next/link";
 import { LinkButton } from "./button";
+import { TextSection, SectionImageContainer } from "./section"
 
-export default function Carousel({
-  title1,
-  title2,
-  paragraph,
-  cta,
-  link,
-}: {
+export default function Carousel({ title1, title2, paragraph, cta, link} : {
   title1: string;
   title2: string;
   paragraph: string;

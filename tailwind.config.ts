@@ -1,4 +1,3 @@
-import { nextui } from '@nextui-org/react'
 import type { Config } from 'tailwindcss'
 
 const config: Config = {
@@ -12,9 +11,16 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        'theme-gradient-radial': 'radial-gradient(var(-tw-gradient-stops))',
-        'theme-gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(-tw-gradient-stops))',
+        'theme-texture':"url('/bg-texture.png')",
+        'theme-about':"url('/about-img.png')",
+        'theme-services-home':"url('/services-home-img.png')",
+        'theme-services-audit':"url('/services-audit-img.png')",
+        'theme-services-iso':"url('/services-iso-img.png')",
+        'theme-cta1':"url('/cta-1-img.png')",
+        'theme-cta2':"url('/cta-2-img.png')",
+        'theme-cta3':"url('/cta-3-img.png')",
+        'theme-cta4':"url('/cta-4-img.png')",
+        'theme-home-video':"url('/home-video.mp4')"
       },
       colors: {
         'theme-red-100' : '#ffced5',

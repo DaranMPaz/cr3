@@ -2,11 +2,15 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { HeaderLogo, HeaderButton } from './header'
 import Logo from '../../../public/logo-colored-light.png'
-import Instagram from '../../../public/icons/Instagram.png'
-import Facebook from '../../../public/icons/Facebook.png'
-import Linkedin from '../../../public/icons/Linkedin.png'
+import Instagram from '../../../public/icons/Instagram-img.png'
+import Facebook from '../../../public/icons/Facebook-img.png'
+import Linkedin from '../../../public/icons/Linkedin-img.png'
 
-export function FooterLink({text, link, isBlank}:{text:string, link:string, isBlank?:boolean}) {
+export function FooterLink({text, link, isBlank}:{
+  text:string,
+  link:string,
+  isBlank?:boolean
+}) {
   return(
    isBlank ?  
    <li className='text-sm h-max leading-6 cursor-pointer tracking-wide hover:text-theme-red-500'>
@@ -19,7 +23,10 @@ export function FooterLink({text, link, isBlank}:{text:string, link:string, isBl
   )
 }
 
-export function FooterColumn({children, title}:{children:React.ReactNode, title:string}) {
+export function FooterColumn({children, title}:{
+  children:React.ReactNode,
+  title:string
+}) {
   return(
     <div className='flex flex-col gap-3'>
       <h6 className='text-theme-gray-50 font-bold'>{title}</h6>
@@ -30,7 +37,11 @@ export function FooterColumn({children, title}:{children:React.ReactNode, title:
   )
 }
 
-export function FooterSocial({icon, link, alt}:{icon:any, link: String, alt:string}) {
+export function FooterSocial({icon, link, alt}:{
+  icon:any,
+  link: String,
+  alt:string
+}) {
   return(
     <li><Link href={`${link}`}><Image src={icon} alt={`${alt}`} width={24} height={24}/></Link></li>
   )
@@ -60,27 +71,9 @@ export function FooterCta() {
 
 export function FooterContainer({children}:{children:React.ReactNode}) {
   return(
-    <footer className='
-      bg-theme-gray2-900
-       text-theme-gray2-300
-       py-12
-       px-24
-       flex
-       justify-center
-       items-center
-       '>
-      
-      <div className='
-        flex
-        justify-between
-        items-start
-        w-full
-        max-w-[1600px]
-        h-full
-      '>
-
+    <footer className='bg-theme-gray2-900 text-theme-gray2-300 py-12 px-24 flex justify-center items-center'>
+      <div className='flex justify-between items-start w-full max-w-[1600px] h-full'>
       {children}
-
       </div>
     </footer>
   )

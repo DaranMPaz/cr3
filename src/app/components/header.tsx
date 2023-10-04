@@ -4,11 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 
-export function HeaderLink({
-  text,
-  link,
-  isActive,
-}: {
+export function HeaderLink({text, link, isActive,} : {
   text: string;
   link: string;
   isActive?: boolean;
@@ -61,29 +57,7 @@ export function HeaderDropdown() {
 
 export function HeaderButton({ text, link }: { text: string; link: string }) {
   return (
-    <Link
-      className="
-      flex
-      flex-col
-      justify-center
-      items-center
-      h-12
-      px-4
-      py-3
-      rounded
-      border-2
-      border-theme-yellow-800
-      text-theme-yellow-800
-      text-base
-      font-bold
-      tracking-wider
-      uppercase
-      hover:bg-theme-red-700
-      hover:text-theme-gray-50
-      hover:border-theme-red-700
-    "
-      href={`${link}`}
-    >{`${text}`}</Link>
+    <Link className="flex flex-col justify-center items-center h-12 px-4 py-3 rounded border-2 border-theme-yellow-800 text-theme-yellow-800 text-base font-bold tracking-wider uppercase hover:bg-theme-red-700 hover:text-theme-gray-50 hover:border-theme-red-700 " href={`${link}`}>{`${text}`}</Link>
   );
 }
 
