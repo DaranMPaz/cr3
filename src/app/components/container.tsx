@@ -27,6 +27,20 @@ export function FlexContainer({children, gap}:{
   )
 }
 
+export function FlexYContainer({children, gap}:{
+  children: React.ReactNode,
+  gap?: boolean
+}) {
+
+  const hasGap = "gap-12"
+
+  return(
+    <div className={`flex flex-col ${gap && hasGap} w-full `}>    
+      {children}    
+    </div>
+  )
+}
+
 export function FlexSpacedContainer({children}:{
   children: React.ReactNode,
 }) {

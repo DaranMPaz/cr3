@@ -1,7 +1,19 @@
+'use client'
+
 import Logo from '../../../public/logo-colored-light.png'
 import { HeaderContainer, HeaderLink, HeaderLinkGroup, HeaderLogo, HeaderButton, HeaderDropdown } from '@/app/components/header'
+import { FormSection, SectionContainer } from '../components/section'
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 export default function News() {
+
+  useEffect(()=>{
+    AOS.init({duration: 1000});
+  },[])
+
   return (
     <>
     <HeaderContainer>
@@ -16,7 +28,12 @@ export default function News() {
       </HeaderLinkGroup>
     </HeaderContainer>
 
-      <h1>Conteúdo</h1>
+    {/* FORM */}
+    <div data-aos="fade-up">
+      <SectionContainer padding="large" >
+        <FormSection/>
+      </SectionContainer>
+    </div>
 
     </>
   )

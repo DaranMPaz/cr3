@@ -1,4 +1,5 @@
 import "./globals.css";
+import {Providers} from "./providers";
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import {
@@ -7,7 +8,6 @@ import {
   FooterCta,
   FooterLink,
   FooterLogo,
-  FooterSocial,
 } from "./components/footer";
 
 const PlusJakartaSans = Plus_Jakarta_Sans({ subsets: ["latin"] });
@@ -26,7 +26,11 @@ export default function RootLayout({
   return (
     <html lang="pt-br" className="scroll-smooth">
       <body className={`bg-theme-texture bg-theme-gray2-900 ${PlusJakartaSans.className}`}>
-        <main>{children}</main>
+        <main className="dark text-foreground">
+          <Providers>
+            {children}
+          </Providers>
+        </main>
         <FooterContainer>
           <FooterLogo />
 
