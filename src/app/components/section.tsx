@@ -12,7 +12,7 @@ export function TextSection({ titleType, title1, title2, paragraph, paragraph2, 
   titleType: "display" | "heading";
   title1?: string;
   title2?: string;
-  paragraph: string;
+  paragraph?: string;
   paragraph2?: string;
   cta?: string;
   link?: string;

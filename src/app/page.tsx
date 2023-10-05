@@ -22,7 +22,6 @@ export default function Home() {
   return (
     <div className="flex flex-col h-full text-theme-gray-50">
       {/* CABEÇALHO */}
-      <div data-aos="fade-up">
         <HeaderContainer>
           <HeaderLogo logo={Logo} />
           <HeaderLinkGroup>
@@ -34,7 +33,6 @@ export default function Home() {
             <HeaderButton link="/contact" text="Entre em Contato" />
           </HeaderLinkGroup>
         </HeaderContainer>
-      </div>
 
       {/* VIDEO */}
       <div data-aos="fade-up">

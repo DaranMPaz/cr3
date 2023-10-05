@@ -11,7 +11,7 @@ export function VerticalCard({image, title1, title2, paragraph1, paragraph2}:{
   return(
     <div className="bg-theme-gray-800">
       <div className="object-cover">
-        <Image className="w-full" src={image} alt="Diferencial"></Image>
+        <Image className="w-full" width={512} height={512} src={image} alt="Diferencial"></Image>
       </div>
       <div className="flex flex-col gap-4 w-full p-6 text-left">
         <h3 className="uppercase text-theme-gray-50 text-xl"><b className="text-theme-red-500">{title1}</b> {title2}</h3>

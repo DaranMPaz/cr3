@@ -31,7 +31,7 @@ export default function Contact() {
       </HeaderContainer>
 
       {/* FORM */}
-      <div data-aos="fade-up">
+      <div data-aos="fade-up" className='pt-20'>
         <SectionContainer padding="large" >
             <FormSection/>
         </SectionContainer>
@@ -46,7 +46,7 @@ export default function Contact() {
       <div data-aos="fade-up">
         <SectionImageContainer image="bg-theme-cta4">
           <PaddingContainer>
-            <TextSection gap="gap-6" color="text-theme-blue-500" hasCta titleType="display" title1="Descubra Nossos Serviços" title2="e Transforme Seu Negócio" paragraph="Queremos ajudar você a trazer conformidade, integridade e transparência para o seu negócio." cta="Conheça nossos serviços" link="/services/audit" />
+            <TextSection gap="gap-6" br color="text-theme-blue-500" hasCta titleType="display" title1="Descubra Nossos Serviços" title2="e Transforme Seu Negócio" paragraph="Queremos ajudar você a trazer conformidade, integridade e transparência para o seu negócio." cta="Conheça nossos serviços" link="/services/audit" />
           </PaddingContainer>
         </SectionImageContainer>
       </div>
