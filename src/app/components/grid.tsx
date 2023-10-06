@@ -2,8 +2,8 @@ import { SectionContainer, TextSection } from '@/app/components/section'
 import { FlexYContainer } from "./container";
 import Image from 'next/image';
 
-import { postList } from '../utils/posts';
-import { newsList } from '../utils/news';
+import { postList } from '../../utils/posts';
+import { newsList } from '../../utils/news';
 import Link from 'next/link';
 
 export function NewsGrid() {

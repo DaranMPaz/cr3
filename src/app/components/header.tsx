@@ -68,7 +68,7 @@ export function HeaderLinkGroup({ children }: { children: React.ReactNode }) {
 export function HeaderLogo({ logo }: { logo: any }) {
   return (
     <Link href={"/"}>
-      <Image src={logo} alt="CR3 Logo" width={74} height={43}></Image>
+      <Image src={logo} alt="CR3 Logo" width={74} height={43} className="w-full h-full"></Image>
     </Link>
   );
 }

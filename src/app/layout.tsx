@@ -1,14 +1,9 @@
-import "./globals.css";
-import {Providers} from "./providers";
+'use client'
+import "@/app/globals.css";
+import {Providers} from "@/app/providers";
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
-import {
-  FooterContainer,
-  FooterColumn,
-  FooterCta,
-  FooterLink,
-  FooterLogo,
-} from "./components/footer";
+import { Footer } from "@/app/components/footer";
 
 const PlusJakartaSans = Plus_Jakarta_Sans({ subsets: ["latin"] });
 
@@ -31,35 +26,7 @@ export default function RootLayout({
             {children}
           </Providers>
         </main>
-        <FooterContainer>
-          <FooterLogo />
-
-          <FooterColumn title="Menu">
-            <FooterLink link="/" text="Inicio" />
-            <FooterLink link="/about" text="Conheça a CR3" />
-            <FooterLink link="/audit" text="Auditoria de Terceira Parte" />
-            <FooterLink link="/iso" text="Auditoria ISO" />
-            <FooterLink link="/news" text="Conteúdo" />
-          </FooterColumn>
-
-          <FooterColumn title="Ajuda">
-            <FooterLink link="/faq" text="Perguntas Frequêntes" />
-            <FooterLink link="/contact" text="Contato" />
-          </FooterColumn>
-
-          <FooterColumn title="Termos">
-            <FooterLink link="/" text="Termos Legais" />
-            <FooterLink link="/" text="Política de Privacidade" />
-            <FooterLink link="/" text="Termos Legais" />
-            <FooterLink
-              isBlank
-              link="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm"
-              text="LGPD"
-            />
-          </FooterColumn>
-
-          <FooterCta />
-        </FooterContainer>
+        <Footer/>
       </body>
     </html>
   );

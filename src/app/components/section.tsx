@@ -3,10 +3,6 @@ import { LinkButton } from "./button";
 import Link from "next/link";
 import { MdChevronRight } from "react-icons/md";
 import { IoChevronDownSharp } from "react-icons/io5"
-import Instagram from '../../../public/icons/Instagram-img.png'
-import Facebook from '../../../public/icons/Facebook-img.png'
-import Linkedin from '../../../public/icons/Linkedin-img.png'
-import { Input, Textarea } from "@nextui-org/react";
 
 export function TextSection({ titleType, title1, title2, paragraph, paragraph2, cta, link, hasCta, br, gap, color} : {
   titleType: "display" | "heading";
@@ -76,11 +72,11 @@ export function ImageBackground({ src, alt }: { src: any; alt: string }) {
 export function ButtonCtaRight({ link, text }: { link: string; text: string }) {
   return (
     <Link
-      className="text-theme-yellow-700 uppercase font-bold flex gap-4 items-center rounded hover:text-theme-red-700 transition absolute top-1/2 right-24"
+      className="text-theme-yellow-700 uppercase font-bold flex gap-2 p-4 items-center rounded hover:text-theme-red-700 bg-black bg-opacity-80 transition absolute top-1/2 -translate-y-1/2 right-24 group"
       href={link}
     >
       {text}
-      <MdChevronRight clannName="text-theme-yellow-700 text-2xl transition hover:translate-x-6" />
+      <MdChevronRight className="text-2xl group-hover:translate-x-2 transition" />
     </Link>
   );
 }
@@ -139,7 +135,7 @@ export function CenteredSection({children, title, paragraph, icon} : {
   )
 }
 
-export function ContactSection({img, alt, title, phone, mail}:{
+export function OtherContacts({img, alt, title, phone, mail}:{
   img: any,
   alt: string,
   title: string,
@@ -163,50 +159,5 @@ export function ContactSection({img, alt, title, phone, mail}:{
         </div>
       </div>
     </SectionContainer>
-  )
-}
-
-export function FormSection({} : {
-
-}) {
-  return(
-    <div className="flex justify-between w-full mx-auto">
-
-      <div className="flex flex-col max-w-[600px] pr-12">
-        <div className="flex flex-col gap-6 border-b border-theme-gray-700 pb-6">
-          <h2 className="text-4xl uppercase text-theme-gay-50 leading-normal"><b className="text-theme-blue-500">Vamos começar</b><br/> a conversa?</h2>
-          <p className="font-bold">Entre em contato para iniciar uma jornada de sucesso</p>
-          <p className="text-theme-gray-400">Preencha o formulário ao lado e nossos especialistas entrarão em contato para entender suas necessidades e discutir como podemos ajudar você a atingir seus objetivos.</p>
-        </div>
-        <div className="flex w-full justify-between pt-6 gap-6">
-          <div className="flex flex-col gap-6 w-full">
-            <p className="text-sm text-theme-gray-400">Alguma dúvida? Acesse nossa página de perguntas frequentes:</p>
-            <Link className="uppercase text-theme-yellow-700 font-bold" href={"/faq"}>Perguntas frequentes</Link>
-          </div>
-          <div className="flex flex-col gap-6 w-full">
-            <p className="text-sm text-theme-gray-400">Se preferir você também pode acessar nossas redes sociais:</p>
-            <div className="flex gap-3">
-              <Link href={"/"}><Image width={24} src={Instagram} alt="Instagram"/></Link>
-              <Link href={"/"}><Image width={24} src={Facebook} alt="Facebook"/></Link>
-              <Link href={"/"}><Image width={24} src={Linkedin} alt="Linkedin"/></Link>   
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <form action="" className="flex flex-col w-full gap-6 max-w-[500px]">
-        <Input type="text" radius="none" labelPlacement="outside" size="lg" variant="bordered" label="Nome" placeholder="Seu nome e sobrenome" />
-        <Input type="text" radius="none" labelPlacement="outside" size="lg" variant="bordered" label="Empresa" placeholder="Nome da sua empresa" />
-        <div className="flex gap-6">
-          <Input type="email" radius="none" labelPlacement="outside" size="lg" variant="bordered" label="E-mail" placeholder="Seu melhor e-mail" />
-          <Input type="tel" radius="none" labelPlacement="outside" size="lg" variant="bordered" label="Telefone (Opcional)" placeholder="(DDD) 0 0000-0000" />
-        </div>
-        <Textarea radius="none" labelPlacement="outside" size="lg" variant="bordered" label="Mensagem (Opcional)" placeholder="Digite sua mensagem" />
-        <input className="flex cursor-pointer items-center w-fit px-4 py-3 font-bold rounded bg-theme-yellow-800 text-theme-gray-900 uppercase hover:bg-theme-red-500 hover:text-theme-gray-50 w-full justify-center" type="submit" value="Enviar" />
-      </form>
-      
-    </div>
-
-    
   )
 }
