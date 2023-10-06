@@ -1,4 +1,5 @@
 import nodemailer from 'nodemailer'
+import { mail } from './mailMessage'
 
 export async function sendMail({name, company, email, phone, message}:{
   name: string,
@@ -20,15 +21,7 @@ export async function sendMail({name, company, email, phone, message}:{
     from: 'darlan.mpaz@gmail.com',
     to: 'darlanmpaz123@gmail.com',
     subject: 'Um novo contato vindo do Website!',
-    html: `
-    <h3>Hello Darlan</h3>
-    <ul>
-      <li>Customer: ${name}</li>
-      <li>Company: ${company}</li>
-      <li>Email: ${email}</li>
-      <li>Phone: ${phone}</li>
-      <li>Message: ${message}</li>
-    </ul>`
+    html: mail({name, company, email, phone, message})
   }
 
   // transporter.sendMail(mailOptions, function (error, info) {
