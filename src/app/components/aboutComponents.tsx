@@ -2,13 +2,13 @@
 
 import Logo from "../../../public/logo-colored-light.png";
 import About2Img from "../../../public/about-2-img.png"
-import Diferential1 from "../../../public/diferencial-1-img.png"
-import Diferential2 from "../../../public/diferencial-2-img.png"
-import Diferential3 from "../../../public/diferencial-3-img.png"
-import Metodologia1 from "../../../public/metodologia-1.png"
-import Metodologia2 from "../../../public/metodologia-2.png"
-import Metodologia3 from "../../../public/metodologia-3.png"
-import Metodologia4 from "../../../public/metodologia-4.png"
+import Diferential1 from "../../../public/diferencial-1.jpg"
+import Diferential2 from "../../../public/diferencial-2.jpg"
+import Diferential3 from "../../../public/diferencial-3.jpg"
+import Metodologia1 from "../../../public/metodologia-1.jpg"
+import Metodologia2 from "../../../public/metodologia-2.jpg"
+import Metodologia3 from "../../../public/metodologia-3.jpg"
+import Metodologia4 from "../../../public/metodologia-4.jpg"
 
 import { HeaderContainer, HeaderLink, HeaderLinkGroup, HeaderLogo, HeaderButton, HeaderDropdown,} from "@/app/components/header";
 import { SectionImageContainer, PaddingContainer, SectionContainer, TextSection, ImageSection, CenteredSection} from "@/app/components/section";
@@ -18,6 +18,8 @@ import { VerticalCard, TimeLineCard, TimelineDivider } from "@/app/components/ca
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
+import { ImageAnimated } from "./imageAnimated";
+import { MdWorkspacePremium } from "react-icons/md";
 
 export function AboutHeader(){
   return(
@@ -43,7 +45,7 @@ export function AboutTitle(){
 
   return(
     <div data-aos="fade-up">
-      <SectionImageContainer image="bg-theme-about">
+      <SectionImageContainer image="bg-theme-about" icon>
         <PaddingContainer>
           <TextSection gap="gap-6" color="text-theme-blue-500" titleType="display" br title1="Quem Somos" paragraph="Na CR3 Auditoria, nossa história é moldada por nossa paixão por excelência e nosso compromisso com a sustentabilidade."/>
         </PaddingContainer>
@@ -62,7 +64,9 @@ export function AboutSection(){
     <div data-aos="fade-up">
       <SectionContainer padding="large">
         <TextSection gap="gap-6" color="text-theme-blue-500" titleType="heading" hasCta title1="Pioneirismo" title2=" em Auditorias de Terceira Parte" paragraph="Somos pioneiros na condução de auditorias de terceira parte para sistemas de logística reversa de embalagens, impulsionando a conformidade, a eficiência e a responsabilidade ambiental." cta="ENTRE EM CONTATO" link="/contact" />
-        <ImageSection src={About2Img} alt="About" height={512} width={512} />
+          <ImageAnimated onLeft image={About2Img} alt="Mulher segurando uma pasta" color="bg-theme-red-500">
+            <MdWorkspacePremium />
+          </ImageAnimated>
       </SectionContainer>
     </div>
   )

@@ -18,7 +18,7 @@ export function TextSection({ titleType, title1, title2, paragraph, paragraph2, 
   color?: string | 'text-theme-blue-500'
 }) {
   return (
-    <div className={`flex flex-col ${gap} w-full max-w-xl z-10`}>
+    <div className={`flex flex-col ${gap} w-full max-w-lg z-10`}>
       {titleType === "display" && (
         <h2 className="text-5xl uppercase leading-tight max-w-2xl text-theme-gray-50">
           <b className={`${color} font-bold pr-2`}>{title1}</b>
@@ -55,7 +55,7 @@ export function ImageSection({ src, alt, width, height,} : {
 
 export function BoxedSection({ children }: { children: React.ReactNode }) {
   return (
-    <div className="bg-theme-gray-900 p-24 flex justify-between items-center mx-auto">
+    <div className="bg-theme-gray-900 px-24 py-12 flex justify-between items-center mx-auto">
       {children}
     </div>
   );
@@ -94,23 +94,25 @@ export function SectionContainer({ children, padding,} : {
   padding: "none" | "large";
 }) {
   return padding === "none" ? (
-    <div className="flex justify-between items-center w-full max-w-[1600px] mx-auto relative bg-theme-texture">
+    <div className="flex justify-between items-center w-full max-w-[1600px] mx-auto relative ">
       {children}
     </div>
   ) : (
-    <div className="flex justify-between p-24 items-center bg-theme-texture bg-theme-gray2-900 w-full max-w-[1600px] mx-auto relative">
+    <div className="flex justify-between p-24 items-center   w-full max-w-[1600px] mx-auto relative">
       {children}
     </div>
   );
 }
 
-export function SectionImageContainer({ children, image} : {
+export function SectionImageContainer({ children, image, icon} : {
   children: React.ReactNode,
-  image: string
+  image: string,
+  icon?: boolean
 }) {
   return (
-    <div className={`flex justify-between p-24 items-center bg-theme-gray2-900 w-full max-w-[1600px] mx-auto relative h-[700px] ${image} bg-no-repeat bg-cover`}>
+    <div className={`flex justify-between p-24 mt-18 items-center  w-full max-w-[1600px] mx-auto relative h-[700px] ${image} bg-no-repeat bg-cover`}>
       {children}
+      {icon && <IoChevronDownSharp className="text-theme-gray-50 text-2xl animate-bounce-slow absolute bottom-12 left-1/2 -translate-x-1/2" />}  
     </div>
   );
 }
@@ -129,7 +131,7 @@ export function CenteredSection({children, title, paragraph, icon} : {
           </h2>
           <p className="leading-relaxed text-theme-gray-50 uppercase">{paragraph}</p>
         </div>
-        {icon && <IoChevronDownSharp className="text-theme-gray-50 text-2xl" />}         
+        {icon && <IoChevronDownSharp className="text-theme-gray-50 text-2xl animate-bounce-slow" />}         
           {children}
       </div>
   )

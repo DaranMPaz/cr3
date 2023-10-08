@@ -20,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br" className="scroll-smooth">
-      <body className={`bg-theme-texture bg-theme-gray2-900 ${PlusJakartaSans.className}`}>
+      <body className={`bg-theme-texture object-center bg-theme-gray2-900 ${PlusJakartaSans.className}`}>
         <main className="dark text-foreground">
           <Providers>
             {children}

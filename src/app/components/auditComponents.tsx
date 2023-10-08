@@ -2,21 +2,24 @@
 
 import Logo from "../../../public/logo-colored-light.png";
 import Audit1Img from '../../../public/audit-1-img.png'
-import Audit2Img from '../../../public/audit-2-img.png'
-import Metodologia1 from "../../../public/metodologia-1.png"
-import Metodologia2 from "../../../public/metodologia-2.png"
-import Metodologia3 from "../../../public/metodologia-3.png"
-import Metodologia4 from "../../../public/metodologia-4.png"
-import Benefi3Img from "../../../public/como-beneficia-img.png";
+import Audit2Img from '../../../public/audit-2-img.jpg'
+import Metodologia1 from "../../../public/metodologia-1.jpg"
+import Metodologia2 from "../../../public/metodologia-2.jpg"
+import Metodologia3 from "../../../public/metodologia-3.jpg"
+import Metodologia4 from "../../../public/metodologia-4.jpg"
+import Benefi3Img from "../../../public/como-beneficia-img.svg";
+import { HiDocumentSearch } from 'react-icons/hi'
 
 import { BoxedSection, CenteredSection, ImageSection, PaddingContainer, SectionContainer, SectionImageContainer, TextSection } from '@/app/components/section'
 import { HeaderContainer, HeaderLink, HeaderLinkGroup, HeaderLogo, HeaderButton, HeaderDropdown } from '@/app/components/header'
-import { HorizontalCard, HorizontalCardContent, HorizontalCardImage, TimeLineCard, TimelineDivider, VerticalCard } from '@/app/components/card'
+import { HorizontalCard, HorizontalCardContent, HorizontalCardImage, TimeLineCard, TimelineDivider } from '@/app/components/card'
 import { FlexContainer } from '@/app/components/container'
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
+import { ImageAnimated } from "./imageAnimated";
+import { ImCheckmark } from "react-icons/im";
 
 export function AudittHeader(){
   return(
@@ -42,7 +45,7 @@ export function AuditTitle(){
 
   return(
     <div data-aos="fade-up">
-      <SectionImageContainer image="bg-theme-services-audit">
+      <SectionImageContainer image="bg-theme-services-audit" icon>
         <PaddingContainer>
           <TextSection gap="gap-6" color="text-theme-blue-500" titleType="display" br title1="Compromisso" title2='com as normas' paragraph="Asseguramos que cada detalhe seja tratado com total consonância com as legislações vigentes."/>
         </PaddingContainer>
@@ -61,7 +64,9 @@ export function AuditSection1(){
     <div data-aos="fade-up">
       <SectionContainer padding="large">
         <TextSection gap="gap-6" color="text-theme-blue-500" titleType="display" title1="Auditoria" title2=" de Terceira Parte" paragraph="Nosso serviço de Auditoria de Terceira Parte é projetado para atender às necessidades únicas das entidades gestoras, modelos individuais de logística reversa e empresas aderentes." paragraph2='Avaliamos os processos, verificamos a precisão dos registros e asseguramos a adesão às regulamentações.' />
-        <ImageSection src={Audit1Img} alt="Auditoria" height={512} width={512} />
+        <ImageAnimated onLeft image={Audit1Img} alt="Mulher segurando uma pasta" color="bg-theme-red-500">
+          <HiDocumentSearch />
+        </ImageAnimated>
       </SectionContainer>
     </div>
   )

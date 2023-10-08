@@ -2,21 +2,23 @@
 
 import Logo from "../../../public/logo-colored-light.png";
 import Iso1Img from '../../../public/Iso-1-img.png'
-import Iso2Img from '../../../public/Iso-2-img.png'
-import Metodologia1 from "../../../public/metodologia-1.png"
-import Metodologia2 from "../../../public/metodologia-2.png"
-import Metodologia3 from "../../../public/metodologia-3.png"
-import Metodologia4 from "../../../public/metodologia-4.png"
-import Benefi3Img from "../../../public/como-beneficia-img.png";
+import Iso2Img from '../../../public/Iso-2-img.jpg'
+import Metodologia1 from "../../../public/metodologia-1.jpg"
+import Metodologia2 from "../../../public/metodologia-2.jpg"
+import Metodologia3 from "../../../public/metodologia-3.jpg"
+import Metodologia4 from "../../../public/metodologia-4.jpg"
+import Benefi3Img from "../../../public/como-beneficia-img.svg";
+import { MdCardMembership } from 'react-icons/md'
 
 import { BoxedSection, CenteredSection, ImageSection, PaddingContainer, SectionContainer, SectionImageContainer, TextSection } from '@/app/components/section'
 import { HeaderContainer, HeaderLink, HeaderLinkGroup, HeaderLogo, HeaderButton, HeaderDropdown } from '@/app/components/header'
-import { HorizontalCard, HorizontalCardContent, HorizontalCardImage, TimeLineCard, TimelineDivider, VerticalCard } from '@/app/components/card'
+import { HorizontalCard, HorizontalCardContent, HorizontalCardImage, TimeLineCard, TimelineDivider } from '@/app/components/card'
 import { FlexContainer } from '@/app/components/container'
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
+import { ImageAnimated } from "./imageAnimated";
 
 export function IsotHeader(){
   return(
@@ -42,7 +44,7 @@ export function IsoTitle(){
 
   return(
     <div data-aos="fade-up">
-      <SectionImageContainer image="bg-theme-services-iso">
+      <SectionImageContainer image="bg-theme-services-iso" icon>
         <PaddingContainer>
           <TextSection gap="gap-6" color="text-theme-blue-500" titleType="display" br title1="Auditoria ISO" title2='Organização Internacional de Normalização' paragraph="Lorem ipsum dolor sit amet consectetur. Est pharetra et vestibulum eget eget sit in viverra luctus. Facilisis aliquet quis in sit vulputate. Tempus amet fermentum tortor cras ac quis."/>
         </PaddingContainer>
@@ -60,7 +62,9 @@ export function IsoSection1(){
   return(
     <div data-aos="fade-up">
       <SectionContainer padding="large">
-        <ImageSection src={Iso1Img} alt="Auditoria" height={512} width={512} />
+        <ImageAnimated onLeft image={Iso1Img} alt="Mulher segurando uma pasta" color="bg-theme-blue-800">
+          <MdCardMembership />
+        </ImageAnimated>
         <TextSection gap="gap-6" color="text-theme-blue-500" titleType="display" title1="Auditoria ISO" title2=" (Organização Internacional de Normalização)" paragraph="Lorem ipsum dolor sit amet consectetur. Est pharetra et vestibulum eget eget sit in viverra luctus. Facilisis aliquet quis in sit vulputate. Tempus amet fermentum tortor cras ac quis." paragraph2='Lorem ipsum dolor sit amet consectetur. Est pharetra et vestibulum eget eget sit in viverra luctus. Facilisis aliquet quis in sit vulputate. Tempus amet fermentum tortor cras ac quis.' />
       </SectionContainer>
     </div>

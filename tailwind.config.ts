@@ -13,15 +13,15 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        'theme-texture':"url('/bg-texture.png')",
-        'theme-about':"url('/about-img.png')",
-        'theme-services-home':"url('/services-home-img.png')",
-        'theme-services-audit':"url('/services-audit-img.png')",
-        'theme-services-iso':"url('/services-iso-img.png')",
-        'theme-cta1':"url('/cta-1-img.png')",
-        'theme-cta2':"url('/cta-2-img.png')",
-        'theme-cta3':"url('/cta-3-img.png')",
-        'theme-cta4':"url('/cta-4-img.png')",
+        'theme-texture':"url('/bg-texture.jpg')",
+        'theme-about':"url('/about-img.jpg')",
+        'theme-services-home':"url('/services-home-img.jpg')",
+        'theme-services-audit':"url('/services-audit-img.jpg')",
+        'theme-services-iso':"url('/services-iso-img.jpg')",
+        'theme-cta1':"url('/cta-1-img.jpg')",
+        'theme-cta2':"url('/cta-2-img.jpg')",
+        'theme-cta3':"url('/cta-3-img.jpg')",
+        'theme-cta4':"url('/cta-4-img.jpg')",
         'theme-home-video':"url('/home-video.mp4')"
       },
       colors: {
@@ -79,7 +79,11 @@ const config: Config = {
         'theme-gradient-img2' : 'linear-gradient(to bottom, #1b1b1b 15.49%,#1b1b1b 100%)',
         'theme-gradient-img3' : 'linear-gradient(to bottom, #1b1b1b 15.49%,#1b1b1b 100%)',
         'theme-gradient-img4' : 'linear-gradient(to bottom, #1b1b1b 11.46%,#1b1b',
-      }
+      },
+      animation: {
+        'bounce-slow': 'bounce 3s linear infinite',
+        'bounce-slowest': 'bounce 16s linear infinite',
+      },
     },
   },
   darkMode: "class",

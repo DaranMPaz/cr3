@@ -1,10 +1,10 @@
 'use client'
 
 import Logo from "../../../public/logo-colored-light.png";
-import ContactImg from '../../../public/contact-img.png'
+import ContactImg from '../../../public/contact-img.svg'
 
 import { HeaderContainer, HeaderLink, HeaderLinkGroup, HeaderLogo, HeaderButton, HeaderDropdown } from '@/app/components/header'
-import { CenteredSection, ImageSection, OtherContacts, PaddingContainer, SectionImageContainer, TextSection } from '@/app/components/section'
+import { OtherContacts, PaddingContainer, SectionImageContainer, TextSection } from '@/app/components/section'
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -49,7 +49,7 @@ export function ContactBanner(){
     <div data-aos="fade-up">
       <SectionImageContainer image="bg-theme-cta4">
         <PaddingContainer>
-          <TextSection gap="gap-6" br color="text-theme-blue-500" hasCta titleType="display" title1="Descubra Nossos Serviços" title2="e Transforme Seu Negócio" paragraph="Queremos ajudar você a trazer conformidade, integridade e transparência para o seu negócio." cta="Conheça nossos serviços" link="/services/audit" />
+          <TextSection gap="gap-6" br color="text-theme-blue-300" hasCta titleType="display" title1="Descubra Nossos Serviços" title2="e Transforme Seu Negócio" paragraph="Queremos ajudar você a trazer conformidade, integridade e transparência para o seu negócio." cta="Conheça nossos serviços" link="/services/audit" />
         </PaddingContainer>
       </SectionImageContainer>
     </div>

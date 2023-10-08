@@ -21,8 +21,8 @@ export function NewsGrid() {
                   <Image className="w-full" width={512} height={512} objectFit='contain' src={`/news/${post.image}`} alt="Diferencial"></Image>
                 </div>
                 <div className="flex flex-col gap-4 w-full p-6 text-left">
-                  <h3 className="uppercase text-theme-gray-50 text-xl font-bold">{post.title}</h3>
-                  <div className='flex flex-col gap-1'>
+                  <h3 className="upperase text-theme-gray-50 text-xl font-bold">{post.title}</h3>
+                  <div className='flecx flex-col gap-1'>
                     <p className="text-theme-gray-400">{post.shortDescription}</p>
                     <Link href={`news/posts/${post.id}`} className='text-theme-yellow-700 font-bold'>[ continuar lendo ]</Link>
                   </div>

@@ -1,14 +1,18 @@
 'use client'
 
 import Logo from "../../../public/logo-colored-light.png";
-import AboutImg from "../../../public/about-2-img.png";
+import AboutImg from "../../../public/sobre-img.png";
 import Benefi1Img from "../../../public/beneficio-1-img.png";
 import Benefi2Img from "../../../public/beneficio-2-img.png";
-import Benefi3Img from "../../../public/como-beneficia-img.png";
+import Benefi3Img from "../../../public/como-beneficia-img.svg";
+import { MdStar } from "react-icons/md"
+import { RiFileList2Fill } from "react-icons/ri"
+import { ImCheckmark } from "react-icons/im"
 
 import { HeaderButton, HeaderContainer, HeaderDropdown, HeaderLink, HeaderLinkGroup, HeaderLogo } from "./header";
 import { BoxedSection, ButtonCtaRight, ImageSection, PaddingContainer, SectionContainer, SectionImageContainer, TextSection } from "./section";
 import Carousel from "./carousel";
+import { ImageAnimated } from "./imageAnimated";
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -26,7 +30,7 @@ export function HomeHeader(){
         <HeaderLink link="/faq" text="Dúvidas" />
         <HeaderButton link="/contact" text="Entre em Contato" />
       </HeaderLinkGroup>
-      </HeaderContainer>
+    </HeaderContainer>
   )
 }
 
@@ -53,7 +57,9 @@ export function HomeAbout(){
     <div data-aos="fade-up">
       <SectionContainer padding="large">
         <TextSection gap="gap-6" color="text-theme-blue-500" titleType="heading" hasCta title1="dedicação" title2="em moldar o futuro da auditoria de terceira parte no Brasil." paragraph="Desde a nossa fundação, temos sido pioneiros na promoção da conformidade e integridade nos sistemas de logística reversa de embalagens." cta="CONHEÇA A CR3" link="/about" />
-        <ImageSection src={AboutImg} alt="About" height={512} width={512} />
+        <ImageAnimated onLeft image={AboutImg} alt="Mulher segurando uma pasta" color="bg-theme-red-500">
+          <ImCheckmark />
+        </ImageAnimated>
       </SectionContainer>
     </div>
   )
@@ -87,7 +93,9 @@ export function HomeBenefit1(){
     <div data-aos="fade-up">
       <SectionContainer padding="large">
         <TextSection gap="gap-6" color="text-theme-blue-500" titleType="heading" br title1="Conformidade" title2="Garantida" paragraph="Asseguramos que cada detalhe seja tratado com total consonância com as legislações vigentes." paragraph2="Nossa abordagem meticulosa e especializada significa que você pode confiar em nossas avaliações rigorosas, para garantir que seus processos de logística reversa estejam em estrita conformidade com as regulamentações."/>
-        <ImageSection src={Benefi1Img} alt="About" height={512} width={512} />
+        <ImageAnimated onLeft image={Benefi1Img} alt="Mulher de braços cruzados" color="bg-theme-red-500">
+          <RiFileList2Fill />
+        </ImageAnimated>
       </SectionContainer>
     </div>
   )
@@ -102,7 +110,9 @@ export function HomeBenefit2(){
   return(
     <div data-aos="fade-up">
       <SectionContainer padding="large">
-        <ImageSection src={Benefi2Img} alt="About" height={512} width={512} />
+        <ImageAnimated onRight image={Benefi2Img} alt="Mulher de braços cruzados" color="bg-theme-yellow-800">
+          <MdStar />
+        </ImageAnimated>
         <TextSection gap="gap-6" color="text-theme-blue-500" titleType="heading" br title1="Excelência:" title2="Padrões Elevados, Resultados Sólidos" paragraph="Excelência técnica é a base de tudo o que fazemos. Temos profundo conhecimento sobre o mercado de logística reversa de embalagens e os mecanismos de auditoria necessários." paragraph2="Entendemos os detalhes intrínsecos do setor e temos a experiência necessária para oferecer resultados sólidos e confiáveis."/>
       </SectionContainer>
     </div>
