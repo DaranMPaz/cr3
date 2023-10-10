@@ -1,7 +1,7 @@
 'use client'
 
 import {Accordion, AccordionItem} from "@nextui-org/react";
-import { PaddingContainer, SectionContainer, SectionImageContainer, TextSection } from '@/app/components/section'
+import { PaddingContainer, SectionContainer, SectionImageContainer, TextSection } from '@/components/section'
 import { FlexContainer, FlexYContainer } from "./container";
 
 export function FaqAccordeon() {

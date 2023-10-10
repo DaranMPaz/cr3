@@ -1,5 +1,5 @@
 import Image from "next/image";
-import TimeLineItem from "../../../public/timeline-item-img.png"
+import TimeLineItem from "../../public/timeline-item-img.png"
 
 export function VerticalCard({image, title1, title2, paragraph1, paragraph2}:{
   image?: any,

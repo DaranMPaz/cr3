@@ -1,10 +1,9 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { HeaderLogo, HeaderButton } from './header'
-import Logo from '../../../public/logo-colored-light.png'
-import Instagram from '../../../public/icons/Instagram-img.png'
-import Facebook from '../../../public/icons/Facebook-img.png'
-import Linkedin from '../../../public/icons/Linkedin-img.png'
+import Logo from '../../public/logo-colored-light.png'
+import Instagram from '../../public/icons/Instagram-img.png'
+import Facebook from '../../public/icons/Facebook-img.png'
+import Linkedin from '../../public/icons/Linkedin-img.png'
 
 export function Footer() {
   return (
@@ -80,7 +79,7 @@ export function FooterSocial({icon, link, alt}:{
 export function FooterLogo() {
   return(
     <div className='flex flex-col gap-6 max-w-[170px]'>
-      <HeaderLogo logo={Logo} />
+      
       <span className='text-xs'>Compromisso Ambiental, Auditoria de Excelência</span>
     </div>
   )
@@ -89,7 +88,7 @@ export function FooterLogo() {
 export function FooterCta() {
   return(
     <div className='flex flex-col justify-between h-full min-h-[150px]'>
-      <HeaderButton link='/contact' text='Entre em Contato'/>
+      
       <ul className='flex items-center gap-6 justify-end'>
         <FooterSocial alt='Linkedin' icon={Linkedin} link={"/"} />
         <FooterSocial alt='Facebook' icon={Facebook} link={"/"} />

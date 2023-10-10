@@ -1,30 +1,10 @@
 'use client'
-
-import Logo from "../../../public/logo-colored-light.png";
-import ContactImg from '../../../public/contact-img.svg'
-
-import { HeaderContainer, HeaderLink, HeaderLinkGroup, HeaderLogo, HeaderButton, HeaderDropdown } from '@/app/components/header'
-import { OtherContacts, PaddingContainer, SectionImageContainer, TextSection } from '@/app/components/section'
+import ContactImg from '../../public/contact-img.svg'
+import { OtherContacts, PaddingContainer, SectionImageContainer, TextSection } from '@/components/section'
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
-
-export function ContactHeader(){
-  return(
-    <HeaderContainer>
-      <HeaderLogo logo={Logo} />
-      <HeaderLinkGroup>
-        <HeaderLink link='/' text='Inicio' />
-        <HeaderLink link='/about' text='Conheça a CR3'/>
-        <HeaderDropdown/>
-        <HeaderLink link='/news' text='Conteúdo' />
-        <HeaderLink link='/faq' text='Dúvidas' />
-        <HeaderButton link='/contact' text='Entre em Contato'/>
-      </HeaderLinkGroup>
-    </HeaderContainer>
-  )
-}
 
 export function ContactOthers(){
 

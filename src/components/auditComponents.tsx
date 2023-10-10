@@ -1,41 +1,21 @@
 'use client'
-
-import Logo from "../../../public/logo-colored-light.png";
-import Audit1Img from '../../../public/audit-1-img.png'
-import Audit2Img from '../../../public/audit-2-img.jpg'
-import Metodologia1 from "../../../public/metodologia-1.jpg"
-import Metodologia2 from "../../../public/metodologia-2.jpg"
-import Metodologia3 from "../../../public/metodologia-3.jpg"
-import Metodologia4 from "../../../public/metodologia-4.jpg"
-import Benefi3Img from "../../../public/como-beneficia-img.svg";
+import Audit1Img from '../../public/audit-1-img.png'
+import Audit2Img from '../../public/audit-2-img.jpg'
+import Metodologia1 from "../../public/metodologia-1.jpg"
+import Metodologia2 from "../../public/metodologia-2.jpg"
+import Metodologia3 from "../../public/metodologia-3.jpg"
+import Metodologia4 from "../../public/metodologia-4.jpg"
+import Benefi3Img from "../../public/como-beneficia-img.svg"
 import { HiDocumentSearch } from 'react-icons/hi'
 
-import { BoxedSection, CenteredSection, ImageSection, PaddingContainer, SectionContainer, SectionImageContainer, TextSection } from '@/app/components/section'
-import { HeaderContainer, HeaderLink, HeaderLinkGroup, HeaderLogo, HeaderButton, HeaderDropdown } from '@/app/components/header'
-import { HorizontalCard, HorizontalCardContent, HorizontalCardImage, TimeLineCard, TimelineDivider } from '@/app/components/card'
-import { FlexContainer } from '@/app/components/container'
+import { BoxedSection, CenteredSection, ImageSection, PaddingContainer, SectionContainer, SectionImageContainer, TextSection } from '@/components/section'
+import { HorizontalCard, HorizontalCardContent, HorizontalCardImage, TimeLineCard, TimelineDivider } from '@/components/card'
+import { FlexContainer } from '@/components/container'
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
 import { ImageAnimated } from "./imageAnimated";
-import { ImCheckmark } from "react-icons/im";
-
-export function AudittHeader(){
-  return(
-    <HeaderContainer>
-      <HeaderLogo logo={Logo} />
-      <HeaderLinkGroup>
-        <HeaderLink link='/' text='Inicio' />
-        <HeaderLink link='/about' text='Conheça a CR3' />
-        <HeaderDropdown/>
-        <HeaderLink link='/news' text='Conteúdo' />
-        <HeaderLink link='/faq' text='Dúvidas' />
-        <HeaderButton link='/contact' text='Entre em Contato' />
-      </HeaderLinkGroup>
-    </HeaderContainer>
-  )
-}
 
 export function AuditTitle(){
 

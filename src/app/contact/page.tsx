@@ -1,10 +1,9 @@
-import { ContactSection } from '@/app/components/contactForm'
-import { ContactBanner, ContactHeader, ContactOthers } from '@/app/components/ContactComponents'
+import { ContactSection } from '@/components/contactForm'
+import { ContactBanner, ContactOthers } from '@/components/contactComponents'
 
 export default function Contact() {
   return (
     <div className="flex flex-col h-full text-theme-gray-50">
-      <ContactHeader />
       <ContactSection />
       <ContactOthers />
       <ContactBanner />

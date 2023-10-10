@@ -1,15 +1,11 @@
 'use client'
-
-import Logo from "../../../public/logo-colored-light.png";
-import AboutImg from "../../../public/sobre-img.png";
-import Benefi1Img from "../../../public/beneficio-1-img.png";
-import Benefi2Img from "../../../public/beneficio-2-img.png";
-import Benefi3Img from "../../../public/como-beneficia-img.svg";
+import AboutImg from "../../public/sobre-img.png";
+import Benefi1Img from "../../public/beneficio-1-img.png";
+import Benefi2Img from "../../public/beneficio-2-img.png";
+import Benefi3Img from "../../public/como-beneficia-img.svg";
 import { MdStar } from "react-icons/md"
 import { RiFileList2Fill } from "react-icons/ri"
 import { ImCheckmark } from "react-icons/im"
-
-import { HeaderButton, HeaderContainer, HeaderDropdown, HeaderLink, HeaderLinkGroup, HeaderLogo } from "./header";
 import { BoxedSection, ButtonCtaRight, ImageSection, PaddingContainer, SectionContainer, SectionImageContainer, TextSection } from "./section";
 import Carousel from "./carousel";
 import { ImageAnimated } from "./imageAnimated";
@@ -17,22 +13,6 @@ import { ImageAnimated } from "./imageAnimated";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
-
-export function HomeHeader(){
-  return(
-    <HeaderContainer>
-      <HeaderLogo logo={Logo} />
-      <HeaderLinkGroup>
-        <HeaderLink link="/" text="Inicio" isActive />
-        <HeaderLink link="/about" text="Conheça a CR3" />
-        <HeaderDropdown />
-        <HeaderLink link="/news" text="Conteúdo" />
-        <HeaderLink link="/faq" text="Dúvidas" />
-        <HeaderButton link="/contact" text="Entre em Contato" />
-      </HeaderLinkGroup>
-    </HeaderContainer>
-  )
-}
 
 export function HomeVideo(){
 

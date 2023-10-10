@@ -34,7 +34,8 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "src/app/backendService/mailService.js",
-    "src/app/api/api_four.js"
+    "src/app/api/api_four.js",
+    "src/app/providers.jsx"
   ],
   "exclude": [
     "node_modules"

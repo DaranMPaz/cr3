@@ -1,4 +1,4 @@
-import { LinkButton } from '@/app/components/button'
+import { LinkButton } from '@/components/button'
 import { MdCheckCircleOutline } from 'react-icons/md'
 
 export function SuccessMessage() {

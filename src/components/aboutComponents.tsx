@@ -1,41 +1,22 @@
 'use client'
+import About2Img from "../../public/about-2-img.png"
+import Diferential1 from "../../public/diferencial-1.jpg"
+import Diferential2 from "../../public/diferencial-2.jpg"
+import Diferential3 from "../../public/diferencial-3.jpg"
+import Metodologia1 from "../../public/metodologia-1.jpg"
+import Metodologia2 from "../../public/metodologia-2.jpg"
+import Metodologia3 from "../../public/metodologia-3.jpg"
+import Metodologia4 from "../../public/metodologia-4.jpg"
 
-import Logo from "../../../public/logo-colored-light.png";
-import About2Img from "../../../public/about-2-img.png"
-import Diferential1 from "../../../public/diferencial-1.jpg"
-import Diferential2 from "../../../public/diferencial-2.jpg"
-import Diferential3 from "../../../public/diferencial-3.jpg"
-import Metodologia1 from "../../../public/metodologia-1.jpg"
-import Metodologia2 from "../../../public/metodologia-2.jpg"
-import Metodologia3 from "../../../public/metodologia-3.jpg"
-import Metodologia4 from "../../../public/metodologia-4.jpg"
-
-import { HeaderContainer, HeaderLink, HeaderLinkGroup, HeaderLogo, HeaderButton, HeaderDropdown,} from "@/app/components/header";
-import { SectionImageContainer, PaddingContainer, SectionContainer, TextSection, ImageSection, CenteredSection} from "@/app/components/section";
-import { GridContainer, FlexContainer } from "@/app/components/container";
-import { VerticalCard, TimeLineCard, TimelineDivider } from "@/app/components/card"
+import { SectionImageContainer, PaddingContainer, SectionContainer, TextSection, ImageSection, CenteredSection} from "@/components/section";
+import { GridContainer, FlexContainer } from "@/components/container";
+import { VerticalCard, TimeLineCard, TimelineDivider } from "@/components/card"
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
 import { ImageAnimated } from "./imageAnimated";
 import { MdWorkspacePremium } from "react-icons/md";
-
-export function AboutHeader(){
-  return(
-    <HeaderContainer>
-      <HeaderLogo logo={Logo} />
-      <HeaderLinkGroup>
-        <HeaderLink link="/" text="Inicio" />
-        <HeaderLink link="/about" text="Conheça a CR3" isActive />
-        <HeaderDropdown />
-        <HeaderLink link="/news" text="Conteúdo" />
-        <HeaderLink link="/faq" text="Dúvidas" />
-        <HeaderButton link="/contact" text="Entre em Contato" />
-      </HeaderLinkGroup>
-    </HeaderContainer>
-  )
-}
 
 export function AboutTitle(){
 

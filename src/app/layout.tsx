@@ -1,9 +1,9 @@
-'use client'
 import "@/app/globals.css";
 import {Providers} from "@/app/providers";
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
-import { Footer } from "@/app/components/footer";
+import { Footer } from "@/components/footer";
+import Header from "@/components/header/header";
 
 const PlusJakartaSans = Plus_Jakarta_Sans({ subsets: ["latin"] });
 
@@ -20,13 +20,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br" className="scroll-smooth">
-      <body className={`bg-theme-texture object-center bg-theme-gray2-900 ${PlusJakartaSans.className}`}>
-        <main className="dark text-foreground">
-          <Providers>
+      <body className={`dark text-foreground bg-theme-texture object-center ${PlusJakartaSans.className}`}>
+        <Providers>
+          <main>
+            <Header/>
             {children}
-          </Providers>
-        </main>
-        <Footer/>
+            <Footer/>
+          </main>
+        </Providers>
       </body>
     </html>
   );

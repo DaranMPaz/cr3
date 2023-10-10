@@ -1,30 +1,10 @@
 'use client'
-
-import Logo from "../../../public/logo-colored-light.png";
-
-import { HeaderContainer, HeaderLink, HeaderLinkGroup, HeaderLogo, HeaderButton, HeaderDropdown } from '@/app/components/header'
-import { FaqAccordeon } from '@/app/components/accordeon'
-import { PaddingContainer, SectionImageContainer, TextSection } from '@/app/components/section'
+import { FaqAccordeon } from '@/components/accordeon'
+import { PaddingContainer, SectionImageContainer, TextSection } from '@/components/section'
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
-
-export function FaqHeader(){
-  return(
-    <HeaderContainer>
-      <HeaderLogo logo={Logo} />
-      <HeaderLinkGroup>
-        <HeaderLink link='/' text='Inicio' />
-        <HeaderLink link='/about' text='Conheça a CR3'/>
-        <HeaderDropdown/>
-        <HeaderLink link='/news' text='Conteúdo'/>
-        <HeaderLink link='/faq' text='Dúvidas' isActive />
-        <HeaderButton link='/contact' text='Entre em Contato' />
-      </HeaderLinkGroup>
-    </HeaderContainer>
-  )
-}
 
 export function FaqContent(){
 
