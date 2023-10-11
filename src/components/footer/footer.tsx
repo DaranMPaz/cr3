@@ -22,8 +22,8 @@ export default function Footer() {
         <Column title="Menu">
           <FooterLink link="/" text="Inicio" />
           <FooterLink link="/about" text="Conheça a CR3" />
-          <FooterLink link="/services/audit" text="Auditoria de Terceira Parte" />
-          <FooterLink link="/services/iso" text="Auditoria ISO" />
+          <FooterLink link="/audit" text="Auditoria de Terceira Parte" />
+          <FooterLink link="/iso" text="Auditoria ISO" />
           <FooterLink link="/news" text="Conteúdo" />
         </Column>
         <Column title="Ajuda">

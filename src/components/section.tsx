@@ -88,7 +88,7 @@ export function ButtonCtaRight({ link, text }: { link: string; text: string }) {
         radius='sm' 
         size='lg' 
         className='hover:bg-red-400 w-max font-bold absolute bottom-0 translate-y-6 md:hidden'
-        onClick={() => router.push(`/services/audit`)} >
+        onClick={() => router.push(`/audit`)} >
         SAIBA MAIS
       </Button>
     </>
@@ -103,16 +103,17 @@ export function PaddingContainer({ children }: { children: React.ReactNode }) {
   );
 }
 
-export function SectionContainer({ children, padding,} : {
-  children: React.ReactNode;
-  padding: "none" | "large";
+export function SectionContainer({ children, padding, reverse} : {
+  children: React.ReactNode
+  padding: "none" | "large"
+  reverse?: boolean
 }) {
   return padding === "none" ? (
-    <div className="flex flex-col-reverse gap-12 md:flex-row justify-between items-center w-full max-w-[1600px] mx-auto relative ">
+    <div className={`flex ${ reverse === true ? 'flex-col' : 'flex-col-reverse' } gap-12 md:flex-row justify-between items-center w-full max-w-[1600px] mx-auto relative `}>
       {children}
     </div>
   ) : (
-    <div className="flex flex-col-reverse gap-12 md:flex-row justify-between p-6 py-12 md:p-24 items-center w-full max-w-[1600px] mx-auto relative">
+    <div className={`flex ${ reverse === true ? 'flex-col' : 'flex-col-reverse' } gap-12 md:flex-row justify-between p-6 py-12 md:p-24 items-center w-full max-w-[1600px] mx-auto relative`}>
       {children}
     </div>
   );

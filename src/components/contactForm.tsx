@@ -69,18 +69,18 @@ export function ContactSectionTitle({
 }) {
   return(
     <div className="flex flex-col max-w-[600px] pr-12">
-      <div className="flex flex-col gap-6 border-b border-theme-gray-700 text-theme-gray-50 pb-6">
-        <h2 className="text-4xl uppercase text-theme-gray-50 leading-normal"><b className="text-theme-blue-500">{title1}</b><br/> {title2}</h2>
-        <p className="font-bold">{text1}</p>
-        <p className="text-theme-gray-400">{text2}</p>
+      <div className="flex flex-col gap-6 border-b border-zinc-700 text-zinc-100 pb-6">
+        <h2 className="text-2xl md:text-4xl uppercase text-zinc-100 leading-normal md:leading-tight"><b className="text-blue-400">{title1}</b><br/> {title2}</h2>
+        <p>{text1}</p>
+        <p className="text-zinc-400 text-sm md:text-base leading-relaxed">{text2}</p>
       </div>
       <div className="flex w-full justify-between pt-6 gap-6">
         <div className="flex flex-col gap-6 w-full">
-          <p className="text-sm text-theme-gray-400">{text3}</p>
-          <Link className="uppercase text-theme-yellow-700 font-bold" href={"/faq"}>{link}</Link>
+          <p className="text-xs md:text-sm leading-relaxed text-zinc-400">{text3}</p>
+          <Link className="uppercase text-yellow-500 font-bold text-sm md:text-base" href={"/faq"}>{link}</Link>
         </div>
         <div className="flex flex-col gap-6 w-full">
-          <p className="text-sm text-theme-gray-400">Se preferir você também pode acessar nossas redes sociais:</p>
+          <p className="text-xs md:text-sm leading-relaxed text-zinc-400">Se preferir você também pode acessar nossas redes sociais:</p>
           <div className="flex gap-3">
             <li className="list-none"><Link className='hover:text-red-400 transition' href={"/"}><BsInstagram/></Link></li>
             <li className="list-none"><Link className='hover:text-red-400 transition' href={"/"}><BsFacebook/></Link></li>

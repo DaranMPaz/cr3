@@ -1,8 +1,9 @@
 'use client'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { RightButton } from './navigationButtons'
 import { Cta } from './cta'
 import Image from 'next/image'
+import { motion } from "framer-motion"
 
 export default function HomeCarousel() {
 
@@ -17,7 +18,7 @@ export default function HomeCarousel() {
       title: 'para sistemas de logística reversa de embalagens',
       paragraph: 'Especializada em logística reversa, a CR3 auditoria é pioneira em promover a conformidade no mercado de logística reversa e créditos de reciclagem do Brasil.',
       hasCta: true,
-      route: '/services/audit',
+      route: '/audit',
       cta: 'SAIBA MAIS'
     },
     {
@@ -25,7 +26,7 @@ export default function HomeCarousel() {
       title: 'Organização Internacional de Normalização',
       paragraph: 'Lorem ipsum dolor sit amet consectetur. Est pharetra et vestibulum eget eget sit in viverra luctus. Facilisis aliquet quis in sit vulputate. Tempus amet fermentum tortor cras ac quis..',
       hasCta: true,
-      route: '/services/iso',
+      route: '/iso',
       cta: 'SAIBA MAIS'
     },
   ]
@@ -38,11 +39,25 @@ export default function HomeCarousel() {
     setCurrentIndex(newIndex)
   }
 
+  const nextSlide = () => {
+    const newIndex = (currentIndex + 1) % slides.length
+    setCurrentIndex(newIndex)
+  }
+
+  useEffect(() => {
+    const interval = setInterval(nextSlide, 10000)
+    return () => clearInterval(interval)
+  }, [currentIndex]);
+
   return (
     <div className='max-w-[1600px] w-full h-[640px] md:h-[720px] m-auto pt-16 md:pt-20 relative group'>
-      {<div className='w-full h-full bg-center bg-cover transition'>
+      {<div className='w-full h-full bg-center bg-cover transition-opacity duration-500'>
         {currentIndex === 0 && 
-          <>
+          <motion.div 
+            initial={{ opacity: 0, scale: 1 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5 }}
+          >
             <video autoPlay loop muted className="brightness-50 object-cover w-full h-[640px] md:h-[720px] absolute top-0 left-0 -z-0">
               <source src={'/banner/banner-1.mp4'} />
             </video>
@@ -51,21 +66,25 @@ export default function HomeCarousel() {
               title={`${ctas[0].title}`}
               cta={`${ctas[0].cta}`}
               paragraph={`${ctas[0].paragraph}`}
-              route={`${ctas[0].route}`}  
+              route={`${ctas[0].route}`} 
             />
-          </>
+          </motion.div>
         }
         {currentIndex === 1 && 
-          <>
+          <motion.div 
+            initial={{ opacity: 0, scale: 1 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5 }}
+          >
             <Image src={`${slides[1].url}`} alt='CR3 Auditoria' width={1600} height={900} className='object-cover w-full h-[640px] md:h-[720px] absolute top-0 left-0 -z-0' />
             <Cta
               emphasis={`${ctas[1].emphasis}`}
               title={`${ctas[1].title}`}
               cta={`${ctas[1].cta}`}
               paragraph={`${ctas[1].paragraph}`}
-              route={`${ctas[1].route}`}  
+              route={`${ctas[1].route}`} 
             />
-          </>
+          </motion.div>
         }
       </div>}
       <RightButton onClick={prevSlide}/>

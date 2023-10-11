@@ -11,10 +11,10 @@ export default function DropdownLink() {
       </DropdownTrigger>
       <DropdownMenu aria-label="Static Actions">
         <DropdownItem key="audit">
-          <NavLink pathName="/services/audit" text="Auditoria de Terceira Parte" />
+          <NavLink pathName="/audit" text="Auditoria de Terceira Parte" />
         </DropdownItem>
         <DropdownItem key="iso">
-          <NavLink pathName="/services/iso" text="Auditoria ISO" />
+          <NavLink pathName="/iso" text="Auditoria ISO" />
         </DropdownItem>
       </DropdownMenu>
     </Dropdown>

@@ -3,10 +3,12 @@
 import { Input, Textarea } from "@nextui-org/react"
 import { FormEvent, useState } from "react"
 import { SuccessMessage } from "./successMessage"
+import { Button } from '@nextui-org/react'
 
 export function Form(){
 
   const [isSubmited, setIsSubmited] = useState(false)
+  const [submiting, setSubmiting] = useState(false)
   const [name, setName] = useState('')
   const [company, setCompany] = useState('')
   const [email, setEmail] = useState('')
@@ -15,12 +17,16 @@ export function Form(){
 
   const onSubmit = async (e:FormEvent) => {
     e.preventDefault()
+
+    setSubmiting(true)
+    console.log(submiting)
     
     try {
       const res = await fetch('/api/contact',{
         method: 'POST',
         body: JSON.stringify({ name, company, email, phone, message }),
-        headers: { 'content-type': 'application/json' }
+        headers: { 'content-type': 'application/json' },
+        mode: 'no-cors'
       })
 
       if (res.status === 200) {
@@ -30,6 +36,9 @@ export function Form(){
     } 
     catch (error) {
       console.error('Error: ', error)
+    }
+    finally {
+      setSubmiting(false)
     }
   }
 
@@ -95,11 +104,17 @@ export function Form(){
         value={message}
         onChange={ e => { setMessage(e.target.value) } }/>
 
-      <input 
-        className="flex cursor-pointer items-center px-4 py-3 font-bold rounded
-        bg-theme-yellow-800 text-theme-gray-900 uppercase hover:bg-theme-red-500
-        hover:text-theme-gray-50 w-full justify-center" 
+      <Button
         type="submit" 
-        value="Enviar" />
+        variant="solid" 
+        color="warning" 
+        className={`hover:bg-red-400 font-bold`} 
+        radius="sm" 
+        size="lg" 
+        isLoading={submiting} 
+        disabled={submiting}
+      >
+        {submiting ? 'Enviando mensagem' : 'Enviar'}
+      </Button>
     </form> )
 }

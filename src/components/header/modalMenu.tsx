@@ -24,8 +24,8 @@ export default function ModalMenu(
               <ul className='flex flex-col gap-6'>
                   <NavLink onClose={onClose} pathName="/" text="Inicio" />
                   <NavLink onClose={onClose} pathName="/about" text="Sobre" />
-                  <NavLink onClose={onClose} pathName="/services/audit" text="Auditoria de Terceira Parte" />
-                  <NavLink onClose={onClose} pathName="/services/iso" text="Auditoria ISO" />
+                  <NavLink onClose={onClose} pathName="/audit" text="Auditoria de Terceira Parte" />
+                  <NavLink onClose={onClose} pathName="/iso" text="Auditoria ISO" />
                   <NavLink onClose={onClose} pathName="/news" text="Conteúdo" />
                   <NavLink onClose={onClose} pathName="/faq" text="Perguntas Frequentes" />
                   <Button 
@@ -34,7 +34,9 @@ export default function ModalMenu(
                     radius='sm' 
                     size='lg' 
                     className='w-full hover:text-red-400 hover:border-red-400' 
-                    onClick={() => router.push('/contact')}>
+                    onClick={() => router.push('/contact')}
+                    onPress={onClose}
+                    >
                     Entre em contato
                   </Button>
               </ul>
