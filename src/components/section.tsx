@@ -22,8 +22,8 @@ export function TextSection({ titleType, title1, title2, paragraph, paragraph2, 
   return (
     <div className={`flex flex-col ${gap} w-full max-w-lg z-10`}>
       {titleType === "display" && (
-        <h2 className="text-3xl md:text-5xl uppercase leading-snug md:leading-tight max-w-2xl text-zinc-100">
-          <b className={`${color} font-bold pr-2`}>{title1}</b>
+        <h2 className="text-2xl md:text-5xl uppercase leading-snug md:leading-tight max-w-2xl text-zinc-100">
+          <b className={`${color} font-bold pr-1`}>{title1}</b>
           {br && <br />}
           {title2}
         </h2>
@@ -126,7 +126,7 @@ export function SectionImageContainer({ children, image, icon} : {
   return (
     <div className={`flex justify-between p-0 md:p-24 mt-18 items-center w-full max-w-[1600px] mx-auto relative h-[700px] ${image} bg-no-repeat bg-cover`}>
       {children}
-      {icon && <IoChevronDownSharp className="text-theme-gray-50 text-2xl animate-bounce-slow absolute bottom-12 left-1/2 -translate-x-1/2" />}  
+      {icon && <IoChevronDownSharp className="text-zinc-100 text-2xl animate-bounce-slow absolute bottom-12 left-1/2 -translate-x-1/2" />}  
     </div>
   );
 }
@@ -138,14 +138,14 @@ export function CenteredSection({children, title, paragraph, icon} : {
   icon?: boolean
 }) {
   return(
-    <div className="flex flex-col justify-center text-center gap-12 px-24 pt-0 pb-32 items-center w-full max-w-[1600px] mx-auto relative">
+    <div className="flex flex-col justify-center text-center gap-12 px-6 md:px-24 md:pb-32 md:py-0 py-32 items-center w-full max-w-[1600px] mx-auto relative">
         <div className="flex flex-col justify-center items-center w-full gap-4">
-          <h2 className="text-5xl uppercase leading-tight max-w-2xl text-theme-gray-50">
-            <b className="text-theme-red-500 font-bold pr-2">{title}</b>
+          <h2 className="text-3xl md:text-5xl uppercase leading-tight max-w-2xl text-zinc-100">
+            <b className="text-red-400 font-bold pr-2">{title}</b>
           </h2>
-          <p className="leading-relaxed text-theme-gray-50 uppercase">{paragraph}</p>
+          <p className="leading-relaxed text-zinc-200 uppercase text-sm md:text-base">{paragraph}</p>
         </div>
-        {icon && <IoChevronDownSharp className="text-theme-gray-50 text-2xl animate-bounce-slow" />}         
+        {icon && <IoChevronDownSharp className="text-zinc-200 text-2xl animate-bounce-slow" />}         
           {children}
       </div>
   )

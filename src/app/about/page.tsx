@@ -1,4 +1,4 @@
-import { AboutBanner, AboutDiferentials, AboutHeader, AboutMetodology, AboutSection, AboutTitle } from "@/components/aboutComponents";
+import { AboutBanner, AboutDiferentials, AboutMetodology, AboutSection, AboutTitle } from "@/components/aboutComponents";
 import { ContactSection } from "@/components/contactForm";
 
 export default function About() {

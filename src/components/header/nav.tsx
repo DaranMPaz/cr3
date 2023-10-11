@@ -13,6 +13,7 @@ export default function Nav() {
         <NavLink pathName="/about" text="Sobre" />
         <DropdownLink/>
         <NavLink pathName="/news" text="Conteúdo" />
+        <NavLink pathName="/faq" text="Perguntas Frequentes" />
         <Button
           variant='bordered'
           color='warning'

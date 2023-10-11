@@ -4,7 +4,7 @@ export function GridContainer({children, gap, cols}:{
   cols: string
 }) {
 
-  const hasGap = "gap-12"
+  const hasGap = 'gap-6 md:gap-12'
 
   return(
     <div className={`grid ${cols} ${gap && hasGap}`}>    
@@ -18,10 +18,10 @@ export function FlexContainer({children, gap}:{
   gap?: boolean
 }) {
 
-  const hasGap = "gap-12"
+  const hasGap = "gap-6 md:gap-12"
 
   return(
-    <div className={`flex items-start ${gap && hasGap}`}>    
+    <div className={`flex flex-col md:flex-row items-start ${gap && hasGap}`}>    
       {children}    
     </div>
   )
