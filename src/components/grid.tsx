@@ -1,5 +1,3 @@
-'use client'
-import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { SectionContainer, TextSection } from '@/components/section'
@@ -8,13 +6,6 @@ import { postList } from '../utils/posts'
 import { newsList } from '../utils/news'
 
 export function NewsGrid() {
-
-  const [currentPage, setCurrentPage] = useState(1)
-  const pageSize = 10
-
-  const onPageChange = ({page}:{page:any}) => {
-    setCurrentPage(page)
-  }
 
   return(
     <>
