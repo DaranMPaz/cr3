@@ -14,19 +14,6 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
 
-export function HomeVideo(){
-
-  useEffect(()=>{
-    AOS.init({duration: 1000});
-  },[])
-
-  return(
-    <div data-aos="fade-up">
-      <Carousel title1="Auditoria de Terceira Parte" title2="para sistemas de logística reversa de embalagens" paragraph="Especializada em logística reversa, a CR3 auditoria é pioneira em promover a conformidade no mercado de logística reversa e créditos de reciclagem do Brasil." cta="SAIBA MAIS" link="/services/audit" />
-    </div>
-  )
-}
-
 export function HomeAbout(){
 
   useEffect(()=>{
