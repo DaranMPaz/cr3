@@ -3,8 +3,7 @@ import type { Metadata } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import {Providers} from "@/app/providers";
 import Header from "@/components/header/header";
-import { Footer } from "@/components/footer";
-import Carousel from "@/components/carousel/homeCarousel";
+import Footer from "@/components/footer/footer";
 
 const PlusJakartaSans = Plus_Jakarta_Sans({ subsets: ["latin"] });
 
@@ -25,7 +24,6 @@ export default function RootLayout({
         <Providers>
           <main>
             <Header/>
-            <Carousel/>
             {children}
             <Footer/>
           </main>

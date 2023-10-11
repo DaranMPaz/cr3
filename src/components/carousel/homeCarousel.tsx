@@ -39,11 +39,11 @@ export default function HomeCarousel() {
   }
 
   return (
-    <div className='max-w-[1600px] w-full h-[512px] md:h-[720px] m-auto pt-16 md:pt-20 relative group'>
+    <div className='max-w-[1600px] w-full h-[640px] md:h-[720px] m-auto pt-16 md:pt-20 relative group'>
       {<div className='w-full h-full bg-center bg-cover transition'>
         {currentIndex === 0 && 
           <>
-            <video autoPlay loop muted className="brightness-50 object-cover w-full h-[720px] absolute top-0 left-0 -z-0">
+            <video autoPlay loop muted className="brightness-50 object-cover w-full h-[640px] md:h-[720px] absolute top-0 left-0 -z-0">
               <source src={'/banner/banner-1.mp4'} />
             </video>
             <Cta
@@ -57,7 +57,7 @@ export default function HomeCarousel() {
         }
         {currentIndex === 1 && 
           <>
-            <Image src={`${slides[1].url}`} alt='CR3 Auditoria' width={1600} height={900} className='object-cover w-full h-[800px] absolute top-0 left-0 -z-0' />
+            <Image src={`${slides[1].url}`} alt='CR3 Auditoria' width={1600} height={900} className='object-cover w-full h-[640px] md:h-[720px] absolute top-0 left-0 -z-0' />
             <Cta
               emphasis={`${ctas[1].emphasis}`}
               title={`${ctas[1].title}`}
