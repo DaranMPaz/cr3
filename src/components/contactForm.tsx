@@ -11,6 +11,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
 import { Form } from "./form";
+import { BsFacebook, BsInstagram, BsLinkedin } from "react-icons/bs";
 
 export function ContactSection() {
 
@@ -45,7 +46,7 @@ export function ContactSectionContainer({
   children:React.ReactNode
 }) {
   return(
-    <div className="flex justify-between w-full mx-auto">
+    <div className="flex flex-col md:flex-row gap-20 pb-12 md:pb-0 justify-between w-full mx-auto">
       {children}
     </div>
   )
@@ -81,9 +82,9 @@ export function ContactSectionTitle({
         <div className="flex flex-col gap-6 w-full">
           <p className="text-sm text-theme-gray-400">Se preferir você também pode acessar nossas redes sociais:</p>
           <div className="flex gap-3">
-            <Link href={"/"}><Image width={24} src={Instagram} alt="Instagram"/></Link>
-            <Link href={"/"}><Image width={24} src={Facebook} alt="Facebook"/></Link>
-            <Link href={"/"}><Image width={24} src={Linkedin} alt="Linkedin"/></Link>   
+            <li className="list-none"><Link className='hover:text-red-400 transition' href={"/"}><BsInstagram/></Link></li>
+            <li className="list-none"><Link className='hover:text-red-400 transition' href={"/"}><BsFacebook/></Link></li>
+            <li className="list-none"><Link className='hover:text-red-400 transition' href={"/"}><BsLinkedin/></Link></li>  
           </div>
         </div>
       </div>

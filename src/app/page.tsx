@@ -1,6 +1,6 @@
 import { HomeAbout, HomeBanner, HomeBenefit1, HomeBenefit2, HomeBenefit3, HomeCta, } from '@/components/homeComponents'
 import { ContactSection } from '@/components/contactForm';
-import HomeCarousel from '@/components/carousel/homeCarousel'
+import HomeCarousel from '@/components/carousel/homeCarousel'; '@/components/carousel/homeCarousel'
 
 export default function Home() {
   return (

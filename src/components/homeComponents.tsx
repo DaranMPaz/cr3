@@ -7,7 +7,6 @@ import { MdStar } from "react-icons/md"
 import { RiFileList2Fill } from "react-icons/ri"
 import { ImCheckmark } from "react-icons/im"
 import { BoxedSection, ButtonCtaRight, ImageSection, PaddingContainer, SectionContainer, SectionImageContainer, TextSection } from "./section";
-import Carousel from "./carousel";
 import { ImageAnimated } from "./imageAnimated";
 
 import AOS from 'aos';
