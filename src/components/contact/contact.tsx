@@ -1,19 +1,14 @@
 'use client'
 
-import { SectionContainer } from "./section";
-import Image from "next/image";
-import Link from "next/link";
-import Instagram from '../../public/icons/Instagram-img.png'
-import Facebook from '../../public/icons/Facebook-img.png'
-import Linkedin from '../../public/icons/Linkedin-img.png'
+import Container from '@/components/section/container'
+import Link from "next/link"
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect } from "react"
+import { Form } from "./form"
+import { BsFacebook, BsInstagram, BsLinkedin } from "react-icons/bs"
 
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import { useEffect } from "react";
-import { Form } from "./form";
-import { BsFacebook, BsInstagram, BsLinkedin } from "react-icons/bs";
-
-export function ContactSection() {
+export default function Contact() {
 
   useEffect(()=>{
     AOS.init({duration: 1000});
@@ -21,7 +16,7 @@ export function ContactSection() {
 
   return(
     <div data-aos="fade-up" className="pt-12">
-      <SectionContainer padding="large" >
+      <Container padding="large" >
         <ContactSectionContainer>
           <ContactSectionTitle
             title1="Vamos começar"
@@ -35,7 +30,7 @@ export function ContactSection() {
           />
           <Form/>
         </ContactSectionContainer>
-      </SectionContainer>
+      </Container>
     </div>
   )
 }

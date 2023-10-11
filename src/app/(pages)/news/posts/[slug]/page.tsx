@@ -7,9 +7,9 @@ import { useEffect } from "react";
 import { postList } from '@/utils/posts'
 import { IoChevronDownSharp } from 'react-icons/io5';
 import { MdChevronLeft } from 'react-icons/md';
-import { NewsGrid } from '@/components/grid'
+import Grid from '@/components/news/grid'
 
-export default function Post({ params }: { params: { slug: string } }) {
+export default function Post({ params }: { params: { slug: any } }) {
   
   useEffect(()=>{
     AOS.init({duration: 1000});
@@ -47,12 +47,12 @@ export default function Post({ params }: { params: { slug: string } }) {
             </Link>
           </div>
         </div>
-        <NewsGrid/>
+        <Grid />
       </div>
     );
   } else {
     return (
-      <div className='w-full bg-zinc-800 pt-16 md:pt-20'>
+      <div className='w-full bg-zinc-800 py-32 md:pt-20'>
         <div className='w-full max-w-3xl p-12 text-sm md:text-base mx-auto text-zinc-300 flex flex-col gap-3'>
           <h1 className='text-lg font-bold md:text-2xl md:leading-tight text-red-400'>Conteúdo não encontrado!</h1>
           <p className='leading-loose'>Volte para a página de posts para acessar as publicações disponíveis.</p>

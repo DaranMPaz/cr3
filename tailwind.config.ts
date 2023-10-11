@@ -13,16 +13,15 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        'theme-texture':"url('/bg-texture.jpg')",
-        'theme-about':"url('/about-img.jpg')",
-        'theme-services-home':"url('/services-home-img.jpg')",
-        'theme-services-audit':"url('/services-audit-img.jpg')",
-        'theme-services-iso':"url('/services-iso-img.jpg')",
-        'theme-cta1':"url('/cta-1-img.jpg')",
-        'theme-cta2':"url('/cta-2-img.jpg')",
-        'theme-cta3':"url('/cta-3-img.jpg')",
-        'theme-cta4':"url('/cta-4-img.jpg')",
-        'theme-home-video':"url('/home-video.mp4')"
+        'theme-texture':"url('/background.jpg')",
+        'theme-about':"url('/banner/banner-9.jpg')",
+        'theme-services-home':"url('/banner/banner-3.jpg')",
+        'theme-services-audit':"url('/banner/banner-8.jpg')",
+        'theme-services-iso':"url('/banner/banner-2.jpg')",
+        'theme-cta1':"url('/banner/banner-4.jpg')",
+        'theme-cta2':"url('/banner/banner-5.jpg')",
+        'theme-cta3':"url('/banner/banner-6.jpg')",
+        'theme-cta4':"url('/banner/banner-10.jpg')",
       },
       colors: {
         'theme-red-100' : '#ffced5',
@@ -82,7 +81,7 @@ const config: Config = {
       },
       animation: {
         'bounce-slow': 'bounce 3s linear infinite',
-        'bounce-slowest': 'bounce 16s linear infinite',
+        'bounce-slowest': 'bounce 8s linear infinite',
       },
     },
   },

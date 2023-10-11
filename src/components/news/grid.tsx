@@ -1,33 +1,49 @@
+'use client'
 import Image from 'next/image'
 import Link from 'next/link'
-import { SectionContainer, TextSection } from '@/components/section'
-import { FlexYContainer } from './container'
-import { postList } from '../utils/posts'
-import { newsList } from '../utils/news'
+import { TextSection } from '@/components/section'
+import { FlexYContainer } from '../container'
+import { postList } from '../../utils/posts'
+import { newsList } from '../../utils/news'
+import Container from '../section/container'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect } from "react"
 
-export function NewsGrid() {
+export default function NewsGrid() {
+
+  useEffect(()=>{
+    AOS.init({duration: 1000});
+  },[])
 
   return(
-    <>
-    <SectionContainer padding="large" >
+    <div data-aos="fade-up" className='pt-12'>
+    <Container padding="large" >
       <FlexYContainer gap>
 
         <TextSection color="text-red-400" gap="gap-2" titleType="heading" title1="fique por dentro" paragraph="Esclarecendo suas Dúvidas e explicando como a CR3 pode ajudar sua empresa" />
         
         <div className='grid lg:grid-cols-3 gap-6 md:gap-12 md:grid-cols-2 sm:grid-cols-1'>
-          { postList.map((post => (     
+
+          { postList.map(((post) => (     
               <div className="bg-zinc-800" key={post.id}>
+
                 <div className="object-cover">
                   <Image className="w-full" width={512} height={512} src={`/news/${post.image}`} alt="Diferencial"></Image>
                 </div>
+
                 <div className="flex flex-col gap-4 w-full p-6 text-left">
+
                   <h3 className="upperase text-zinc-100 text-lg md:text-xl font-bold">{post.title}</h3>
+
                   <div className='flecx flex-col gap-1'>
                     <p className="text-zinc-400 text-sm md:text-base pb-2">{post.shortDescription}</p>
                     <Link href={`news/posts/${post.id}`} className='text-yellow-500'>[ continuar lendo ]</Link>
                   </div>
+
                 </div>
               </div>
+
           )))}
         </div>
 
@@ -49,7 +65,7 @@ export function NewsGrid() {
         </div>
 
       </FlexYContainer>
-    </SectionContainer>
-    </>
+    </Container>
+    </div>
   )
 }

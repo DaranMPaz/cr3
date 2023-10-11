@@ -1,15 +1,53 @@
-import { ContactSection } from '@/components/contactForm'
-import { IsoBanner, IsoMetodology, IsoSection1, IsoSection2, IsoTitle } from '@/components/IsoComponents'
+'use client'
+import Metodology from '@/components/metodology/metodology'
+import Contact from '@/components/contact/contact'
+import BoxSection from '@/components/boxSection/boxSection'
+import Container from '@/components/section/container'
+import { TextSection } from '@/components/section/textSection'
+import { ImageAnimated } from '@/components/imageAnimated'
+import { HiDocumentSearch } from 'react-icons/hi'
+import Iso2Img from '../../../../public/Iso-2-img.jpg'
+import person2 from '../../../../public/person/person-2.png'
+import { Banner } from '@/components/section/banner'
+import TitleSection from '@/components/titleSection/titleSection'
 
 export default function Iso() {
   return (
     <div className="flex flex-col h-full text-theme-gray-50">
-      <IsoTitle />
-      <IsoSection1 />
-      <IsoSection2 />
-      <IsoMetodology />
-      <IsoBanner />
-      <ContactSection />
+      <TitleSection 
+        image="bg-theme-services-iso" 
+        title="Auditoria ISO"
+        title2="Organização Internacional de Normalização"
+        paragraph="Lorem ipsum dolor sit amet consectetur. Est pharetra et vestibulum eget eget sit in viverra luctus. Facilisis aliquet quis in sit vulputate. Tempus amet fermentum tortor cras ac quis." 
+      />
+
+      {/* SESSÃO TEXTO IMAGEM */}
+      <Container padding="large">
+        <TextSection 
+          gap="gap-6" 
+          color="text-theme-blue-500" 
+          titleType="heading" 
+          br
+          title1="Auditoria ISO" 
+          title2=" Organização Internacional de Normalização" 
+          paragraph="Nada ainda..." 
+        />
+        <ImageAnimated onLeft image={person2} alt="Homem Segurando uma pasta" color="bg-theme-red-500">
+          <HiDocumentSearch />
+        </ImageAnimated>
+      </Container>
+
+      <BoxSection 
+        image={Iso2Img} 
+        alt='Audirotia ISO'
+        title='ISO'
+        emphasis='Auditoria'
+        paragraph='Nada ainda...'
+      />
+
+      <Metodology />
+      <Banner banner={2} />
+      <Contact />
     </div>
   )
 }
