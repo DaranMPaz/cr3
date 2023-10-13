@@ -9,6 +9,8 @@ import BlogTile from '@/components/blog/BlogTitle';
 import BlogContent from '@/components/blog/BlogContent';
 import NewsComponent from '@/components/news/NewsComponent';
 import NewsGrid2 from '@/components/news/Grid2';
+import Image from 'next/image';
+import { IoChevronDownSharp } from 'react-icons/io5';
 
 export default function Post({ params }: { params: { slug: any } }) {
   
@@ -22,118 +24,118 @@ export default function Post({ params }: { params: { slug: any } }) {
   if (selectedPost) {
     return (
       <div>
-
-        <BlogTile 
-          postTitle={selectedPost.title}
-          postShortDescription={selectedPost.shortDescription}
-          imageSrc={selectedPost.image}
-          imageAlt={selectedPost.title}
-        />
+        <div className='relative pt-16 md:pt-20 transition' data-aos="fade-up">
+          <Image 
+            src={selectedPost.image} 
+            alt={selectedPost.title} 
+            width={1600} 
+            height={900} 
+            className='object-fit w-full h-[320px] md:h-[720px] md:object-cover brightness-[0.2]' 
+          />
+          <IoChevronDownSharp className="text-zinc-100 text-2xl animate-bounce-slow absolute bottom-12 md:bottom-28 left-1/2 -translate-x-1/2" />
+          <div className='absolute z-0 top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 p-6 md:p-12 w-full max-w-3xl 
+          md:max-w-3xl flex flex-col gap-4 mt-4'>
+            <Link className='p-2 bg-black bg-opacity-50 rounded-full w-max hover:bg-opacity-100 hover:text-yellow-500 transition' href={'/news'}>
+              <MdChevronLeft size={24} />
+            </Link>
+            <h1 className='text-xl font-bold md:text-4xl md:leading-tight text-red-400'>{selectedPost.title}</h1>
+            <p className='text-zinc-100 leading-relaxed text-sm md:text-base'>{selectedPost.title}</p>
+          </div>
+        </div>  
 
         <div className='w-full bg-zinc-800'>
 
-          <BlogContent
-            title={selectedPost.subtitle}
-            content={selectedPost.content}
-          />
+          <div className='w-full max-w-2xl pt-12 px-12 text-sm md:text-base mx-auto text-zinc-300 flex flex-col gap-3'>
+            <h2 className='text-lg font-bold md:text-xl md:leading-tight text-red-400'>{selectedPost.subtitle}</h2>
+            <p className='leading-loose'>{selectedPost.content}</p>
+          </div>
 
           { selectedPost.content2 &&
-            <BlogContent
-              title={selectedPost.subtitle2}
-              content={selectedPost.content2}
-            />
+            <div className='w-full max-w-2xl pt-12 px-12 text-sm md:text-base mx-auto text-zinc-300 flex flex-col gap-3'>
+              <h2 className='text-lg font-bold md:text-xl md:leading-tight text-red-400'>{selectedPost.subtitle2}</h2>
+              <p className='leading-loose'>{selectedPost.content2}</p>
+            </div>
           }
 
           { selectedPost.content3 &&
-            <BlogContent
-              title={selectedPost.subtitle3}
-              content={selectedPost.content3}
-            />
+            <div className='w-full max-w-2xl pt-12 px-12 text-sm md:text-base mx-auto text-zinc-300 flex flex-col gap-3'>
+              <h2 className='text-lg font-bold md:text-xl md:leading-tight text-red-400'>{selectedPost.subtitle3}</h2>
+              <p className='leading-loose'>{selectedPost.content3}</p>
+            </div>
           }
 
           { selectedPost.content4 &&
-            <BlogContent
-              title={selectedPost.subtitle4}
-              content={selectedPost.content4}
-            />
+            <div className='w-full max-w-2xl pt-12 px-12 text-sm md:text-base mx-auto text-zinc-300 flex flex-col gap-3'>
+              <h2 className='text-lg font-bold md:text-xl md:leading-tight text-red-400'>{selectedPost.subtitle4}</h2>
+              <p className='leading-loose'>{selectedPost.content4}</p>
+            </div>
           }
 
           { selectedPost.content5 &&
-            <BlogContent
-              title={selectedPost.subtitle5}
-              content={selectedPost.content5}
-            />
+            <div className='w-full max-w-2xl pt-12 px-12 text-sm md:text-base mx-auto text-zinc-300 flex flex-col gap-3'>
+              <h2 className='text-lg font-bold md:text-xl md:leading-tight text-red-400'>{selectedPost.subtitle5}</h2>
+              <p className='leading-loose'>{selectedPost.content5}</p>
+            </div>
           }
-
           { selectedPost.content6 &&
-            <BlogContent
-              title={selectedPost.subtitle6}
-              content={selectedPost.content6}
-            />
-          }        
-
+            <div className='w-full max-w-2xl pt-12 px-12 text-sm md:text-base mx-auto text-zinc-300 flex flex-col gap-3'>
+              <h2 className='text-lg font-bold md:text-xl md:leading-tight text-red-400'>{selectedPost.subtitle6}</h2>
+              <p className='leading-loose'>{selectedPost.content6}</p>
+            </div>
+          }
           { selectedPost.content7 &&
-            <BlogContent
-              title={selectedPost.subtitle7}
-              content={selectedPost.content7}
-            />
-          }  
-
+            <div className='w-full max-w-2xl pt-12 px-12 text-sm md:text-base mx-auto text-zinc-300 flex flex-col gap-3'>
+              <h2 className='text-lg font-bold md:text-xl md:leading-tight text-red-400'>{selectedPost.subtitle7}</h2>
+              <p className='leading-loose'>{selectedPost.content7}</p>
+            </div>
+          }
           { selectedPost.content8 &&
-            <BlogContent
-              title={selectedPost.subtitle8}
-              content={selectedPost.content8}
-            />
+            <div className='w-full max-w-2xl pt-12 px-12 text-sm md:text-base mx-auto text-zinc-300 flex flex-col gap-3'>
+              <h2 className='text-lg font-bold md:text-xl md:leading-tight text-red-400'>{selectedPost.subtitle8}</h2>
+              <p className='leading-loose'>{selectedPost.content8}</p>
+            </div>
           }
-
           { selectedPost.content9 &&
-            <BlogContent
-              title={selectedPost.subtitle9}
-              content={selectedPost.content9}
-            />
+            <div className='w-full max-w-2xl pt-12 px-12 text-sm md:text-base mx-auto text-zinc-300 flex flex-col gap-3'>
+              <h2 className='text-lg font-bold md:text-xl md:leading-tight text-red-400'>{selectedPost.subtitle9}</h2>
+              <p className='leading-loose'>{selectedPost.content9}</p>
+            </div>
           }
-
           { selectedPost.content10 &&
-            <BlogContent
-              title={selectedPost.subtitle10}
-              content={selectedPost.content10}
-            />
+            <div className='w-full max-w-2xl pt-12 px-12 text-sm md:text-base mx-auto text-zinc-300 flex flex-col gap-3'>
+              <h2 className='text-lg font-bold md:text-xl md:leading-tight text-red-400'>{selectedPost.subtitle10}</h2>
+              <p className='leading-loose'>{selectedPost.content10}</p>
+            </div>
           }
-
           { selectedPost.content11 &&
-            <BlogContent
-              title={selectedPost.subtitle11}
-              content={selectedPost.content11}
-            />
+            <div className='w-full max-w-2xl pt-12 px-12 text-sm md:text-base mx-auto text-zinc-300 flex flex-col gap-3'>
+              <h2 className='text-lg font-bold md:text-xl md:leading-tight text-red-400'>{selectedPost.subtitle11}</h2>
+              <p className='leading-loose'>{selectedPost.content11}</p>
+            </div>
           }
-
           { selectedPost.content12 &&
-            <BlogContent
-              title={selectedPost.subtitle12}
-              content={selectedPost.content12}
-            />
+            <div className='w-full max-w-2xl pt-12 px-12 text-sm md:text-base mx-auto text-zinc-300 flex flex-col gap-3'>
+              <h2 className='text-lg font-bold md:text-xl md:leading-tight text-red-400'>{selectedPost.subtitle12}</h2>
+              <p className='leading-loose'>{selectedPost.content12}</p>
+            </div>
           }
-
           { selectedPost.content13 &&
-            <BlogContent
-              title={selectedPost.subtitle13}
-              content={selectedPost.content13}
-            />
+            <div className='w-full max-w-2xl pt-12 px-12 text-sm md:text-base mx-auto text-zinc-300 flex flex-col gap-3'>
+              <h2 className='text-lg font-bold md:text-xl md:leading-tight text-red-400'>{selectedPost.subtitle13}</h2>
+              <p className='leading-loose'>{selectedPost.content13}</p>
+            </div>
           }
-
           { selectedPost.content14 &&
-            <BlogContent
-              title={selectedPost.subtitle14}
-              content={selectedPost.content14}
-            />
+            <div className='w-full max-w-2xl pt-12 px-12 text-sm md:text-base mx-auto text-zinc-300 flex flex-col gap-3'>
+              <h2 className='text-lg font-bold md:text-xl md:leading-tight text-red-400'>{selectedPost.subtitle14}</h2>
+              <p className='leading-loose'>{selectedPost.content14}</p>
+            </div>
           }
-
-          {
-            selectedPost.content15 && 
-            <BlogContent
-              title={selectedPost.subtitle15}
-              content={selectedPost.content15}
-            />
+          { selectedPost.content15 &&
+            <div className='w-full max-w-2xl pt-12 px-12 text-sm md:text-base mx-auto text-zinc-300 flex flex-col gap-3'>
+              <h2 className='text-lg font-bold md:text-xl md:leading-tight text-red-400'>{selectedPost.subtitle15}</h2>
+              <p className='leading-loose'>{selectedPost.content15}</p>
+            </div>
           }
 
             <div className='max-w-2xl pt-16 px-12 mx-auto flex flex-col gap-6'>
