@@ -13,11 +13,11 @@ export default function Footer() {
   const router = useRouter()
 
   return (
-    <footer className='bg-theme-gray2-900 text-theme-gray2-300 py-4 md:py-12 px-4 md:px-24 flex justify-center items-center'>
+    <footer className='bg-theme-gray2-900 text-theme-gray2-300 py-8 md:py-12 px-4 md:px-24 flex justify-center items-center'>
       <div className='flex md:flex-row flex-col justify-between md:items-start gap-12 md:gap-0 w-full md:max-w-[1600px] h-full'>
         <div className='flex flex-col items-center md:items-start gap-6 w-full md:w-max max-w-[170px] mx-auto md:mx-0'>
           <Image src={Logo} alt='CR3 Auditoria' />
-          <span className='text-sm text-zinc-300 leading-relaxed'>Compromisso Ambiental, Auditoria de Excelência</span>
+          <span className='text-sm text-zinc-300 leading-loose text-center'>Compromisso Ambiental, Auditoria de Excelência</span>
         </div>
         <Column title="Menu">
           <FooterLink link="/" text="Inicio" />
