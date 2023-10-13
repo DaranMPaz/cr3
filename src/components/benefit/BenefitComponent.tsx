@@ -19,7 +19,7 @@ export default function Benefit(){
       <Container padding="large">
         <BoxedSection>
           <TextContent gap="gap-6" color="text-theme-red-500" titleType="heading" br title1="Como Beneficia Você?" paragraph="Você garante a conformidade com as legislações, fortalece a transparência e a confiança com as partes interessadas, e contribui para o desenvolvimento sustentável."/>
-          <Image alt="About" src={benefit} width={552} height={248}/>
+          <Image alt="About" src={benefit} width={420} height={248} className='animate-idle-slow'/>
         </BoxedSection>
       </Container>
     </div>

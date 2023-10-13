@@ -72,7 +72,7 @@ export function ContactSectionTitle({
       <div className="flex w-full justify-between pt-6 gap-6">
         <div className="flex flex-col gap-6 w-full">
           <p className="text-xs md:text-sm leading-relaxed text-zinc-400">{text3}</p>
-          <Link className="uppercase text-yellow-500 font-bold text-sm md:text-base" href={"/faq"}>{link}</Link>
+          <Link className="uppercase text-yellow-500 font-bold text-sm md:text-base w-max" href={"/faq"}>{link}</Link>
         </div>
         {/* <div className="flex flex-col gap-6 w-full">
           <p className="text-xs md:text-sm leading-relaxed text-zinc-400">Se preferir você também pode acessar nossas redes sociais:</p>

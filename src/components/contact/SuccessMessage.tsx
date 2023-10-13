@@ -13,11 +13,11 @@ export function SuccessMessage() {
       <p className='leading-relaxed text-zinc-400'>Agradecemos por entrar em contato conosco! Vamos analisar suas informações e entrar em contato em breve para ajudá-lo com suas necessidades de auditoria.</p>
       <p className='leading-relaxed text-zinc-400'> Obrigado pela confiança em nossa equipe.</p>
       <Button 
-        variant='bordered' 
+        variant='solid' 
         color='warning' 
         radius='sm' 
         size='lg' 
-        className='w-full hover:text-red-400 hover:border-red-400' 
+        className='hover:bg-red-400 w-max font-bold' 
         onClick={() => router.push('/')}
         >
         Voltar para a página inicial

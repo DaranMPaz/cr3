@@ -9,18 +9,27 @@ export async function sendMail({name, company, email, phone, message}:{
   message: string
 }) {
 
+  // const transporter = nodemailer.createTransport({
+  //   service:'gmail',
+  //   auth: {
+  //     user: '',
+  //     pass: ''
+  //   }
+  // })
   const transporter = nodemailer.createTransport({
-    service:'gmail',
+    host: "smtp.hostinger.com",
+    port: 465,
+    secure: true,
     auth: {
-      user: 'darlan.mpaz@gmail.com',
-      pass: 'xjcuktangvpmbkey'
-    }
+      user: process.env.USER_EMAIL,
+      pass: process.env.USER_PASSWD,
+    },
   })
 
   const mailOptions = {
-    from: 'darlan.mpaz@gmail.com',
-    to: 'darlanmpaz123@gmail.com',
-    subject: 'Um novo contato vindo do Website!',
+    from: 'contato@cr3auditoria.com.br',
+    to: 'contato@cr3auditoria.com.br',
+    subject: 'Um novo contato vindo do site!',
     html: mail({name, company, email, phone, message})
   }
 
