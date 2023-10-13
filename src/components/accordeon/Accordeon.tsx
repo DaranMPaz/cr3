@@ -22,7 +22,7 @@ export default function FAQAccordion() {
 
         <FlexYContainer gap>
 
-          <TextContent color="text-red-400" gap="gap-2" titleType="heading" title1="PERGUNTAS FREQUENTES" paragraph="Esclarecendo suas Dúvidas" />
+          <TextContent color="text-red-400" gap="gap-2" titleType="heading" title1="PERGUNTAS FREQUENTES" paragraph="Esclarecendo suas dúvidas" />
 
           <Accordion variant="light">
             <AccordionItem className="text-zinc-400 leading-relaxed text-sm md:text-base" key="1" aria-label="Accordion 1" title="Quais setores ou indústrias vocês atendem?">
