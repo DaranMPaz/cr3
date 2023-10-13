@@ -24,7 +24,7 @@ export default function HomeCarousel() {
     {
       emphasis:'Auditoria ISO ',
       title: 'Organização Internacional de Normalização',
-      paragraph: 'Lorem ipsum dolor sit amet consectetur. Est pharetra et vestibulum eget eget sit in viverra luctus. Facilisis aliquet quis in sit vulputate. Tempus amet fermentum tortor cras ac quis..',
+      paragraph: 'A certificação ISO é altamente valorizada e muitas vezes é um requisito para fazer negócios em mercados internacionais. A CR3 está sempre empenhada em proporcionar soluções de excelência para seus clientes, e estamos empolgados em anunciar que em breve estaremos oferecendo um novo serviço de Auditoria ISO.',
       hasCta: true,
       route: '/iso',
       cta: 'SAIBA MAIS'
