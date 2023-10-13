@@ -31,9 +31,8 @@ export default function Footer() {
           <FooterLink link="/contact" text="Contato" />
         </Column>
         <Column title="Termos">
-          <FooterLink link="/" text="Termos Legais" />
-          <FooterLink link="/" text="Política de Privacidade" />
-          <FooterLink link="/" text="Termos Legais" />
+          <FooterLink link="/terms" text="Termos Legais" />
+          <FooterLink link="/policy" text="Política de Privacidade" />
           <FooterLink
             isBlank
             link="https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm"
