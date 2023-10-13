@@ -1,6 +1,6 @@
 'use client'
 import Metodology from '@/components/Metodology'
-import BoxSection from '@/components/boxSection/BoxSection'
+import BoxSection from '@/components/BoxSection'
 import ImageAnimated from '@/components/ImageAnimated'
 import { HiDocumentSearch } from 'react-icons/hi'
 import Iso2Img from '../../../../public/iso-2-img.jpg'
@@ -10,6 +10,7 @@ import ContactComponent from '@/components/contact/ContactComponent'
 import HeroSectionComponent from '@/components/HeroSectionComponent'
 import BannerComponent from '@/components/BannerComponent'
 import TextContent from '@/components/TextContent'
+import Benefit from '../../../components/benefit/BenefitComponent'
 
 export default function Iso() {
   return (
@@ -46,6 +47,7 @@ export default function Iso() {
       />
 
       <Metodology />
+      <Benefit />
       <BannerComponent banner={2} />
       <ContactComponent />
     </div>

@@ -4,7 +4,7 @@ import person6 from '../../../../public/person/person-6.png'
 import Diferential from "@/components/Diferential";
 import Metodology from "@/components/Metodology";
 import Container from "@/components/section/SectionContainer";
-import ImageAnimated from "@/components/ImageAnimated";
+import ImageAnimated from "../../../components/ImageAnimated";
 import ContactComponent from "@/components/contact/ContactComponent";
 import HeroSectionComponent from "@/components/HeroSectionComponent";
 import BannerComponent from "@/components/BannerComponent";

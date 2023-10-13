@@ -1,6 +1,5 @@
 'use client'
 import HomeCarousel from '@/components/carousel/HomeCarousel'
-import Benefit from '@/components/benefit/Benefit'
 import ImageAnimated from '@/components/ImageAnimated'
 import { MdStar  } from 'react-icons/md'
 import { RiFileList2Fill } from 'react-icons/ri'
@@ -13,6 +12,7 @@ import Container from '@/components/section/SectionContainer'
 import TextContent from '@/components/TextContent'
 import BannerComponent from '@/components/BannerComponent'
 import ContactComponent from '@/components/contact/ContactComponent'
+import Benefit from '@/components/benefit/BenefitComponent'
 
 export default function Home() {
   return (
