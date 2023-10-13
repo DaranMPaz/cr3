@@ -15,7 +15,7 @@ const config: Config = {
     extend: {
       backgroundImage: {
         'theme-texture':"url('/background.jpg')",
-        'theme-about':"url('/banner/banner-9.jpg')",
+        'theme-about':"url('/banner/banner-11.jpg')",
         'theme-services-home':"url('/banner/banner-3.jpg')",
         'theme-services-audit':"url('/banner/banner-8.jpg')",
         'theme-services-iso':"url('/banner/banner-2.jpg')",
