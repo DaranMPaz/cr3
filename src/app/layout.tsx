@@ -11,6 +11,8 @@ export const metadata: Metadata = {
   title: "CR3 Auditoria",
   description:
     "Auditoria de Terceira Parte para Logística Reversa de Embalagens",
+  keywords: 
+    "cr3, empresas, gestão, compliance, auditoria, ISO, iso, políticas de compliance, consultoria, treinamento, gestao de riscos, matriz de riscos, due diligence , diagnóstico sistêmico, ambiente de controle, efetividade, integridade organizacional",
 };
 
 export default function RootLayout({
