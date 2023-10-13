@@ -4,7 +4,7 @@ import ContactImg from '../../../public/contact-img.svg'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
-import Container from '../section/container';
+import Container from '../Section/Container';
 import Image from 'next/image';
 
 export default function Other(){

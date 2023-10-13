@@ -2,8 +2,8 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import Logo from '../../../public/logo-mobile.svg'
-import Column from './column'
-import FooterLink from './footerLink'
+import Column from './Column'
+import FooterLink from './FooterLink'
 import { BsFacebook, BsLinkedin, BsInstagram } from 'react-icons/bs'
 import { Button } from '@nextui-org/react'
 import { useRouter } from 'next/navigation'
@@ -50,11 +50,11 @@ export default function Footer() {
             onClick={() => router.push('/contact')} >
             Entre em contato
           </Button>
-          <ul className='flex items-center gap-6 justify-center md:justify-end'>
+          {/* <ul className='flex items-center gap-6 justify-center md:justify-end'>
             <li><Link className='hover:text-red-400 transition' href={"/"}><BsInstagram/></Link></li>
             <li><Link className='hover:text-red-400 transition' href={"/"}><BsFacebook/></Link></li>
             <li><Link className='hover:text-red-400 transition' href={"/"}><BsLinkedin/></Link></li>
-          </ul>
+          </ul> */}
         </div>
       </div>
     </footer>

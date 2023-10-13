@@ -1,8 +1,8 @@
 'useClient'
 import { Button } from '@nextui-org/react'
 import { useRouter } from 'next/navigation'
-import NavLink from './navLink'
-import DropdownLink from './dropdownLink'
+import NavLink from './NavLink'
+import DropdownLink from './DropdownLink'
 
 export default function Nav() {
   const router = useRouter()

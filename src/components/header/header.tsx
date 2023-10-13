@@ -1,9 +1,9 @@
 'use client'
 import { useDisclosure } from '@nextui-org/react'
-import Logo from '@/components/header/logo'
-import MobileIconMenu from '@/components/header/mobileIconMenu'
-import ModalMenu from './modalMenu'
-import Nav from './nav'
+import Logo from '@/components/Header/Logo'
+import MobileIconMenu from '@/components/Header/MobileIconMenu'
+import ModalMenu from './ModalMenu'
+import Nav from './Nav'
 
 export default function Header() {
 

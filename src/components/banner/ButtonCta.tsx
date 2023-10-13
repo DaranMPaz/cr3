@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { MdChevronRight } from "react-icons/md";
 
-export default function ButtonCtaRight({ link, text }: { link: string; text: string }) {
+export default function ButtonCta({ link, text }: { link: string; text: string }) {
   const router = useRouter()
   return (
     <>

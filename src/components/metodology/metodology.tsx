@@ -2,9 +2,9 @@
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { useEffect } from "react"
-import { CenteredSection } from '../section'
-import { FlexContainer } from '../container'
-import { TimeLineCard, TimelineDivider } from '../card'
+import Centered from '@/components/Section/Centered'
+import { FlexContainer } from '../Container'
+import { TimeLineCard, TimelineDivider } from '../Card'
 import Metodologia1 from '../../../public/metodology/metodology-1.jpg'
 import Metodologia2 from '../../../public/metodology/metodology-2.jpg'
 import Metodologia3 from '../../../public/metodology/metodology-3.jpg'
@@ -18,7 +18,7 @@ export default function Metodology(){
 
   return(
     <div data-aos="fade-up">
-      <CenteredSection title="Nossa Metodologia de Trabalho" paragraph="Compromisso com a Excelência e Resultados" icon >
+      <Centered title="Nossa Metodologia de Trabalho" paragraph="Compromisso com a Excelência e Resultados" icon >
         <FlexContainer>
           <TimeLineCard image={Metodologia1} title="Definição de escopo" paragraph="Definição do escopo da auditoria, considerando estados de atuação, número de operadores homologados e relação de empresas aderentes ao sistema."/>
           <TimelineDivider/>
@@ -28,7 +28,7 @@ export default function Metodology(){
           <TimelineDivider/>
           <TimeLineCard image={Metodologia4} title="Entrega de relatório" paragraph="Avaliação final e entrega da declaração de auditoria de terceira parte quanto ao cumprimento das metas propostas e dos requisitos descritos nas legislações."/>
         </FlexContainer>
-      </CenteredSection>
+      </Centered>
     </div>
   )
 }

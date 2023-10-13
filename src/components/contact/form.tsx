@@ -2,7 +2,7 @@
 
 import { Input, Textarea } from "@nextui-org/react"
 import { FormEvent, useState } from "react"
-import { SuccessMessage } from "./successMessage"
+import { SuccessMessage } from "./SuccessMessage"
 import { Button } from '@nextui-org/react'
 
 export function Form(){

@@ -2,11 +2,11 @@
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { useEffect } from "react"
-import Container from '../section/container'
-import { TextSection } from '../section/textSection'
-import { ImageSection } from '../section'
+import Container from '../Section/Container'
+import TextContent from '../Section/TextContent'
 import benefit from '../../../public/como-beneficia-img.svg'
-import BoxedSection from './boxedSection'
+import BoxedSection from './BoxedSection'
+import Image from 'next/image'
 
 export default function Benefit(){
 
@@ -18,8 +18,8 @@ export default function Benefit(){
     <div data-aos="fade-up">
       <Container padding="large">
         <BoxedSection>
-          <TextSection gap="gap-6" color="text-theme-red-500" titleType="heading" br title1="Como Beneficia Você?" paragraph="Você garante a conformidade com as legislações, fortalece a transparência e a confiança com as partes interessadas, e contribui para o desenvolvimento sustentável."/>
-          <ImageSection src={benefit} alt="About" height={248} width={552} />
+          <TextContent gap="gap-6" color="text-theme-red-500" titleType="heading" br title1="Como Beneficia Você?" paragraph="Você garante a conformidade com as legislações, fortalece a transparência e a confiança com as partes interessadas, e contribui para o desenvolvimento sustentável."/>
+          <Image alt="About" src={benefit} width={552} height={248}/>
         </BoxedSection>
       </Container>
     </div>

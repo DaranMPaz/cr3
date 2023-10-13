@@ -1,9 +1,9 @@
-import Contact from '@/components/contact/contact'
-import Grid from '@/components/news/grid'
+import Contact from '@/components/Contact/Contact'
+import Grid from '@/components/News/Grid'
 
 export default function News() {
   return (
-    <div className="flex flex-col h-full text-theme-gray-50">
+    <div className="flex flex-col h-full text-zinc-100">
       <Grid />
       <Contact />
     </div>

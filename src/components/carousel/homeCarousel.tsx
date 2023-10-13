@@ -1,7 +1,7 @@
 'use client'
 import { useState, useEffect } from 'react'
-import { RightButton } from './navigationButtons'
-import { Cta } from './cta'
+import { RightButton } from './NavigationButtons'
+import { Cta } from './Cta'
 import Image from 'next/image'
 import { motion } from "framer-motion"
 

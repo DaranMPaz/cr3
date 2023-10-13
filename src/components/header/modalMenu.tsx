@@ -1,5 +1,5 @@
 import { Modal, ModalBody, ModalContent, useDisclosure, Button } from '@nextui-org/react'
-import NavLink from './navLink'
+import NavLink from './NavLink'
 import { useRouter } from 'next/navigation'
 
 export default function ModalMenu(

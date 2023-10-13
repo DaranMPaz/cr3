@@ -2,9 +2,9 @@
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { useEffect } from "react"
-import SectionImageContainer from '../section/imageContainer'
-import Padding from '../section/padding'
-import { TextSection } from '../section/textSection'
+import SectionImageContainer from '../Section/ImageContainer'
+import Padding from '../Section/Padding'
+import TextContent from '../Section/TextContent'
 
 export default function TitleSection({title, title2, paragraph, image}:{
   image:any,
@@ -21,7 +21,7 @@ export default function TitleSection({title, title2, paragraph, image}:{
     <div data-aos="fade-up">
       <SectionImageContainer image={`${image}`} icon>
         <Padding>
-          <TextSection gap="gap-6" color="text-theme-blue-500" titleType="display" br title1={title} title2={title2} paragraph={paragraph}/>
+          <TextContent gap="gap-6" color="text-theme-blue-500" titleType="display" br title1={title} title2={title2} paragraph={paragraph}/>
         </Padding>
       </SectionImageContainer>
     </div>

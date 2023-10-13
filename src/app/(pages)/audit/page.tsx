@@ -1,20 +1,20 @@
 'use client'
-import Metodology from '@/components/metodology/metodology'
-import Contact from '@/components/contact/contact'
-import BoxSection from '@/components/boxSection/boxSection'
-import { Banner } from '@/components/section/banner'
-import Container from '@/components/section/container'
-import { TextSection } from '@/components/section/textSection'
-import { ImageAnimated } from '@/components/imageAnimated'
+import Metodology from '@/components/Metodology/Metodology'
+import Contact from '@/components/Contact/Contact'
+import BoxSection from '@/components/BoxSection/BoxSection'
+import { Banner } from '@/components/Section/Banner'
+import Container from '@/components/Section/Container'
+import TextContent from '@/components/Section/TextContent'
+import { ImageAnimated } from '@/components/ImageAnimated'
 import { HiDocumentSearch } from 'react-icons/hi'
 import person6 from '../../../../public/person/person-5.png'
-import Benefit from '@/components/benefit/benefit'
+import Benefit from '@/components/Benefit/Benefit'
 import Audit2Img from '../../../../public/audit-2-img.jpg'
-import TitleSection from '@/components/titleSection/titleSection'
+import TitleSection from '@/components/TitleSection/TitleSection'
 
 export default function Audit() {
   return (
-    <div className="flex flex-col h-full text-theme-gray-50">
+    <div className="flex flex-col h-full text-zinc-100">
       <TitleSection 
         image="bg-theme-services-audit" 
         title="Compromisso"
@@ -24,7 +24,7 @@ export default function Audit() {
 
       {/* SESSÃO TEXTO IMAGEM */}
       <Container padding="large">
-        <TextSection 
+        <TextContent 
           gap="gap-6" 
           color="text-theme-blue-500" 
           titleType="heading" 

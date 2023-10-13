@@ -1,7 +1,7 @@
 import { Button } from "@nextui-org/react";
 import { useRouter } from "next/navigation";
 
-export function TextSection({ titleType, title1, title2, paragraph, paragraph2, cta, link, hasCta, br, gap, color} : {
+export default function TextContent({ titleType, title1, title2, paragraph, paragraph2, cta, link, hasCta, br, gap, color} : {
   titleType: "display" | "heading";
   title1?: string;
   title2?: string;

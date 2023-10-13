@@ -10,7 +10,7 @@ export function VerticalCard({image, title1, title2, paragraph1, paragraph2}:{
   paragraph2?: string
 }) {
   return(
-    <div className="bg-zinc-800">
+    <div className="bg-zinc-800 md:origin-center md:hover:scale-105 transition">
       <div className="object-cover">
         <Image width={480} height={480} quality={100} src={image} alt="Diferencial"></Image>
       </div>
@@ -30,7 +30,7 @@ export function TimeLineCard({image, title, paragraph, divider}:{
   divider?: boolean
 }) {
   return(
-    <div className="flex items-start w-[270px]">
+    <div className="flex items-start w-[270px] md:origin-center md:hover:scale-105 transition">
       <div className="flex flex-col gap-4">
           <Image src={image} alt="Metodologia"></Image>
         <div className="flex flex-col gap-4 w-full py-6 text-left">

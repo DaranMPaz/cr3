@@ -1,11 +1,11 @@
 'use client'
 
-import Container from '@/components/section/container'
+import Container from '@/components/Section/Container'
 import Link from "next/link"
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { useEffect } from "react"
-import { Form } from "./form"
+import { Form } from "./Form"
 import { BsFacebook, BsInstagram, BsLinkedin } from "react-icons/bs"
 
 export default function Contact() {
@@ -74,14 +74,14 @@ export function ContactSectionTitle({
           <p className="text-xs md:text-sm leading-relaxed text-zinc-400">{text3}</p>
           <Link className="uppercase text-yellow-500 font-bold text-sm md:text-base" href={"/faq"}>{link}</Link>
         </div>
-        <div className="flex flex-col gap-6 w-full">
+        {/* <div className="flex flex-col gap-6 w-full">
           <p className="text-xs md:text-sm leading-relaxed text-zinc-400">Se preferir você também pode acessar nossas redes sociais:</p>
           <div className="flex gap-3">
             <li className="list-none"><Link className='hover:text-red-400 transition' href={"/"}><BsInstagram/></Link></li>
             <li className="list-none"><Link className='hover:text-red-400 transition' href={"/"}><BsFacebook/></Link></li>
             <li className="list-none"><Link className='hover:text-red-400 transition' href={"/"}><BsLinkedin/></Link></li>  
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   )

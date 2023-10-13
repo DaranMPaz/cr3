@@ -9,7 +9,7 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { useEffect } from "react"
 
-export default function NewsGrid() {
+export default function NewsGrid2() {
 
   useEffect(()=>{
     AOS.init({duration: 1000});
@@ -22,7 +22,7 @@ export default function NewsGrid() {
 
         <TextContent color="text-red-400" gap="gap-2" titleType="heading" title1="fique por dentro" paragraph="Esclarecendo suas Dúvidas e explicando como a CR3 pode ajudar sua empresa" />
         
-        <div className='grid lg:grid-cols-3 gap-6 md:gap-8 md:grid-cols-2 sm:grid-cols-1'>
+        <div className='grid lg:grid-cols-4 gap-6 md:gap-8 md:grid-cols-2 sm:grid-cols-1'>
 
           { postList.map(((post) => (     
               <div className="bg-zinc-800 md:origin-center md:hover:scale-105 transition" key={post.id}>
@@ -37,7 +37,7 @@ export default function NewsGrid() {
 
                   <div className='flex flex-col gap-1 justify-between'>
                     <p className="text-zinc-400 text-sm md:text-sm pb-2">{post.shortDescription}</p>
-                    <Link href={`news/posts/${post.id}`} className='text-yellow-500'>[ continuar lendo ]</Link>
+                    <Link href={`/news/posts/${post.id}`} className='text-yellow-500'>[ continuar lendo ]</Link>
                   </div>
 
                 </div>

@@ -1,15 +1,15 @@
 'use client'
-import HomeCarousel from '@/components/carousel/homeCarousel'
-import { Banner } from '@/components/section/banner'
-import ContactSection from '@/components/contact/contact'
-import Benefit from '@/components/benefit/benefit';
-import Container from '@/components/section/container';
-import { TextSection } from '@/components/section/textSection';
-import { ImageAnimated } from '@/components/imageAnimated';
+import HomeCarousel from '@/components/Carousel/HomeCarousel'
+import { Banner } from '@/components/Section/Banner'
+import ContactSection from '@/components/Contact/Contact'
+import Benefit from '@/components/Benefit/Benefit';
+import Container from '@/components/Section/Container';
+import TextContent from '@/components/Section/TextContent';
+import { ImageAnimated } from '@/components/ImageAnimated';
 import { MdStar  } from 'react-icons/md';
 import { RiFileList2Fill } from 'react-icons/ri';
 import { ImCheckmark  } from 'react-icons/im';
-import CtaBanner from '@/components/banner/ctaBanner'
+import CtaBanner from '@/components/Banner/CtaBanner'
 import person1 from '../../public/person/person-1.png'
 import person4 from '../../public/person/person-4.png'
 import person3 from '../../public/person/person-3.png'
@@ -21,7 +21,7 @@ export default function Home() {
 
       {/* SESSÃO TEXTO IMAGEM */}
       <Container padding="large">
-        <TextSection 
+        <TextContent 
           gap="gap-6" 
           color="text-theme-blue-500" 
           titleType="heading" hasCta 
@@ -40,7 +40,7 @@ export default function Home() {
 
       {/* SESSÃO TEXTO IMAGEM */}
       <Container padding="large">
-        <TextSection 
+        <TextContent 
           gap="gap-6" 
           color="text-theme-blue-500" 
           titleType="heading" 
@@ -59,7 +59,7 @@ export default function Home() {
         <ImageAnimated onRight image={person3} alt="Mulher de braços cruzados" color="bg-yellow-500">
           <MdStar />
         </ImageAnimated>
-        <TextSection 
+        <TextContent 
           gap="gap-6"
           color="text-theme-blue-500"
           br
