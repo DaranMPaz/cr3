@@ -20,7 +20,7 @@ export default function NewsGrid() {
     <Container padding="large" >
       <FlexYContainer gap>
 
-        <TextContent color="text-red-400" gap="gap-2" titleType="heading" title1="fique por dentro" paragraph="Esclarecendo suas Dúvidas e explicando como a CR3 pode ajudar sua empresa" />
+        <TextContent color="text-red-400" gap="gap-2" titleType="heading" title1="fique por dentro" paragraph="Esclarecendo suas dúvidas e explicando como a CR3 pode ajudar sua empresa" />
         
         <div className='grid lg:grid-cols-3 gap-6 md:gap-8 md:grid-cols-2 sm:grid-cols-1'>
 
