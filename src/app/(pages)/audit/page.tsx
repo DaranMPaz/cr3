@@ -1,16 +1,16 @@
 'use client'
 import Metodology from '@/components/Metodology'
-import Contact from '@/components/contact/Contact'
 import BoxSection from '@/components/boxSection/BoxSection'
 import { Banner } from '@/components/section/Banner'
 import TextContent from '@/components/section/TextContent'
-import { ImageAnimated } from '@/components/ImageAnimated'
 import { HiDocumentSearch } from 'react-icons/hi'
 import person6 from '../../../../public/person/person-5.png'
 import Benefit from '@/components/benefit/Benefit'
 import Audit2Img from '../../../../public/audit-2-img.jpg'
 import TitleSection from '@/components/titleSection/TitleSection'
 import Container from '@/components/section/SectionContainer'
+import ImageAnimated from '@/components/ImageAnimated'
+import ContactComponent from '@/components/contact/ContactComponent'
 
 export default function Audit() {
   return (
@@ -51,7 +51,7 @@ export default function Audit() {
       <Metodology />
       <Benefit />
       <Banner banner={2} />
-      <Contact />
+      <ContactComponent />
     </div>
   )
 }

@@ -1,15 +1,15 @@
 'use client'
 import Metodology from '@/components/Metodology'
-import Contact from '@/components/contact/Contact'
 import BoxSection from '@/components/boxSection/BoxSection'
 import TextContent from '@/components/section/TextContent'
-import { ImageAnimated } from '@/components/ImageAnimated'
+import ImageAnimated from '@/components/ImageAnimated'
 import { HiDocumentSearch } from 'react-icons/hi'
 import Iso2Img from '../../../../public/iso-2-img.jpg'
 import person2 from '../../../../public/person/person-2.png'
 import { Banner } from '@/components/section/Banner'
 import TitleSection from '@/components/titleSection/TitleSection'
 import Container from '@/components/section/SectionContainer'
+import ContactComponent from '@/components/contact/ContactComponent'
 
 export default function Iso() {
   return (
@@ -47,7 +47,7 @@ export default function Iso() {
 
       <Metodology />
       <Banner banner={2} />
-      <Contact />
+      <ContactComponent />
     </div>
   )
 }

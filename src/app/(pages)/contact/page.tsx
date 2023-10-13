@@ -1,13 +1,13 @@
-import ContactBanner from '@/components/contact/Contact'
 import Other from '@/components/contact/Other'
-import ContactSection from '@/components/contact/Contact'
+import ContactComponent from '@/components/contact/ContactComponent'
+import { Banner } from '@/components/section/Banner'
 
 export default function Contact() {
   return (
     <div className="flex flex-col h-full text-theme-gray-50">
-      <ContactSection />
+      <ContactComponent />
       <Other />
-      <ContactBanner />
+      <Banner banner={3} />
     </div>
   )
 }

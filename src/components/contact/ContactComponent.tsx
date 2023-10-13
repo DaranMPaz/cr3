@@ -8,7 +8,7 @@ import { Form } from "./Form"
 import { BsFacebook, BsInstagram, BsLinkedin } from "react-icons/bs"
 import Container from "../section/SectionContainer"
 
-export default function Contact() {
+export default function ContactComponent() {
 
   useEffect(()=>{
     AOS.init({duration: 1000});
