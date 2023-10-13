@@ -1,5 +1,5 @@
 'use client'
-import { ImageAnimated } from "@/components/ImageAnimated";
+import ImageAnimated from "@/components/ImageAnimated";
 import { MdWorkspacePremium } from "react-icons/md";
 import person6 from '../../../../public/person/person-6.png'
 import Contact from '@/components/contact/Contact'
