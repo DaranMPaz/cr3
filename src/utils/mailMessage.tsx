@@ -33,7 +33,7 @@ export function mail({name, company, email, phone, message}:{
           <th style="background-color: #d5d5d5; text-align: left; width: 200px; border: 1px solid rgb(190, 190, 190); padding: 12px;">Mensagem</th>
         </tr>
         <tr>
-          <td style="width: 100%; max-width: 650px; border: 1px solid rgb(190, 190, 190); padding: 12px;">${message}</td>
+          <td word-wrap:break-word style="width: 100%; word-break: break-all; height: 100%; max-width: 650px; border: 1px solid rgb(190, 190, 190); padding: 12px;">${message}</td>
         </tr>
       </table>
     </div>`
