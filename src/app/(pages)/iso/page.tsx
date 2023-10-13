@@ -42,9 +42,10 @@ export default function Iso() {
       <BoxSection 
         image={Iso2Img} 
         alt='Audirotia ISO'
-        title='Aprimorar'
-        emphasis='a qualidade de seus produtos ou serviços'
-        paragraph='Estamos ansiosos para lançar nosso novo serviço de Auditoria ISO em breve, e acreditamos que ele será um recurso valioso para organizações em busca de certificação ISO. Se você deseja aprimorar a qualidade de seus produtos ou serviços, demonstrar seu compromisso com a excelência ou expandir seus horizontes no mercado global, a CR3 está aqui para ajudar. Fique atento para obter mais informações sobre o lançamento deste serviço e entre em contato conosco para saber como podemos ajudar sua organização a alcançar o sucesso ISO.'
+        emphasis='Aprimorar a qualidade'
+        title='de seus produtos ou serviços'
+        paragraph='Estamos ansiosos para lançar nosso novo serviço de Auditoria ISO em breve, e acreditamos que ele será um recurso valioso para organizações em busca de certificação ISO. Se você deseja aprimorar a qualidade de seus produtos ou serviços, demonstrar seu compromisso com a excelência ou expandir seus horizontes no mercado global, a CR3 está aqui para ajudar.'
+        finaly='Fique atento para obter mais informações sobre o lançamento deste serviço e entre em contato conosco para saber como podemos ajudar sua organização a alcançar o sucesso ISO.'
       />
 
       <Metodology />
