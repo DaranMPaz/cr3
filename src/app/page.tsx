@@ -1,6 +1,5 @@
 'use client'
 import HomeCarousel from '@/components/carousel/HomeCarousel'
-import ImageAnimated from '@/components/ImageAnimated'
 import { MdStar  } from 'react-icons/md'
 import { RiFileList2Fill } from 'react-icons/ri'
 import { ImCheckmark  } from 'react-icons/im'
@@ -13,6 +12,7 @@ import TextContent from '@/components/TextContent'
 import BannerComponent from '@/components/BannerComponent'
 import ContactComponent from '@/components/contact/ContactComponent'
 import Benefit from '@/components/benefit/BenefitComponent'
+import ImageBlock from '@/components/ImageBlock'
 
 export default function Home() {
   return (
@@ -31,9 +31,9 @@ export default function Home() {
           cta="CONHEÇA A CR3" 
           link="/about" 
         />
-        <ImageAnimated onLeft image={person1} alt="Homem segurando um tablet" color="bg-red-500">
+        <ImageBlock onLeft image={person1} alt="Homem segurando um tablet" color="bg-red-500">
           <ImCheckmark  />
-        </ImageAnimated>
+        </ImageBlock>
       </Container>
 
       <CtaBanner />
@@ -49,16 +49,16 @@ export default function Home() {
           paragraph="Asseguramos que cada detalhe seja tratado com total consonância com as legislações vigentes."
           paragraph2="Nossa abordagem meticulosa e especializada significa que você pode confiar em nossas avaliações rigorosas, para garantir que seus processos de logística reversa estejam em estrita conformidade com as regulamentações."
         />
-          <ImageAnimated onLeft image={person4} alt="Mulher de braços cruzados" color="bg-red-500">
+          <ImageBlock onLeft image={person4} alt="Mulher de braços cruzados" color="bg-red-500">
             <RiFileList2Fill  />
-          </ImageAnimated>
+          </ImageBlock>
       </Container>
 
       {/* SESSÃO TEXTO IMAGEM */}
       <Container reverse padding="large">
-        <ImageAnimated onRight image={person3} alt="Mulher de braços cruzados" color="bg-yellow-500">
+        <ImageBlock onRight image={person3} alt="Mulher de braços cruzados" color="bg-yellow-500">
           <MdStar />
-        </ImageAnimated>
+        </ImageBlock>
         <TextContent 
           gap="gap-6"
           color="text-theme-blue-500"

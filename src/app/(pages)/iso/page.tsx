@@ -1,7 +1,6 @@
 'use client'
 import Metodology from '@/components/Metodology'
 import BoxSection from '@/components/BoxSection'
-import ImageAnimated from '@/components/ImageAnimated'
 import { HiDocumentSearch } from 'react-icons/hi'
 import Iso2Img from '../../../../public/iso-2-img.jpg'
 import person2 from '../../../../public/person/person-2.png'
@@ -11,6 +10,7 @@ import HeroSectionComponent from '@/components/HeroSectionComponent'
 import BannerComponent from '@/components/BannerComponent'
 import TextContent from '@/components/TextContent'
 import Benefit from '../../../components/benefit/BenefitComponent'
+import ImageBlock from '@/components/ImageBlock'
 
 export default function Iso() {
   return (
@@ -33,9 +33,9 @@ export default function Iso() {
           title2=" Organização Internacional de Normalização" 
           paragraph="Nada ainda..." 
         />
-        <ImageAnimated onLeft image={person2} alt="Homem Segurando uma pasta" color="bg-theme-red-500">
+        <ImageBlock onLeft image={person2} alt="Homem Segurando uma pasta" color="bg-theme-red-500">
           <HiDocumentSearch />
-        </ImageAnimated>
+        </ImageBlock>
       </Container>
 
       <BoxSection 

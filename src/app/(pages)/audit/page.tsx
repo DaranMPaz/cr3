@@ -6,11 +6,11 @@ import person6 from '../../../../public/person/person-5.png'
 import Benefit from '../../../components/benefit/BenefitComponent'
 import Audit2Img from '../../../../public/audit-2-img.jpg'
 import Container from '@/components/section/SectionContainer'
-import ImageAnimated from '@/components/ImageAnimated'
 import ContactComponent from '@/components/contact/ContactComponent'
 import HeroSectionComponent from '@/components/HeroSectionComponent'
 import BannerComponent from '@/components/BannerComponent'
 import TextContent from '@/components/TextContent'
+import ImageBlock from '@/components/ImageBlock'
 
 export default function Audit() {
   return (
@@ -33,9 +33,9 @@ export default function Audit() {
           title2=" em Auditorias de Terceira Parte" 
           paragraph="Somos pioneiros na condução de auditorias de terceira parte para sistemas de logística reversa de embalagens, impulsionando a conformidade, a eficiência e a responsabilidade ambiental." 
         />
-        <ImageAnimated onLeft image={person6} alt="Mulher segurando uma pasta" color="bg-theme-red-500">
+        <ImageBlock onLeft image={person6} alt="Mulher segurando uma pasta" color="bg-theme-red-500">
           <HiDocumentSearch />
-        </ImageAnimated>
+        </ImageBlock>
       </Container>
 
       <BoxSection 
