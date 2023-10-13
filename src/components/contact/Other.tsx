@@ -20,9 +20,9 @@ export default function Other(){
       <div className="flex flex-col gap-6 w-full max-w-xl z-10">
         <h2 className="text-2xl leading-relaxed text-theme-gray-50 uppercase" >OUTRAS FORMAS DE CONTATO</h2>
         <div className="flex flex-col">
-          <div className="flex py-3 border-b border-theme-gray-600">
-            <span className="uppercase font-bold text-theme-red-300 text-lg pr-4">E-mail </span>
-            <span className="uppercase text-theme-gray-50 text-lg"> contato@cr3auditoria.com.br</span>
+          <div className="flex py-3 border-b border-theme-gray-600 w-max">
+            <span className="uppercase font-bold text-theme-red-300 text-base pr-4">E-mail </span>
+            <span className="uppercase text-theme-gray-50 text-base"> contato@cr3auditoria.com.br</span>
           </div>
           {/* <div className="flex py-3">
             <span className="uppercase font-bold text-theme-red-300 text-lg pr-4">E-mail </span>
