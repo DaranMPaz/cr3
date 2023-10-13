@@ -1,5 +1,5 @@
 'use client'
-import Metodology from '@/components/Metodology/Metodology'
+import Metodology from '@/components/Metodology'
 import Contact from '@/components/Contact/Contact'
 import BoxSection from '@/components/BoxSection/BoxSection'
 import Container from '@/components/Section/Container'

@@ -3,12 +3,12 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { useEffect } from "react"
 import Centered from '@/components/Section/Centered'
-import { FlexContainer } from '../Container'
-import { TimeLineCard, TimelineDivider } from '../Card'
-import Metodologia1 from '../../../public/metodology/metodology-1.jpg'
-import Metodologia2 from '../../../public/metodology/metodology-2.jpg'
-import Metodologia3 from '../../../public/metodology/metodology-3.jpg'
-import Metodologia4 from '../../../public/metodology/metodology-4.jpg'
+import { FlexContainer } from './Container'
+import { TimeLineCard, TimelineDivider } from './Card'
+import Metodologia1 from '../../public/metodology/metodology-1.jpg'
+import Metodologia2 from '../../public/metodology/metodology-2.jpg'
+import Metodologia3 from '../../public/metodology/metodology-3.jpg'
+import Metodologia4 from '../../public/metodology/metodology-4.jpg'
 
 export default function Metodology(){
 

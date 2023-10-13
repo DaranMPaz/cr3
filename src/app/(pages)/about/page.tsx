@@ -1,5 +1,5 @@
 'use client'
-import Metodology from "@/components/Metodology/Metodology";
+import Metodology from "@/components/Metodology";
 import Container from '@/components/Section/Container'
 import Diferential from "@/components/Diferential/Diferential";
 import TextContent from "@/components/Section/TextContent";
