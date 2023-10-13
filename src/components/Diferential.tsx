@@ -2,9 +2,9 @@
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { useEffect } from "react"
-import Diferential1 from '../../../public/diferentials/diferencial-1.jpg'
-import Diferential2 from '../../../public/diferentials/diferencial-2.jpg'
-import Diferential3 from '../../../public/diferentials/diferencial-3.jpg'
+import Diferential1 from '../../public/diferentials/diferencial-1.jpg'
+import Diferential2 from '../../public/diferentials/diferencial-2.jpg'
+import Diferential3 from '../../public/diferentials/diferencial-3.jpg'
 import Centered from './section/Centered'
 import { GridContainer } from './Container'
 import { VerticalCard } from './Card'

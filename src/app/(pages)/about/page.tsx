@@ -1,22 +1,22 @@
 'use client'
 import { MdWorkspacePremium } from "react-icons/md";
 import person6 from '../../../../public/person/person-6.png'
-import TitleSection from "@/components/titleSection/TitleSection";
 import Diferential from "@/components/Diferential";
 import Metodology from "@/components/Metodology";
-import { Banner } from "@/components/section/Banner";
-import TextContent from "@/components/section/TextContent";
 import Container from "@/components/section/SectionContainer";
 import ImageAnimated from "@/components/ImageAnimated";
 import ContactComponent from "@/components/contact/ContactComponent";
+import HeroSectionComponent from "@/components/HeroSectionComponent";
+import BannerComponent from "@/components/BannerComponent";
+import TextContent from "@/components/TextContent";
 
 export default function About() {
   return (
     <div className="flex flex-col h-full text-zinc-100">
-      <TitleSection 
+      <HeroSectionComponent 
         image="bg-theme-about" 
         title="Quem Somos" 
-        paragraph="Na CR3 Auditoria, nossa história é moldada por nossa paixão por excelência e nosso compromisso com a sustentabilidade." 
+        paragraph="Na CR3 Auditoria, nossa história é moldada por nossa paixão por excelência e nosso compromisso com a sustentabilidade."      
       />
 
       {/* SESSÃO TEXTO IMAGEM */}
@@ -29,7 +29,7 @@ export default function About() {
 
       <Diferential />
       <Metodology />
-      <Banner banner={1} />
+      <BannerComponent banner={1} />
       <ContactComponent />
     </div>
   );

@@ -1,9 +1,6 @@
 'use client'
 import HomeCarousel from '@/components/carousel/HomeCarousel'
-import { Banner } from '@/components/section/Banner'
-import ContactSection from '@/components/contact/Contact'
 import Benefit from '@/components/benefit/Benefit'
-import TextContent from '@/components/section/TextContent'
 import ImageAnimated from '@/components/ImageAnimated'
 import { MdStar  } from 'react-icons/md'
 import { RiFileList2Fill } from 'react-icons/ri'
@@ -13,6 +10,9 @@ import person1 from '../../public/person/person-1.png'
 import person4 from '../../public/person/person-4.png'
 import person3 from '../../public/person/person-3.png'
 import Container from '@/components/section/SectionContainer'
+import TextContent from '@/components/TextContent'
+import BannerComponent from '@/components/BannerComponent'
+import ContactComponent from '@/components/contact/ContactComponent'
 
 export default function Home() {
   return (
@@ -72,8 +72,8 @@ export default function Home() {
       </Container>
 
       <Benefit />
-      <Banner banner={0} />
-      <ContactSection />
+      <BannerComponent banner={0} />
+      <ContactComponent />
     </div>
   );
 }

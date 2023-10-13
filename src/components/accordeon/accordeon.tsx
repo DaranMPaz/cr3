@@ -1,8 +1,8 @@
 'use client'
 import {Accordion, AccordionItem} from "@nextui-org/react"
-import TextContent from '@/components/section/TextContent'
 import { FlexYContainer } from "../Container"
 import Container from "../section/SectionContainer"
+import TextContent from "../TextContent"
 
 export default function FAQAccordion() {
   const answers = [

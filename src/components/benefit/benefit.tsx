@@ -2,11 +2,11 @@
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { useEffect } from "react"
-import TextContent from '../section/TextContent'
 import benefit from '../../../public/como-beneficia-img.svg'
 import BoxedSection from './BoxedSection'
 import Image from 'next/image'
 import Container from '../section/SectionContainer'
+import TextContent from '../TextContent'
 
 export default function Benefit(){
 

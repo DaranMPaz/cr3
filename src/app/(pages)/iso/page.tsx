@@ -1,24 +1,24 @@
 'use client'
 import Metodology from '@/components/Metodology'
 import BoxSection from '@/components/boxSection/BoxSection'
-import TextContent from '@/components/section/TextContent'
 import ImageAnimated from '@/components/ImageAnimated'
 import { HiDocumentSearch } from 'react-icons/hi'
 import Iso2Img from '../../../../public/iso-2-img.jpg'
 import person2 from '../../../../public/person/person-2.png'
-import { Banner } from '@/components/section/Banner'
-import TitleSection from '@/components/titleSection/TitleSection'
 import Container from '@/components/section/SectionContainer'
 import ContactComponent from '@/components/contact/ContactComponent'
+import HeroSectionComponent from '@/components/HeroSectionComponent'
+import BannerComponent from '@/components/BannerComponent'
+import TextContent from '@/components/TextContent'
 
 export default function Iso() {
   return (
     <div className="flex flex-col h-full text-zinc-100">
-      <TitleSection 
+      <HeroSectionComponent 
         image="bg-theme-services-iso" 
         title="Auditoria ISO"
         title2="Organização Internacional de Normalização"
-        paragraph="Lorem ipsum dolor sit amet consectetur. Est pharetra et vestibulum eget eget sit in viverra luctus. Facilisis aliquet quis in sit vulputate. Tempus amet fermentum tortor cras ac quis." 
+        paragraph="Lorem ipsum dolor sit amet consectetur. Est pharetra et vestibulum eget eget sit in viverra luctus. Facilisis aliquet quis in sit vulputate. Tempus amet fermentum tortor cras ac quis."  
       />
 
       {/* SESSÃO TEXTO IMAGEM */}
@@ -46,7 +46,7 @@ export default function Iso() {
       />
 
       <Metodology />
-      <Banner banner={2} />
+      <BannerComponent banner={2} />
       <ContactComponent />
     </div>
   )
