@@ -2,17 +2,17 @@
 import HomeCarousel from '@/components/carousel/HomeCarousel'
 import { Banner } from '@/components/section/Banner'
 import ContactSection from '@/components/contact/Contact'
-import Benefit from '@/components/benefit/Benefit';
-import Container from '@/components/section/Container';
-import TextContent from '@/components/section/TextContent';
-import { ImageAnimated } from '@/components/ImageAnimated';
-import { MdStar  } from 'react-icons/md';
-import { RiFileList2Fill } from 'react-icons/ri';
-import { ImCheckmark  } from 'react-icons/im';
+import Benefit from '@/components/benefit/Benefit'
+import TextContent from '@/components/section/TextContent'
+import ImageAnimated from '@/components/ImageAnimated'
+import { MdStar  } from 'react-icons/md'
+import { RiFileList2Fill } from 'react-icons/ri'
+import { ImCheckmark  } from 'react-icons/im'
 import CtaBanner from '@/components/banner/CtaBanner'
 import person1 from '../../public/person/person-1.png'
 import person4 from '../../public/person/person-4.png'
 import person3 from '../../public/person/person-3.png'
+import Container from '@/components/section/SectionContainer'
 
 export default function Home() {
   return (

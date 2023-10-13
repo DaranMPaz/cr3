@@ -1,5 +1,4 @@
 'use client'
-import Container from '@/components/section/Container'
 import { ImageAnimated } from "@/components/ImageAnimated";
 import { MdWorkspacePremium } from "react-icons/md";
 import person6 from '../../../../public/person/person-6.png'
@@ -9,6 +8,7 @@ import Diferential from "@/components/Diferential";
 import Metodology from "@/components/Metodology";
 import { Banner } from "@/components/section/Banner";
 import TextContent from "@/components/section/TextContent";
+import Container from "@/components/section/SectionContainer";
 
 export default function About() {
   return (

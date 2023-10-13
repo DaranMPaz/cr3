@@ -1,12 +1,12 @@
 'use client'
 
-import Container from '@/components/section/Container'
 import Link from "next/link"
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { useEffect } from "react"
 import { Form } from "./Form"
 import { BsFacebook, BsInstagram, BsLinkedin } from "react-icons/bs"
+import Container from "../section/SectionContainer"
 
 export default function Contact() {
 

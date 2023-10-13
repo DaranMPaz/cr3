@@ -1,5 +1,5 @@
 import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem} from "@nextui-org/react";
-import NavLink from "./navLink";
+import NavLink from "./NavLink";
 
 export default function DropdownLink() {
   return(

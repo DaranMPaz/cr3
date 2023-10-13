@@ -4,10 +4,10 @@ import Link from 'next/link'
 import TextContent from '@/components/section/TextContent'
 import { FlexYContainer } from '../Container'
 import { postList } from '../../utils/posts'
-import Container from '../section/Container'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { useEffect } from "react"
+import Container from '../section/SectionContainer'
 
 export default function NewsGrid2() {
 

@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-export function ImageAnimated({image, alt, color, children, onRight, onLeft}:{
+export default function ImageAnimated({image, alt, color, children, onRight, onLeft}:{
   image: any,
   color: string
   alt: string,
