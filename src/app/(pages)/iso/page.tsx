@@ -17,9 +17,9 @@ export default function Iso() {
     <div className="flex flex-col h-full text-zinc-100">
       <HeroSectionComponent 
         image="bg-theme-services-iso" 
-        title="Auditoria ISO"
-        title2="Organização Internacional de Normalização"
-        paragraph="Lorem ipsum dolor sit amet consectetur. Est pharetra et vestibulum eget eget sit in viverra luctus. Facilisis aliquet quis in sit vulputate. Tempus amet fermentum tortor cras ac quis."  
+        title="Em breve"
+        title2="Auditoria ISO"
+        paragraph="A CR3 está sempre empenhada em proporcionar soluções de excelência para seus clientes, e estamos empolgados em anunciar que em breve estaremos oferecendo um novo serviço de Auditoria ISO. Como uma Organização Internacional de Normalização, a CR3 está comprometida em ajudar empresas de todo o mundo a atender aos padrões mais rigorosos de qualidade, eficiência e sustentabilidade. Com a adição deste novo serviço, pretendemos simplificar o processo de certificação ISO, tornando-o mais acessível e eficaz do que nunca."  
       />
 
       {/* SESSÃO TEXTO IMAGEM */}
@@ -29,9 +29,10 @@ export default function Iso() {
           color="text-theme-blue-500" 
           titleType="heading" 
           br
-          title1="Auditoria ISO" 
-          title2=" Organização Internacional de Normalização" 
-          paragraph="Nada ainda..." 
+          title1="Padrões Técnicos" 
+          title2=" para uma ampla variedade de indústrias e setores" 
+          paragraph="A ISO (Organização Internacional de Normalização) é uma entidade global que estabelece padrões técnicos para uma ampla variedade de indústrias e setores. Esses padrões são projetados para garantir a qualidade, segurança e eficiência de produtos e serviços em todo o mundo. A certificação ISO é altamente valorizada e muitas vezes é um requisito para fazer negócios em mercados internacionais." 
+          paragraph2='A Auditoria ISO é um processo crítico que verifica se uma organização atende aos requisitos estabelecidos pelos padrões ISO relevantes. Essa certificação demonstra o compromisso de uma empresa com a qualidade e a melhoria contínua e pode aumentar a confiança dos clientes, parceiros e partes interessadas.'
         />
         <ImageBlock onLeft image={person2} alt="Homem Segurando uma pasta" color="bg-theme-red-500">
           <HiDocumentSearch />
@@ -41,9 +42,9 @@ export default function Iso() {
       <BoxSection 
         image={Iso2Img} 
         alt='Audirotia ISO'
-        title='ISO'
-        emphasis='Auditoria'
-        paragraph='Nada ainda...'
+        title='Aprimorar'
+        emphasis='a qualidade de seus produtos ou serviços'
+        paragraph='Estamos ansiosos para lançar nosso novo serviço de Auditoria ISO em breve, e acreditamos que ele será um recurso valioso para organizações em busca de certificação ISO. Se você deseja aprimorar a qualidade de seus produtos ou serviços, demonstrar seu compromisso com a excelência ou expandir seus horizontes no mercado global, a CR3 está aqui para ajudar. Fique atento para obter mais informações sobre o lançamento deste serviço e entre em contato conosco para saber como podemos ajudar sua organização a alcançar o sucesso ISO.'
       />
 
       <Metodology />
