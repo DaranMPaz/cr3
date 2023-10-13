@@ -5,10 +5,10 @@ import 'aos/dist/aos.css';
 import { useEffect } from "react";
 import { postList } from '@/utils/posts'
 import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
-import BlogTile from '@/components/Blog/BlogTitle';
-import BlogContent from '@/components/Blog/BlogContent';
-import NewsComponent from '@/components/News/NewsComponent';
-import NewsGrid2 from '@/components/News/Grid2';
+import BlogTile from '@/components/blog/BlogTitle';
+import BlogContent from '@/components/blog/BlogContent';
+import NewsComponent from '@/components/news/NewsComponent';
+import NewsGrid2 from '@/components/news/Grid2';
 
 export default function Post({ params }: { params: { slug: any } }) {
   

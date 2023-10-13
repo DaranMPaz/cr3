@@ -1,6 +1,6 @@
-import ContactBanner from '@/components/Contact/Contact'
-import Other from '@/components/Contact/Other'
-import ContactSection from '@/components/Contact/Contact'
+import ContactBanner from '@/components/contact/Contact'
+import Other from '@/components/contact/Other'
+import ContactSection from '@/components/contact/Contact'
 
 export default function Contact() {
   return (

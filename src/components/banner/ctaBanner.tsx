@@ -1,8 +1,8 @@
 'use client'
 import { useEffect } from "react"
-import SectionImageContainer from "../Section/ImageContainer"
-import Padding from "../Section/Padding"
-import TextContent from "../Section/TextContent"
+import SectionImageContainer from "../section/ImageContainer"
+import Padding from "../section/Padding"
+import TextContent from "../section/TextContent"
 import ButtonCta from "./ButtonCta"
 import AOS from 'aos'
 import 'aos/dist/aos.css'

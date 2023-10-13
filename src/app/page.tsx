@@ -1,15 +1,15 @@
 'use client'
-import HomeCarousel from '@/components/Carousel/HomeCarousel'
-import { Banner } from '@/components/Section/Banner'
-import ContactSection from '@/components/Contact/Contact'
-import Benefit from '@/components/Benefit/Benefit';
-import Container from '@/components/Section/Container';
-import TextContent from '@/components/Section/TextContent';
+import HomeCarousel from '@/components/carousel/HomeCarousel'
+import { Banner } from '@/components/section/Banner'
+import ContactSection from '@/components/contact/Contact'
+import Benefit from '@/components/benefit/Benefit';
+import Container from '@/components/section/Container';
+import TextContent from '@/components/section/TextContent';
 import { ImageAnimated } from '@/components/ImageAnimated';
 import { MdStar  } from 'react-icons/md';
 import { RiFileList2Fill } from 'react-icons/ri';
 import { ImCheckmark  } from 'react-icons/im';
-import CtaBanner from '@/components/Banner/CtaBanner'
+import CtaBanner from '@/components/banner/CtaBanner'
 import person1 from '../../public/person/person-1.png'
 import person4 from '../../public/person/person-4.png'
 import person3 from '../../public/person/person-3.png'

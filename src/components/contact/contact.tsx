@@ -1,6 +1,6 @@
 'use client'
 
-import Container from '@/components/Section/Container'
+import Container from '@/components/section/Container'
 import Link from "next/link"
 import AOS from 'aos'
 import 'aos/dist/aos.css'

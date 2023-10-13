@@ -1,7 +1,7 @@
 'use client'
 import { useDisclosure } from '@nextui-org/react'
-import Logo from '@/components/Header/Logo'
-import MobileIconMenu from '@/components/Header/MobileIconMenu'
+import Logo from '@/components/header/Logo'
+import MobileIconMenu from '@/components/header/MobileIconMenu'
 import ModalMenu from './ModalMenu'
 import Nav from './Nav'
 

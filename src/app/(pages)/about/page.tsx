@@ -1,14 +1,14 @@
 'use client'
-import Container from '@/components/Section/Container'
+import Container from '@/components/section/Container'
 import { ImageAnimated } from "@/components/ImageAnimated";
 import { MdWorkspacePremium } from "react-icons/md";
 import person6 from '../../../../public/person/person-6.png'
-import Contact from '@/components/Contact/Contact'
-import TitleSection from "@/components/TitleSection/TitleSection";
+import Contact from '@/components/contact/Contact'
+import TitleSection from "@/components/titleSection/TitleSection";
 import Diferential from "@/components/Diferential";
 import Metodology from "@/components/Metodology";
-import { Banner } from "@/components/Section/Banner";
-import TextContent from "@/components/Section/TextContent";
+import { Banner } from "@/components/section/Banner";
+import TextContent from "@/components/section/TextContent";
 
 export default function About() {
   return (

@@ -2,7 +2,7 @@
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { useEffect } from "react"
-import Centered from '@/components/Section/Centered'
+import Centered from '@/components/section/Centered'
 import { FlexContainer } from './Container'
 import { TimeLineCard, TimelineDivider } from './Card'
 import Metodologia1 from '../../public/metodology/metodology-1.jpg'

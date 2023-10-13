@@ -2,7 +2,7 @@
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { useEffect } from "react"
-import Container from '../Section/Container'
+import Container from '../section/Container'
 import { HorizontalCard, HorizontalCardContent, HorizontalCardImage } from '../Card'
 
 export default function BoxSection({image, alt, title, emphasis, paragraph, complement, finaly}:{

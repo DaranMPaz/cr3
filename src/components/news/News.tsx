@@ -1,5 +1,5 @@
 import Link from "next/link";
-import TextContent from "../Section/TextContent";
+import TextContent from "../section/TextContent";
 import NewsComponent from "./NewsComponent";
 
 export default function News({news1, news2, news3}:{

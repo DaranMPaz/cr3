@@ -2,9 +2,9 @@
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { useEffect } from "react"
-import SectionImageContainer from '../Section/ImageContainer'
-import Padding from '../Section/Padding'
-import TextContent from '../Section/TextContent'
+import SectionImageContainer from '../section/ImageContainer'
+import Padding from '../section/Padding'
+import TextContent from '../section/TextContent'
 
 export default function TitleSection({title, title2, paragraph, image}:{
   image:any,

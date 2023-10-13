@@ -1,6 +1,6 @@
-import ContactBanner from '@/components/Contact/Contact'
-import { Banner } from "@/components/Section/Banner"
-import FAQAccordion from "@/components/Accordeon/Accordeon"
+import ContactBanner from '@/components/contact/Contact'
+import { Banner } from "@/components/section/Banner"
+import FAQAccordion from "@/components/accordeon/Accordeon"
 
 export default function Faq() {
   return (

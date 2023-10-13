@@ -1,5 +1,5 @@
-import Contact from '@/components/Contact/Contact'
-import Grid from '@/components/News/Grid'
+import Contact from '@/components/contact/Contact'
+import Grid from '@/components/news/Grid'
 
 export default function News() {
   return (

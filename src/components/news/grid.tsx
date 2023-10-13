@@ -1,10 +1,10 @@
 'use client'
 import Image from 'next/image'
 import Link from 'next/link'
-import TextContent from '@/components/Section/TextContent'
+import TextContent from '@/components/section/TextContent'
 import { FlexYContainer } from '../Container'
 import { postList } from '../../utils/posts'
-import Container from '../Section/Container'
+import Container from '../section/Container'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import { useEffect } from "react"
