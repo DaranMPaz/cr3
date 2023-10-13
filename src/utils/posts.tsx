@@ -1,15 +1,70 @@
 export const postList = [
+
     // NOTICIA 1
     {
       'id' : '1',
+      'image' : 'https://source.unsplash.com/3R1pWT9PUS0',
+
+      'references' : 'Exame.com - Como Funcionam os Créditos de Reciclagem',
+      'moreInfo' : 'https://exame.com/esg/como-funcionam-creditos-reciclagem/',
+
+      'title' : 'Como funcionam os créditos de reciclagem que toda empresa vai precisar',
+      'shortDescription' : 'A economia circular, que visa reduzir as emissões de carbono e atingir as metas do Acordo de Paris, desempenha um papel crucial...',
+      
+      'subtitle':"",
+      'content' : "A implementação da Política Nacional de Resíduos Sólidos (PNRS) no Brasil em 2010, finalmente regulamentada em janeiro de 2022, é um passo significativo na gestão responsável dos resíduos. Ela estabelece a responsabilidade compartilhada entre o poder público, fabricantes, comerciantes e consumidores na gestão do lixo.",
+
+      'subtitle2':"",
+      'content2':"O programa Recicla+, lançado em abril de 2022, introduziu o Certificado de Crédito de Reciclagem. Essa iniciativa proporciona uma alternativa mais viável para as empresas cumprirem as exigências da PNRS em comparação com a implementação de projetos próprios de logística reversa, que seriam mais onerosos e complexos. Além disso, os créditos de reciclagem fortalecem a cadeia de cooperativas de catadores, o que tem um impacto social positivo.",
+
+      'subtitle3':"",
+      'content3':"As cooperativas de catadores desempenham um papel crucial na reciclagem de uma grande quantidade de materiais no Brasil, contribuindo para a redução do impacto ambiental e a preservação dos recursos naturais. A compra de créditos de reciclagem pelas empresas ajuda a financiar o trabalho dessas cooperativas.",
+
+      'subtitle4':"",
+      'content4':"Em resumo, a implementação do Certificado de Crédito de Reciclagem é uma iniciativa promissora para promover a economia circular e a gestão responsável de resíduos, contribuindo para metas ambientais e sociais mais ambiciosas.",
+    },
+
+    // NOTICIA 2
+    {
+      'id' : '2',
+      'image' : 'https://www.gov.br/mma/pt-br/noticias/governo-federal-lanca-certificado-de-credito-de-reciclagem-2013-recicla/assinatura-decreto.jpg/@@images/930267cc-7d0d-4df4-8190-8483ad2fa044.jpeg',
+      'imageSrc' : 'Izabela Bruzaca/MMA',
+
+      'references' : 'Gov.br - Governo Federal Lança Certificado de Crédito de Reciclagem 2023 Recicla',
+      'moreInfo' : 'https://www.gov.br/mma/pt-br/noticias/governo-federal-lanca-certificado-de-credito-de-reciclagem-2013-recicla',
+      
+
+      'title' : 'Governo Federal lança Certificado de Crédito de Reciclagem – Recicla+',
+      'shortDescription' : 'O decreto institui medida que possibilita investimento potencial de R$ 14 bilhões, ao ano, beneficiando mais de 1 milhão de agentes de reciclagem',
+      
+      'subtitle':"",
+      'content' : "Em abril de 2022 foi lançado o Certificado de Crédito de Reciclagem - Recicla+ pelo Governo Federal do Brasil, em uma iniciativa conjunta dos ministérios do Meio Ambiente e da Economia. O objetivo principal foi promover investimentos privados na reciclagem de produtos e embalagens descartados pelos consumidores.",
+
+      'subtitle2':"",
+      'content2':"",
+
+      'subtitle3':"",
+      'content3':"O Certificado de Crédito de Reciclagem é uma medida inovadora que tem o potencial de atrair cerca de R$ 14 bilhões em investimentos anuais para o setor de reciclagem, contribuindo para reduzir o desperdício e aumentar a eficiência na gestão de resíduos. Ele funcionará como uma garantia de que embalagens e produtos sujeitos à logística reversa foram de fato reintroduzidos no ciclo produtivo.",
+
+      'subtitle4':"",
+      'content4':"Além disso, foi assinado o Plano Nacional de Resíduos Sólidos (Planares), que visa melhorar a gestão de resíduos sólidos no Brasil. O plano tem como metas o encerramento de todos os lixões e o aumento da recuperação de resíduos para cerca de 50% em 20 anos.",
+
+      'subtitle5':"",
+      'content5':"Essas medidas são fundamentais não apenas para o meio ambiente, mas também para a economia e a saúde pública, ao reduzir o impacto dos resíduos e promover práticas mais sustentáveis. O Planares também representa um passo importante no processo de adesão do Brasil à Organização para a Cooperação e Desenvolvimento Econômico (OCDE).",
+
+      'subtitle6':"",
+      'content6':"No geral, essas iniciativas demonstram um compromisso sério do governo brasileiro em promover práticas mais sustentáveis e eficazes na gestão de resíduos, o que é crucial para a preservação do meio ambiente e o desenvolvimento sustentável do país.",
+
+    },
+
+    // NOTICIA 3
+    {
+      'id' : '3',
       'image' : 'https://source.unsplash.com/OQMZwNd3ThU',
 
       'references' : 'SOLER, F. Direito dos Resíduos: Sistemas de Logística Reversa de Embalagens em Geral. Regulamentos Estaduais. Instituto PNRS, São Paulo, SP, 2023.',
       'moreInfo' : 'https://fabriciosoler.com.br/2020/wp-content/uploads/2023/06/E-BOOK-Direito-dos-Res%C3%ADduos-Sistemas-de-Log%C3%ADstica-Reversa-de-Embalagens-_-Prof.-Fabricio-Soler-SITE.pdf',
       
-      'news1':'',
-      'news2':'',
-      'news3':'',
 
       'title' : 'GUIA PARA CONFORMIDADE NA LOGÍSTICA REVERSA DE EMBALAGENS',
       'shortDescription' : 'A logística reversa de embalagens, regulamentada pela Lei 12.305/2010 no Brasil, é fundamental para a gestão sustentável de resíduos.',
@@ -34,44 +89,16 @@ export const postList = [
 
       'subtitle7':"",
       'content7':"Portanto, a logística reversa de embalagens no âmbito do direito dos resíduos, regulamentada pela Lei 12.305/2010, representa um avanço significativo na gestão ambiental e na promoção da sustentabilidade. Ao estabelecer a responsabilidade compartilhada e criar instrumentos para a gestão adequada dos resíduos, a legislação busca promover a transição para uma economia mais circular e menos impactante para o meio ambiente, contribuindo para a preservação dos recursos naturais e a mitigação dos efeitos das mudanças climáticas.",
-
-      'subtitle8':"",
-      'content8':"",
-
-      'subtitle9':"",
-      'content9':"",
-
-      'subtitle10':"",
-      'content10':"",
-
-      'subtitle11':"",
-      'content11':"",
-
-      'subtitle12':"",
-      'content12':"",
-
-      'subtitle13':"",
-      'content13':"",
-
-      'subtitle14':"",
-      'content14':"",
-
-      'subtitle15':"",
-      'content15':"",
     },
 
-    // NOTICIA 2
+    // NOTICIA 4
     {
-      'id' : '2',
+      'id' : '4',
       'image' : 'https://source.unsplash.com/OypnYfdiQgg',
 
-      'references' : '',
+      'references' : 'Sebrae - Auditoria ambiental agrega valor a sua sempresa',
       'moreInfo' : 'https://sebrae.com.br/sites/PortalSebrae/artigos/auditoria-ambiental-agrega-valor-a-sua-empresa,66c90e59d0257810VgnVCM1000001b00320aRCRD',
       'moreInfo2' : '',
-
-      'news1':'',
-      'news2':'',
-      'news3':'',
 
       'title' : 'AUDITORIA AMBIENTAL AGREGA VALOR À SUA EMPRESA',
       'shortDescription' : 'A atuação ambiental responsável das empresas é essencial para evitar problemas graves ao meio ambiente.',
@@ -85,55 +112,14 @@ export const postList = [
       'subtitle3':"As vantagens",
       'content3':"Empresas de todo tipo e porte podem realizar sua auditoria ambiental. A principal vantagem é detectar riscos e evitar que se transformem em problemas ambientais sérios, com consequências graves para a natureza e as comunidades. Além dos prejuízos financeiros para a empresa. A história recente está cheia de exemplos, no Brasil e no mundo, de empresas que sofreram desgastes sérios de imagem – algumas até quebraram – pela responsabilidade em enormes desastres ambientais. \n A auditoria ambiental também permite melhorar a parceria com outras empresas, principalmente de grande porte, que vêm cobrando a prática da sustentabilidade em toda a sua cadeia de fornecedores. \n Além disso, a realização de uma auditoria ambiental também pode detectar as perdas da sua empresa no consumo de energia elétrica, água e matérias-primas, levando à economia de recursos. \n Uma empresa que exige seu certificado de respeito às normas ambientais também passa a ser vista de outra forma pelo mercado, não apenas no Brasil, mas no exterior. \n Sem esquecer que a adesão à sustentabilidade funciona como um fator poderoso de conscientização e engajamento dos funcionários e suas famílias, o que melhora o ambiente de trabalho. \n Como você vê, a auditoria ambiental é uma ferramenta importante na gestão da empresa, seja qual for o seu tamanho. Seja responsável: o meio ambiente agradece. E os resultados de seu negócio, também!",
 
-      'subtitle4':"",
-      'content4':"",
-
-      'subtitle5':"",
-      'content5':"",
-
-      'subtitle6':"",
-      'content6':"",
-
-      'subtitle7':"",
-      'content7':"",
-
-      'subtitle8':"",
-      'content8':"",
-
-      'subtitle9':"",
-      'content9':"",
-
-      'subtitle10':"",
-      'content10':"",
-
-      'subtitle11':"",
-      'content11':"",
-
-      'subtitle12':"",
-      'content12':"",
-
-      'subtitle13':"",
-      'content13':"",
-
-      'subtitle14':"",
-      'content14':"",
-
-      'subtitle15':"",
-      'content15':"",
     },
 
-    // NOTICIA 3
+    // NOTICIA 5
     {
-      'id' : '3',
+      'id' : '5',
       'image' : 'https://source.unsplash.com/rB1sQc98i4U',
 
       'references' : 'SOLER, F.D. RIBEIRO, F.M. XXIX Congresso Nacional do CONPEDI, 2022.',
-      'moreInfo' : '',
-      'moreInfo2' : '',
-
-      'news1':['Quais são as tendências ESG para 2023','https://exame.com/esg/quais-sao-as-tendencias-esg-para-2023/'],
-      'news2':['Política Nacional de Resíduos Sólidos','https://fabriciosoler.com.br/2020/wp-content/uploads/2022/12/Artigo-CONPEDI-Poli%CC%81tica-Nacional-de-Resi%CC%81duos-So%CC%81lidos-proposta-de-regulamentac%CC%A7a%CC%83o-para-auditoria-de-sistemas-de-logi%CC%81stica-reversa.pdf'],
-      'news3':'',
 
       'title' : 'COMO A IMPLEMENTAÇÃO DE AUDITORIAS MELHOROU OS RESULTADOS DA FORD MOTOR COMPANY',
       'shortDescription' : 'Uma empresa notável que obteve melhorias significativas após a implementação de auditorias é a Ford Motor Company. ',
@@ -152,53 +138,18 @@ export const postList = [
 
       'subtitle5':"",
       'content5':"O caso da Ford é um exemplo notável de como a implementação de auditorias e avaliações críticas pode ter um impacto transformador em uma empresa, levando a melhorias significativas em qualidade, eficiência e desempenho global. Esse sucesso demonstra a importância de abraçar a transparência e a responsabilidade na gestão empresarial, além de destacar o valor essencial das auditorias como uma ferramenta estratégica para aprimoramento e sucesso organizacional.",
-
-      'subtitle6':"",
-      'content6':"",
-
-      'subtitle7':"",
-      'content7':"",
-
-      'subtitle8':"",
-      'content8':"",
-
-      'subtitle9':"",
-      'content9':"",
-
-      'subtitle10':"",
-      'content10':"",
-
-      'subtitle11':"",
-      'content11':"",
-
-      'subtitle12':"",
-      'content12':"",
-
-      'subtitle13':"",
-      'content13':"",
-
-      'subtitle14':"",
-      'content14':"",
-
-      'subtitle15':"",
-      'content15':"",
     },
 
-    // NOTICIA 4
+    // NOTICIA 6
     {
-      'id' : '4',
+      'id' : '6',
       'image' : 'https://source.unsplash.com/um-edificio-alto-com-um-ceu-ao-fundo--43PQCSljfc',
 
-      'references' : '',
+      'references' : 'Procenge.com.br - Tudo sobre auditoria',
       'moreInfo' : 'https://procenge.com.br/blog/tudo-sobre-auditoria/#:~:text=Com%20a%20auditoria%2C%20torna%2Dse,fazem%20parte%20da%20rotina%20dela.',
-      'moreInfo2' : '',
-
-      'news1':['Como funcionam os Créditos de Reciclagem','https://exame.com/esg/como-funcionam-creditos-reciclagem/'] ,
-      'news2':['Governo Federal Lança Certificado de Ceciclagem','https://www.gov.br/mma/pt-br/noticias/governo-federal-lanca-certificado-de-credito-de-reciclagem-2013-recicla'] ,
-      'news3':'',
 
       'title' : 'O Papel da Auditoria de Terceira Parte na Sustentabilidade Empresarial',
-      'shortDescription' : 'A busca por práticas empresariais sustentáveis é uma tendência global, impulsionada pela crescente preocupação com o meio ambiente e a responsabilidade social. ',
+      'shortDescription' : 'A busca por práticas empresariais sustentáveis é uma tendência global, impulsionada pela crescente preocupação com o meio ambiente e a responsabilidade social.',
       
       'subtitle':"",
       'content' : "A busca por práticas empresariais sustentáveis é uma tendência global, impulsionada pela crescente preocupação com o meio ambiente e a responsabilidade social. Nesse contexto, a auditoria de terceira parte surge como uma ferramenta fundamental na avaliação e promoção da sustentabilidade empresarial. Este artigo explora o papel crucial que a auditoria desempenha na verificação e validação das iniciativas sustentáveis de uma empresa, fornecendo credibilidade e transparência aos esforços para um futuro mais sustentável.",
@@ -220,44 +171,12 @@ export const postList = [
 
       'subtitle7':"Conclusão",
       'content7':"A auditoria de terceira parte desempenha um papel essencial na promoção da sustentabilidade empresarial. Além de verificar a conformidade e avaliar o desempenho ambiental e social, ela proporciona transparência, credibilidade e identifica oportunidades para aprimoramento. Ao abraçar a auditoria como parte integrante de sua estratégia de sustentabilidade, as empresas podem não apenas cumprir suas responsabilidades, mas também prosperar em um mundo cada vez mais consciente da importância da preservação ambiental e do bem-estar social.",
-
-      'subtitle8':"",
-      'content8':"",
-
-      'subtitle9':"",
-      'content9':"",
-
-      'subtitle10':"",
-      'content10':"",
-
-      'subtitle11':"",
-      'content11':"",
-
-      'subtitle12':"",
-      'content12':"",
-
-      'subtitle13':"",
-      'content13':"",
-
-      'subtitle14':"",
-      'content14':"",
-
-      'subtitle15':"",
-      'content15':"",
     },
 
-    // NOTICIA 5
+    // NOTICIA 7
     {
-      'id' : '5',
+      'id' : '7',
       'image' : 'https://source.unsplash.com/vWchRczcQwM',
-
-      'references' : '',
-      'moreInfo' : '',
-      'moreInfo2' : '',
-
-      'news1':'',
-      'news2':'',
-      'news3':'',
 
       'title' : 'COMO IMPLEMENTAR A ISO 9001 PODE AJUDAR A SUA EMPRESA',
       'shortDescription' : 'A implementação da ISO 9001 pode trazer diversos benefícios significativos para uma empresa. ',
@@ -303,23 +222,12 @@ export const postList = [
 
       'subtitle14':"",
       'content14':"Em resumo, a implementação da ISO 9001 pode levar a uma empresa mais eficiente, competitiva e focada no cliente. No entanto, é importante notar que a implementação eficaz requer o compromisso da alta administração, o envolvimento dos colaboradores e a manutenção contínua do sistema de gestão da qualidade.",
-
-      'subtitle15':"",
-      'content15':"",
     },
 
-    // NOTICIA 6
+    // NOTICIA 8
     {
-      'id' : '6',
+      'id' : '8',
       'image' : 'https://source.unsplash.com/OTDyDgPoJ_0',
-
-      'references' : '',
-      'moreInfo' : '',
-      'moreInfo2' : '',
-
-      'news1':'',
-      'news2':'',
-      'news3':'',
 
       'title' : 'COMO IMPLEMENTAR A ISO 14001 PODE AJUDAR UMA EMPRESA?',
       'shortDescription' : 'A implementação da ISO 14001 pode trazer vários benefícios para uma empresa, especialmente em termos de gestão ambiental. ',
@@ -370,18 +278,10 @@ export const postList = [
       'content15':"Em resumo, a implementação da ISO 14001 pode levar a uma gestão ambiental mais eficaz, redução de impactos negativos no meio ambiente e uma postura mais sustentável, o que pode ser benéfico tanto para o ambiente quanto para a reputação e o desempenho financeiro da empresa. No entanto, é importante notar que a implementação eficaz requer o compromisso da alta administração, o envolvimento dos colaboradores e a manutenção contínua do sistema de gestão ambiental.",
     },
 
-    // NOTICIA 7
+    // NOTICIA 9
     {
-      'id' : '7',
+      'id' : '9',
       'image' : 'https://source.unsplash.com/Ass0DusYDk4',
-
-      'references' : '',
-      'moreInfo' : '',
-      'moreInfo2' : '',
-
-      'news1':'',
-      'news2':'',
-      'news3':'',
 
       'title' : 'COMO IMPLEMENTAR A ISO 45001 PODE AJUDAR UMA EMPRESA?',
       'shortDescription' : 'A implementação da ISO 45001 pode trazer vários benefícios para uma empresa em termos de saúde e segurança ocupacional. ',
@@ -432,18 +332,10 @@ export const postList = [
       'content15':"",
     },
 
-    // NOTICIA 8
+    // NOTICIA 10
     {
-      'id' : '8',
+      'id' : '10',
       'image' : 'https://source.unsplash.com/gp8BLyaTaA0',
-
-      'references' : '',
-      'moreInfo' : '',
-      'moreInfo2' : '',
-
-      'news1':'',
-      'news2':'',
-      'news3':'',
 
       'title' : 'COMO IMPLEMENTAR UM SISTEMA DE GESTÃO INTEGRADO ISO PODE AJUDAR UMA EMPRESA',
       'shortDescription' : 'A implementação de um Sistema de Gestão Integrado (SGI) pode trazer uma série de benefícios para uma empresa.',
@@ -489,8 +381,5 @@ export const postList = [
 
       'subtitle14':"",
       'content14':"Em resumo, a implementação de um Sistema de Gestão Integrado ISO pode levar a uma operação mais eficiente, a uma entrega de produtos e serviços de maior qualidade e à satisfação das partes interessadas. No entanto, é importante notar que a implementação eficaz requer o compromisso da alta administração, o envolvimento dos colaboradores e a manutenção contínua do SGI. Além disso, a organização deve considerar cuidadosamente quais normas ISO são mais relevantes para suas operações e objetivos de negócios.",
-
-      'subtitle15':"",
-      'content15':"",
     },
   ]

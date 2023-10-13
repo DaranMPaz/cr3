@@ -5,8 +5,7 @@ import 'aos/dist/aos.css';
 import { useEffect } from "react";
 import { postList } from '@/utils/posts'
 import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
-import NewsComponent from '@/components/news/NewsComponent';
-import NewsGrid2 from '@/components/news/Grid2';
+import NewsGrid from '@/components/news/Grid';
 import Image from 'next/image';
 import { IoChevronDownSharp } from 'react-icons/io5';
 
@@ -23,13 +22,14 @@ export default function Post({ params }: { params: { slug: any } }) {
     return (
       <div>
         <div className='relative pt-16 md:pt-20 transition' data-aos="fade-up">
-          <Image 
-            src={selectedPost.image} 
-            alt={selectedPost.title} 
-            width={1600} 
-            height={900} 
-            className='object-fit w-full h-[320px] md:h-[720px] md:object-cover brightness-[0.2]' 
-          />
+          <div className='w-full h-[320px] md:h-[720px]'>
+            <Image 
+              src={selectedPost.image} 
+              alt={ selectedPost.imageSrc ? selectedPost.imageSrc : selectedPost.title } 
+              fill={true}
+              className='object-cover brightness-[0.2]'
+            />
+          </div>
           <IoChevronDownSharp className="text-zinc-100 text-2xl animate-bounce-slow absolute bottom-12 md:bottom-28 left-1/2 -translate-x-1/2" />
           <div className='absolute z-0 top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 p-6 md:p-12 w-full max-w-3xl 
           md:max-w-3xl flex flex-col gap-4 mt-4'>
@@ -37,7 +37,7 @@ export default function Post({ params }: { params: { slug: any } }) {
               <MdChevronLeft size={24} />
             </Link>
             <h1 className='text-xl font-bold md:text-4xl md:leading-tight text-red-400'>{selectedPost.title}</h1>
-            <p className='text-zinc-100 leading-relaxed text-sm md:text-base'>{selectedPost.title}</p>
+            <p className='text-zinc-100 leading-relaxed text-sm md:text-base'>{selectedPost.shortDescription}</p>
           </div>
         </div>  
 
@@ -161,16 +161,6 @@ export default function Post({ params }: { params: { slug: any } }) {
                 </Link> }
             </div>
 
-
-          { selectedPost.news1 && <div className='max-w-2xl pt-12 px-12 mx-auto flex flex-col gap-6'>
-            <span className='uppercase font-bold'>Saiba mais</span>
-            <div className='grid lg:grid-cols-3 gap-6 md:gap-8 md:grid-cols-2 sm:grid-cols-1'>
-              { selectedPost.news1 && <NewsComponent newsTitle={selectedPost.news1[0]} newsLink={selectedPost.news1[1]} /> }
-              { selectedPost.news2 && <NewsComponent newsTitle={selectedPost.news2[0]} newsLink={selectedPost.news2[1]} /> }
-              { selectedPost.news3 && <NewsComponent newsTitle={selectedPost.news3[0]} newsLink={selectedPost.news3[1]} /> }
-            </div>
-          </div> }
-
           <div className='w-full max-w-2xl py-2 pt-12 px-12 pb-12 text-sm md:text-base mx-auto text-zinc-300 flex flex-col gap-3'>
               <Link className='p-2 pr-4 bg-black flex items-center bg-opacity-50 rounded-full w-max hover:bg-opacity-100 hover:text-yellow-500 transition' href={'/news'}>
               <MdChevronLeft size={24} />
@@ -180,7 +170,7 @@ export default function Post({ params }: { params: { slug: any } }) {
 
         </div>
 
-        <NewsGrid2 />
+        <NewsGrid amount={4} title='fique por dentro' subtitle='Esclarecendo suas dúvidas e explicando como a CR3 pode ajudar sua empresa' />
 
       </div>
     );
