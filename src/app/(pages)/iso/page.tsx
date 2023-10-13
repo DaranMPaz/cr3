@@ -19,7 +19,7 @@ export default function Iso() {
         image="bg-theme-services-iso" 
         title="Em breve"
         title2="Auditoria ISO"
-        paragraph="A CR3 está sempre empenhada em proporcionar soluções de excelência para seus clientes, e estamos empolgados em anunciar que em breve estaremos oferecendo um novo serviço de Auditoria ISO. Como uma Organização Internacional de Normalização, a CR3 está comprometida em ajudar empresas de todo o mundo a atender aos padrões mais rigorosos de qualidade, eficiência e sustentabilidade. Com a adição deste novo serviço, pretendemos simplificar o processo de certificação ISO, tornando-o mais acessível e eficaz do que nunca."  
+        paragraph="A certificação ISO é altamente valorizada e muitas vezes é um requisito para fazer negócios em mercados internacionais. A CR3 está sempre empenhada em proporcionar soluções de excelência para seus clientes, e estamos empolgados em anunciar que em breve estaremos oferecendo um novo serviço de Auditoria ISO."  
       />
 
       {/* SESSÃO TEXTO IMAGEM */}
