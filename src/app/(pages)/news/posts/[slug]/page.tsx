@@ -5,8 +5,6 @@ import 'aos/dist/aos.css';
 import { useEffect } from "react";
 import { postList } from '@/utils/posts'
 import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
-import BlogTile from '@/components/blog/BlogTitle';
-import BlogContent from '@/components/blog/BlogContent';
 import NewsComponent from '@/components/news/NewsComponent';
 import NewsGrid2 from '@/components/news/Grid2';
 import Image from 'next/image';
