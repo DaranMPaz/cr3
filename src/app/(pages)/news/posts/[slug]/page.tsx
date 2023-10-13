@@ -43,52 +43,52 @@ export default function Post({ params }: { params: { slug: any } }) {
 
         <div className='w-full bg-zinc-800'>
 
-          <div className='w-full max-w-2xl pt-12 px-12 text-sm md:text-base mx-auto text-zinc-300 flex flex-col gap-3'>
+          <div className='w-full max-w-2xl pt-12 px-12 text-sm text-justify md:text-base mx-auto text-zinc-300 flex flex-col gap-3'>
             <h2 className='text-lg font-bold md:text-xl md:leading-tight text-red-400'>{selectedPost.subtitle}</h2>
             <p className='leading-loose'>{selectedPost.content}</p>
           </div>
 
           { selectedPost.content2 &&
-            <div className='w-full max-w-2xl pt-12 px-12 text-sm md:text-base mx-auto text-zinc-300 flex flex-col gap-3'>
+            <div className='w-full max-w-2xl pt-12 px-12 text-sm text-justify md:text-base mx-auto text-zinc-300 flex flex-col gap-3'>
               <h2 className='text-lg font-bold md:text-xl md:leading-tight text-red-400'>{selectedPost.subtitle2}</h2>
               <p className='leading-loose'>{selectedPost.content2}</p>
             </div>
           }
 
           { selectedPost.content3 &&
-            <div className='w-full max-w-2xl pt-12 px-12 text-sm md:text-base mx-auto text-zinc-300 flex flex-col gap-3'>
+            <div className='w-full max-w-2xl pt-12 px-12 text-sm text-justify md:text-base mx-auto text-zinc-300 flex flex-col gap-3'>
               <h2 className='text-lg font-bold md:text-xl md:leading-tight text-red-400'>{selectedPost.subtitle3}</h2>
               <p className='leading-loose'>{selectedPost.content3}</p>
             </div>
           }
 
           { selectedPost.content4 &&
-            <div className='w-full max-w-2xl pt-12 px-12 text-sm md:text-base mx-auto text-zinc-300 flex flex-col gap-3'>
+            <div className='w-full max-w-2xl pt-12 px-12 text-sm text-justify md:text-base mx-auto text-zinc-300 flex flex-col gap-3'>
               <h2 className='text-lg font-bold md:text-xl md:leading-tight text-red-400'>{selectedPost.subtitle4}</h2>
               <p className='leading-loose'>{selectedPost.content4}</p>
             </div>
           }
 
           { selectedPost.content5 &&
-            <div className='w-full max-w-2xl pt-12 px-12 text-sm md:text-base mx-auto text-zinc-300 flex flex-col gap-3'>
+            <div className='w-full max-w-2xl pt-12 px-12 text-sm text-justify md:text-base mx-auto text-zinc-300 flex flex-col gap-3'>
               <h2 className='text-lg font-bold md:text-xl md:leading-tight text-red-400'>{selectedPost.subtitle5}</h2>
               <p className='leading-loose'>{selectedPost.content5}</p>
             </div>
           }
           { selectedPost.content6 &&
-            <div className='w-full max-w-2xl pt-12 px-12 text-sm md:text-base mx-auto text-zinc-300 flex flex-col gap-3'>
+            <div className='w-full max-w-2xl pt-12 px-12 text-sm text-justify md:text-base mx-auto text-zinc-300 flex flex-col gap-3'>
               <h2 className='text-lg font-bold md:text-xl md:leading-tight text-red-400'>{selectedPost.subtitle6}</h2>
               <p className='leading-loose'>{selectedPost.content6}</p>
             </div>
           }
           { selectedPost.content7 &&
-            <div className='w-full max-w-2xl pt-12 px-12 text-sm md:text-base mx-auto text-zinc-300 flex flex-col gap-3'>
+            <div className='w-full max-w-2xl pt-12 px-12 text-sm text-justify md:text-base mx-auto text-zinc-300 flex flex-col gap-3'>
               <h2 className='text-lg font-bold md:text-xl md:leading-tight text-red-400'>{selectedPost.subtitle7}</h2>
               <p className='leading-loose'>{selectedPost.content7}</p>
             </div>
           }
           { selectedPost.content8 &&
-            <div className='w-full max-w-2xl pt-12 px-12 text-sm md:text-base mx-auto text-zinc-300 flex flex-col gap-3'>
+            <div className='w-full max-w-2xl pt-12 px-12 text-sm text-justify md:text-base mx-auto text-zinc-300 flex flex-col gap-3'>
               <h2 className='text-lg font-bold md:text-xl md:leading-tight text-red-400'>{selectedPost.subtitle8}</h2>
               <p className='leading-loose'>{selectedPost.content8}</p>
             </div>
@@ -100,37 +100,37 @@ export default function Post({ params }: { params: { slug: any } }) {
             </div>
           }
           { selectedPost.content10 &&
-            <div className='w-full max-w-2xl pt-12 px-12 text-sm md:text-base mx-auto text-zinc-300 flex flex-col gap-3'>
+            <div className='w-full max-w-2xl pt-12 px-12 text-sm text-justify md:text-base mx-auto text-zinc-300 flex flex-col gap-3'>
               <h2 className='text-lg font-bold md:text-xl md:leading-tight text-red-400'>{selectedPost.subtitle10}</h2>
               <p className='leading-loose'>{selectedPost.content10}</p>
             </div>
           }
           { selectedPost.content11 &&
-            <div className='w-full max-w-2xl pt-12 px-12 text-sm md:text-base mx-auto text-zinc-300 flex flex-col gap-3'>
+            <div className='w-full max-w-2xl pt-12 px-12 text-sm text-justify md:text-base mx-auto text-zinc-300 flex flex-col gap-3'>
               <h2 className='text-lg font-bold md:text-xl md:leading-tight text-red-400'>{selectedPost.subtitle11}</h2>
               <p className='leading-loose'>{selectedPost.content11}</p>
             </div>
           }
           { selectedPost.content12 &&
-            <div className='w-full max-w-2xl pt-12 px-12 text-sm md:text-base mx-auto text-zinc-300 flex flex-col gap-3'>
+            <div className='w-full max-w-2xl pt-12 px-12 text-sm text-justify md:text-base mx-auto text-zinc-300 flex flex-col gap-3'>
               <h2 className='text-lg font-bold md:text-xl md:leading-tight text-red-400'>{selectedPost.subtitle12}</h2>
               <p className='leading-loose'>{selectedPost.content12}</p>
             </div>
           }
           { selectedPost.content13 &&
-            <div className='w-full max-w-2xl pt-12 px-12 text-sm md:text-base mx-auto text-zinc-300 flex flex-col gap-3'>
+            <div className='w-full max-w-2xl pt-12 px-12 text-sm text-justify md:text-base mx-auto text-zinc-300 flex flex-col gap-3'>
               <h2 className='text-lg font-bold md:text-xl md:leading-tight text-red-400'>{selectedPost.subtitle13}</h2>
               <p className='leading-loose'>{selectedPost.content13}</p>
             </div>
           }
           { selectedPost.content14 &&
-            <div className='w-full max-w-2xl pt-12 px-12 text-sm md:text-base mx-auto text-zinc-300 flex flex-col gap-3'>
+            <div className='w-full max-w-2xl pt-12 px-12 text-sm text-justify md:text-base mx-auto text-zinc-300 flex flex-col gap-3'>
               <h2 className='text-lg font-bold md:text-xl md:leading-tight text-red-400'>{selectedPost.subtitle14}</h2>
               <p className='leading-loose'>{selectedPost.content14}</p>
             </div>
           }
           { selectedPost.content15 &&
-            <div className='w-full max-w-2xl pt-12 px-12 text-sm md:text-base mx-auto text-zinc-300 flex flex-col gap-3'>
+            <div className='w-full max-w-2xl pt-12 px-12 text-sm text-justify md:text-base mx-auto text-zinc-300 flex flex-col gap-3'>
               <h2 className='text-lg font-bold md:text-xl md:leading-tight text-red-400'>{selectedPost.subtitle15}</h2>
               <p className='leading-loose'>{selectedPost.content15}</p>
             </div>
