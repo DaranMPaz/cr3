@@ -9,7 +9,7 @@ export default function Nav() {
   return(
     <nav className="hidden w-full justify-end items-center md:flex">
       <ul className="flex items-center gap-6">
-        <NavLink pathName="/" text="Inicio" />
+        <NavLink pathName="/" text="Inóicio" />
         <NavLink pathName="/about" text="Sobre" />
         <DropdownLink/>
         <NavLink pathName="/news" text="Conteúdo" />

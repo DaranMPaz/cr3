@@ -4,6 +4,7 @@ import { Plus_Jakarta_Sans } from "next/font/google";
 import {Providers} from "@/app/providers";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
+import Copyright from "@/components/footer/Copyright";
 
 const PlusJakartaSans = Plus_Jakarta_Sans({ subsets: ["latin"] });
 
@@ -28,6 +29,7 @@ export default function RootLayout({
             <Header/>
             {children}
             <Footer/>
+            <Copyright/>
           </main>
         </Providers>
       </body>

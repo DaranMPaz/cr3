@@ -20,14 +20,14 @@ export default function Footer() {
           <span className='text-sm text-zinc-300 leading-loose text-center md:text-left'>Compromisso Ambiental, Auditoria de Excelência</span>
         </div>
         <Column title="Menu">
-          <FooterLink link="/" text="Inicio" />
+          <FooterLink link="/" text="Início" />
           <FooterLink link="/about" text="Conheça a CR3" />
           <FooterLink link="/audit" text="Auditoria de Terceira Parte" />
           <FooterLink link="/iso" text="Auditoria ISO" />
           <FooterLink link="/news" text="Conteúdo" />
         </Column>
         <Column title="Ajuda">
-          <FooterLink link="/faq" text="Perguntas Frequêntes" />
+          <FooterLink link="/faq" text="Perguntas Frequentes" />
           <FooterLink link="/contact" text="Contato" />
         </Column>
         <Column title="Termos">
@@ -39,7 +39,7 @@ export default function Footer() {
             text="LGPD"
           />
         </Column>
-        <div className='flex flex-col justify-start gap-6 md:gap-8 h-full min-h-[150px]'>
+        <div className='flex flex-col justify-start gap-6 md:gap-8 h-full md:min-h-[150px]'>
           <Button
             variant='bordered'
             color='warning'
