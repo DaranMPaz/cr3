@@ -4,8 +4,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 import { postList } from '../../utils/posts'
+import { usePathname } from 'next/navigation'
 
 const PostData = ({amount}:{amount:number}) => {
+  const pathname = usePathname()
   const [visiblePosts, setVisiblePosts] = useState(amount); // Defina o número inicial de posts visíveis
 
   const handleLoadMore = () => {
@@ -27,7 +29,7 @@ const PostData = ({amount}:{amount:number}) => {
               <h3 className="upperase text-zinc-100 text-sm md:text-sm font-bold uppercase tracking-wide leading-10">{post.title}</h3>
               <div className='flex flex-col gap-1 justify-between'>
                 <p className="text-zinc-400 text-sm md:text-sm pb-2">{post.shortDescription}</p>
-                <Link href={`news/posts/${post.id}`} className='text-yellow-500'>[ continuar lendo ]</Link>
+                <Link href={`/news/posts/${post.id}`} className='text-yellow-500'>[ continuar lendo ]</Link>
               </div>
             </div>
           </div>

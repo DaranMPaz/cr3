@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   keywords: 
     "cr3, recife, empresas, gestão, compliance, auditoria, ebooks, políticas de compliance, consultoria, treinamento, gestao de riscos, matriz de riscos, due diligence , diagnóstico sistêmico, ambiente de controle, efetividade, integridade organizacional",
   icons: {
-    icon: '../../public/favicon/android-icon-48x48.png',
+    icon: './icon.png',
   },
 };
 
@@ -28,7 +28,7 @@ export default function RootLayout({
     <html lang="pt-br" className="scroll-smooth">
       <body className={`dark text-foreground bg-theme-texture object-center ${PlusJakartaSans.className}`}>
         <head>
-          <link rel="shortcut icon" href="icon.png" type="image/x-icon" />
+          <link rel="icon" href="icon.png" type="image/x-icon" />
         </head>
         <Providers>
           <main>
