@@ -1,5 +1,5 @@
 import { MetadataRoute } from 'next'
- 
+
 export default function manifest(): MetadataRoute.Manifest {
   return {
     name: 'CR3 Auditoria',
@@ -10,12 +10,5 @@ export default function manifest(): MetadataRoute.Manifest {
     background_color: '#fff',
     categories: ["Audit", "Compliance", "Assurance"],
     theme_color: '#fff',
-    icons: [
-      {
-        src: './icon.png',
-        sizes: 'any',
-        type: 'image/x-icon',
-      },
-    ],
   }
 }
