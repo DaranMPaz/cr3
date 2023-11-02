@@ -1,15 +1,15 @@
 import Image from "next/image";
-import TimeLineDesktopItem from '../../public/desktop-divider.svg'
-import TimeLineMobileItem from '../../public/mobile-divider.svg'
+import TimeLineDesktopItem from '../../public/desktop-divider.svg';
+import TimeLineMobileItem from '../../public/mobile-divider.svg';
 
-export function VerticalCard({image, title1, title2, paragraph1, paragraph2}:{
+export function VerticalCard({ image, title1, title2, paragraph1, paragraph2 }: {
   image?: any,
   title1?: string,
   title2?: string,
   paragraph1?: string,
   paragraph2?: string
 }) {
-  return(
+  return (
     <div className="bg-zinc-800 md:origin-center md:hover:scale-105 transition">
       <div className="object-cover">
         <Image width={480} height={480} quality={100} src={image} alt="Diferencial"></Image>
@@ -23,16 +23,16 @@ export function VerticalCard({image, title1, title2, paragraph1, paragraph2}:{
   )
 }
 
-export function TimeLineCard({image, title, paragraph, divider}:{
+export function TimeLineCard({ image, title, paragraph, divider }: {
   image?: any,
   title?: string,
   paragraph?: string,
   divider?: boolean
 }) {
-  return(
+  return (
     <div className="flex items-start w-[270px] md:origin-center md:hover:scale-105 transition">
       <div className="flex flex-col gap-4">
-          <Image src={image} alt="Metodologia"></Image>
+        <Image src={image} alt="Metodologia"></Image>
         <div className="flex flex-col gap-4 w-full py-6 text-left">
           <h4 className="uppercase text-red-400 font-bold md:text-base">{title}</h4>
           <p className="text-zinc-400 text-sm leading-relaxed">{paragraph}</p>
@@ -43,7 +43,7 @@ export function TimeLineCard({image, title, paragraph, divider}:{
 }
 
 export function TimelineDivider() {
-  return(
+  return (
     <>
       <Image src={TimeLineDesktopItem} width={50} alt="Timeline Divider" className="hidden md:flex"></Image>
       <Image src={TimeLineMobileItem} alt="Timeline Divider" className="flex md:hidden mb-6"></Image>
@@ -51,40 +51,40 @@ export function TimelineDivider() {
   )
 }
 
-export function HorizontalCard({children}:{
+export function HorizontalCard({ children }: {
   children: React.ReactNode
 }) {
-  return(
+  return (
     <div className="grid grid-cols-1 md:grid-cols-2">
       {children}
     </div>
   )
 }
 
-export function HorizontalCardImage({image, alt,}:{
+export function HorizontalCardImage({ image, alt, }: {
   image: any,
   alt: string,
 }) {
-  return(
+  return (
     <div className="object-cover">
       <Image className="w-full" src={image} alt={alt}></Image>
     </div>
   )
 }
 
-export function HorizontalCardContent({title1, title2, paragraph1, paragraph2, paragraph3}:{
+export function HorizontalCardContent({ title1, title2, paragraph1, paragraph2, paragraph3 }: {
   title1?: string,
   title2?: string,
   paragraph1?: string,
   paragraph2?: string,
   paragraph3?: string
 }) {
-  return(
+  return (
     <div className="flex flex-col gap-4 md:gap-8 w-full p-6 md:p-12 text-left leading-relaxed text-sm md:text-base bg-zinc-800">
       <h2 className="uppercase text-zinc-100 text-2xl md:text-4xl leading-snug md:leading-tight"><b className="text-red-400">{title1}</b> {title2}</h2>
-      <p className="text-zinc-100">{paragraph1}</p>
-      <p className="text-zinc-400">{paragraph2}</p>
-      <p className="text-zinc-400">{paragraph3}</p>
+      <p className="text-zinc-100 text-justify">{paragraph1}</p>
+      <p className="text-zinc-400 text-justify">{paragraph2}</p>
+      <p className="text-zinc-400 text-justify">{paragraph3}</p>
     </div>
   )
 }

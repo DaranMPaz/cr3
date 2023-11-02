@@ -1,12 +1,11 @@
 'use client'
-import Link from 'next/link'
+import { Button } from '@nextui-org/react'
 import Image from 'next/image'
+import { useRouter } from 'next/navigation'
 import Logo from '../../../public/logo-mobile.svg'
+import IsoIcons from '../header/IsoIcons'
 import Column from './Column'
 import FooterLink from './FooterLink'
-import { BsFacebook, BsLinkedin, BsInstagram } from 'react-icons/bs'
-import { Button } from '@nextui-org/react'
-import { useRouter } from 'next/navigation'
 
 export default function Footer() {
 
@@ -18,6 +17,7 @@ export default function Footer() {
         <div className='flex flex-col items-center md:items-start gap-6 w-full md:w-max max-w-[170px] mx-auto md:mx-0'>
           <Image src={Logo} alt='CR3 Auditoria' />
           <span className='text-sm text-zinc-300 leading-loose text-center md:text-left'>Compromisso Ambiental, Auditoria de Excelência</span>
+          <IsoIcons />
         </div>
         <Column title="Menu">
           <FooterLink link="/" text="Início" />
@@ -43,8 +43,8 @@ export default function Footer() {
           <Button
             variant='bordered'
             color='warning'
-            radius='sm' 
-            size='md' 
+            radius='sm'
+            size='md'
             className='hover:text-red-400 hover:border-red-400'
             onClick={() => router.push('/contact')} >
             Entre em contato
