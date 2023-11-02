@@ -45,7 +45,7 @@ export default function Iso() {
         emphasis='ISO 9001'
         title='Melhoria da Qualidade dos Produtos/Serviços'
         paragraph='A ISO 9001 é essencial para melhorar a gestão e a satisfação dos clientes. Com um sistema de gestão adequado, sua empresa alcançará diferenciais competitivos, reconhecimento nacional e internacional, desenvolvimento dos colaboradores e qualidade total.'
-        finaly='Além disso, a ISO 9001 proporcionará maior competitividade no mercado, otimização de processos e redução de custos, garantindo boas práticas de gestão e relacionamento com clientes e fornecedores.'
+        complement='Além disso, a ISO 9001 proporcionará maior competitividade no mercado, otimização de processos e redução de custos, garantindo boas práticas de gestão e relacionamento com clientes e fornecedores.'
       />
       <BoxSection
         image={Iso14001}
@@ -53,7 +53,7 @@ export default function Iso() {
         emphasis='ISO 14001'
         title='GESTÃO AMBIENTAL DA SUA EMPRESA'
         paragraph='A ISO 14001 é essencial para o aprimoramento do sistema de gestão ambiental da sua empresa. Com a adoção deste sistema, você poderá identificar e controlar os impactos ambientais, cumprir regulamentos e leis ambientais, reduzir os riscos de danos e demonstrar o compromisso com a sustentabilidade.'
-        finaly='Além disso, a ISO 14001 permitirá que sua empresa aumente a eficiência dos recursos, melhore sua imagem perante os stakeholders, promova a conscientização ambiental, ganhe uma vantagem competitiva no mercado e busque a inovação sustentável.'
+        complement='Além disso, a ISO 14001 permitirá que sua empresa aumente a eficiência dos recursos, melhore sua imagem perante os stakeholders, promova a conscientização ambiental, ganhe uma vantagem competitiva no mercado e busque a inovação sustentável.'
       />
       <BoxSection
         image={Iso45001}
@@ -61,7 +61,7 @@ export default function Iso() {
         emphasis='ISO 45001'
         title='ambiente de trabalho seguro e saudável'
         paragraph='A ISO 45001 é fundamental para fornecer um ambiente de trabalho seguro e saudável em sua empresa. Ao adotar esse sistema de gestão de saúde ocupacional e segurança, você poderá identificar e controlar os riscos relacionados à saúde e segurança dos colaboradores, cumprir regulamentações e leis trabalhistas, reduzir acidentes e doenças ocupacionais, e promover uma cultura de segurança.'
-        finaly='Além disso, a ISO 45001 ajudará a melhorar a reputação da sua empresa, demonstrando compromisso com a segurança dos colaboradores, fornecedores e clientes. Também permitirá uma gestão eficaz dos recursos humanos, redução de custos associados a acidentes e doenças ocupacionais, além de abrir portas para oportunidades de negócios que valorizam a segurança e a saúde dos trabalhadores.'
+        complement='Além disso, a ISO 45001 ajudará a melhorar a reputação da sua empresa, demonstrando compromisso com a segurança dos colaboradores, fornecedores e clientes. Também permitirá uma gestão eficaz dos recursos humanos, redução de custos associados a acidentes e doenças ocupacionais, além de abrir portas para oportunidades de negócios que valorizam a segurança e a saúde dos trabalhadores.'
       />
 
       <MetodologyIso />

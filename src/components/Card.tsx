@@ -30,7 +30,7 @@ export function TimeLineCard({ image, title, paragraph, divider }: {
   divider?: boolean
 }) {
   return (
-    <div className="flex items-start w-[270px] md:origin-center md:hover:scale-105 transition">
+    <div className="flex items-start w-full max-w-[270px] md:origin-center md:hover:scale-105 transition">
       <div className="flex flex-col gap-4">
         <Image src={image} alt="Metodologia"></Image>
         <div className="flex flex-col gap-4 w-full py-6 text-left">
@@ -66,8 +66,8 @@ export function HorizontalCardImage({ image, alt, }: {
   alt: string,
 }) {
   return (
-    <div className="object-cover">
-      <Image className="w-full" src={image} alt={alt}></Image>
+    <div className="object-cover h-full">
+      <Image className="w-full object-cover h-full max-h-[570px]" src={image} alt={alt}></Image>
     </div>
   )
 }
@@ -80,7 +80,7 @@ export function HorizontalCardContent({ title1, title2, paragraph1, paragraph2, 
   paragraph3?: string
 }) {
   return (
-    <div className="flex flex-col gap-4 md:gap-8 w-full p-6 md:p-12 text-left leading-relaxed text-sm md:text-base bg-zinc-800">
+    <div className="flex flex-col justify-center gap-4 md:gap-8 w-full p-6 md:p-12 text-left leading-relaxed text-sm md:text-base bg-zinc-800">
       <h2 className="uppercase text-zinc-100 text-2xl md:text-4xl leading-snug md:leading-tight"><b className="text-red-400">{title1}</b> {title2}</h2>
       <p className="text-zinc-100 text-justify">{paragraph1}</p>
       <p className="text-zinc-400 text-justify">{paragraph2}</p>
