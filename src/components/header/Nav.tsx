@@ -8,7 +8,7 @@ import NavLink from './NavLink'
 export default function Nav() {
   const router = useRouter()
   return (
-    <nav className="hidden w-full justify-end items-center md:flex">
+    <nav className="hidden w-full justify-end items-center xl:flex ">
       <ul className="flex items-center gap-6">
         <NavLink pathName="/" text="Início" />
         <NavLink pathName="/about" text="Sobre" />

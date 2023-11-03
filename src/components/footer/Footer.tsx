@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation'
 import Logo from '../../../public/logo-mobile.svg'
 import IsoIcons from '../header/IsoIcons'
 import Column from './Column'
-import FooterLink from './FooterLink'
+import FooterLink from "./FooterLink"
 
 export default function Footer() {
 
