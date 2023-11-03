@@ -23,7 +23,7 @@ export default function Footer() {
           <FooterLink link="/" text="Início" />
           <FooterLink link="/about" text="Conheça a CR3" />
           <FooterLink link="/audit" text="Auditoria de Terceira Parte" />
-          <FooterLink link="/iso" text="Auditoria ISO" />
+          <FooterLink link="/iso" text="Consultoria ISO" />
           <FooterLink link="/news" text="Conteúdo" />
         </Column>
         <Column title="Ajuda">
