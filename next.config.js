@@ -10,6 +10,10 @@ const nextConfig = {
       },
       {
         protocol: 'https',
+        hostname: 'mamangua-cloud.com',
+      },
+      {
+        protocol: 'https',
         hostname: 'www.gov.br',
       },
     ],
