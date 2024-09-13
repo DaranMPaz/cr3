@@ -14,7 +14,7 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        'background':"url('/assets/background.png')",
+        'background':"url('/assets/Background.png')",
         'home-manufacturers-banner':"url('/assets/home/banner-manufacurers-image.png')",
         'home-audit-banner':"url('/assets/home/banner-audit-image.jpg')",
         'theme-about':"url('/banner/banner-11.jpg')",
