@@ -23,7 +23,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br" className="scroll-smooth" >
-      <body className={`dark text-foreground bg-zinc-950 bg-background bg-cover bg-center bg-fixed object-center ${PlusJakartaSans.className}`}>
+      <body className={`dark text-foreground bg-zinc-950 bg-background2 bg-cover bg-center bg-fixed object-center ${PlusJakartaSans.className}`}>
         <head>
           <link rel="icon" href="/favicon.ico" sizes="any" />
         </head>
