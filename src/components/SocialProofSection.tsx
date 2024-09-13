@@ -5,15 +5,15 @@ import Avatar3 from '../../public/assets/socialProof/Avatar-3.jpg'
 
 export default function SocialProofSection() {
   return (
-    <div data-aos="fade-up" className="flex flex-col gap-20 justify-center max-w-[1600px] mx-auto relative my-20 md:px-0 px-5">
+    <div data-aos="fade-up" className="flex flex-col gap-20 justify-center max-w-[1600px] w-full md:w-max mx-auto relative my-20 md:px-0 px-5">
 
-        <div className='pb-8 border-b border-zinc-800 w-max mx-auto'>
+        <div className='pb-8 border-b border-zinc-800 w-full mx-auto flex justify-center'>
           <h2 className='text-2xl md:text-4xl leading-snug md:leading-tight max-w-2xl text-theme-blue-500 uppercase font-bold text-center'>O que nossos clientes estão falando</h2>
         </div>
 
         <div className='flex justify-evenly w-full gap-8 max-w-[1248px] flex-col md:flex-row'>
 
-          <div className='absolute top-[202px] -left-[25rem] md:opacity-20 opacity-0'>
+          <div className='absolute top-[202px] -left-[25rem] md:opacity-20 opacity-0 hidden md:block'>
             <SocialProofCard
               avatar={Avatar2}
               name='Ana Pereira'
@@ -43,7 +43,7 @@ export default function SocialProofSection() {
             comment='"O serviço de auditoria da CR3 foi essencial para nossa adaptação às novas regulamentações. A análise minuciosa das embalagens e a verificação precisa das notas fiscais garantiram que estivéssemos em total conformidade. A equipe foi extremamente profissional e o suporte foi além das expectativas."'
           />
 
-          <div className='absolute top-[202px] -right-[25rem] md:opacity-20 opacity-0'>
+          <div className='absolute top-[202px] -right-[25rem] md:opacity-20 opacity-0 hidden md:block'>
             <SocialProofCard
               avatar={Avatar1}
               name='Maria Silva'
