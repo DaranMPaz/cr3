@@ -8,7 +8,7 @@ export default function ButtonCta({ link, text }: { link: string; text: string }
   return (
     <>
       <Link
-        className="hidden text-theme-yellow-700 uppercase font-bold md:flex gap-2 p-4 items-center rounded hover:text-theme-red-700 bg-black bg-opacity-80 transition absolute md:top-1/2 md:-translate-y-1/2 md:right-24 group"
+        className="hidden text-theme-yellow-700 uppercase font-bold md:flex gap-2 p-4 items-center rounded hover:text-theme-red-700 bg-black bg-opacity-40 transition absolute md:top-1/2 md:-translate-y-1/2 md:right-24 group"
         href={link}
       >
         {text}

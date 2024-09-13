@@ -13,6 +13,9 @@ export default function DropdownLink() {
         <DropdownItem key="audit">
           <NavLink pathName="/audit" text="Auditoria de Terceira Parte" />
         </DropdownItem>
+        <DropdownItem key="manufacturers">
+          <NavLink pathName="/manufacturers" text="Auditoria de Fabricantes e Importadores" />
+        </DropdownItem>
         <DropdownItem key="iso">
           <NavLink pathName="/iso" text="Consultoria ISO" />
         </DropdownItem>

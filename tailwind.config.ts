@@ -14,7 +14,9 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        'theme-texture':"url('/background.jpg')",
+        'background':"url('/assets/background.png')",
+        'home-manufacturers-banner':"url('/assets/home/banner-manufacurers-image.png')",
+        'home-audit-banner':"url('/assets/home/banner-audit-image.jpg')",
         'theme-about':"url('/banner/banner-11.jpg')",
         'theme-services-home':"url('/banner/banner-3.jpg')",
         'theme-services-audit':"url('/banner/banner-8.jpg')",

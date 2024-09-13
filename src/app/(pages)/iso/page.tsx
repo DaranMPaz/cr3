@@ -2,7 +2,7 @@
 import BoxSection from '@/components/BoxSection'
 import HeroSectionComponent from '@/components/HeroSectionComponent'
 import ImageBlock from '@/components/ImageBlock'
-import { MetodologyIso } from '@/components/Metodology'
+import Metodology, { MetodologyIso } from '@/components/Metodology'
 import TextContent from '@/components/TextContent'
 import ContactComponent from '@/components/contact/ContactComponent'
 import Container from '@/components/section/SectionContainer'
@@ -11,8 +11,11 @@ import Iso14001 from '../../../../public/iso/14001-bg.png'
 import Iso45001 from '../../../../public/iso/45001-bg.png'
 import Iso9001 from '../../../../public/iso/9001-bg.png'
 import person2 from '../../../../public/person/person-2.png'
+import SocialProofSection from '@/components/SocialProofSection'
+import BannerComponent from '@/components/BannerComponent'
+import Benefit from '@/components/benefit/BenefitComponent'
 
-export default function Iso() {
+export default function Manufacturers() {
   return (
     <div className="flex flex-col h-full text-zinc-100">
       <HeroSectionComponent
@@ -64,7 +67,14 @@ export default function Iso() {
         complement='Além disso, a ISO 45001 ajudará a melhorar a reputação da sua empresa, demonstrando compromisso com a segurança dos colaboradores, fornecedores e clientes. Também permitirá uma gestão eficaz dos recursos humanos, redução de custos associados a acidentes e doenças ocupacionais, além de abrir portas para oportunidades de negócios que valorizam a segurança e a saúde dos trabalhadores.'
       />
 
-      <MetodologyIso />
+
+      <Metodology />
+      <Benefit 
+        title='Como Beneficia Você?'
+        content='Você garante a conformidade com as legislações, fortalece a transparência e a confiança com as partes interessadas, e contribui para o desenvolvimento sustentável.'
+      />
+      <SocialProofSection/>
+      <BannerComponent banner={2} />
       <ContactComponent />
     </div>
   )

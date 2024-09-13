@@ -3,7 +3,7 @@ export const postList = [
   // NOTICIA 1
   {
     'id': '1',
-    'image': 'https://source.unsplash.com/3R1pWT9PUS0',
+    'image': '/assets/posts/post1-min.jpg',
 
     'references': 'Exame.com - Como Funcionam os Créditos de Reciclagem',
     'moreInfo': 'https://exame.com/esg/como-funcionam-creditos-reciclagem/',
@@ -27,7 +27,7 @@ export const postList = [
   // NOTICIA 2
   {
     'id': '2',
-    'image': 'https://mamangua-cloud.com/wp-content/CR3/Recicla%2B.png',
+    'image': '/assets/posts/post2-min.png',
     'imageSrc': 'Created by Darlan Paz',
 
     'references': 'Gov.br - Governo Federal Lança Certificado de Crédito de Reciclagem 2023 Recicla',
@@ -60,17 +60,17 @@ export const postList = [
   // NOTICIA 3
   {
     'id': '3',
-    'image': 'https://source.unsplash.com/OQMZwNd3ThU',
+    'image': '/assets/posts/post3-min.jpg',
 
-    'references': 'SOLER, F. Direito dos Resíduos: Sistemas de Logística Reversa de Embalagens em Geral. Regulamentos Estaduais. Instituto PNRS, São Paulo, SP, 2023.',
+    'references': 'SOLER, F. Direito dos Resíduos: Sistemas de Logística Reversa em Geral. Regulamentos Estaduais. Instituto PNRS, São Paulo, SP, 2023.',
     'moreInfo': 'https://fabriciosoler.com.br/2020/wp-content/uploads/2023/06/E-BOOK-Direito-dos-Res%C3%ADduos-Sistemas-de-Log%C3%ADstica-Reversa-de-Embalagens-_-Prof.-Fabricio-Soler-SITE.pdf',
 
 
-    'title': 'GUIA PARA CONFORMIDADE NA LOGÍSTICA REVERSA DE EMBALAGENS',
-    'shortDescription': 'A logística reversa de embalagens, regulamentada pela Lei 12.305/2010 no Brasil, é fundamental para a gestão sustentável de resíduos.',
+    'title': 'GUIA PARA CONFORMIDADE NA LOGÍSTICA REVERSA',
+    'shortDescription': 'A logística reversa, regulamentada pela Lei 12.305/2010 no Brasil, é fundamental para a gestão sustentável de resíduos.',
 
     'subtitle': "",
-    'content': "A logística reversa de embalagens é um componente essencial na gestão sustentável dos resíduos sólidos, com implicações significativas no âmbito do direito dos resíduos. No Brasil, a Lei nº 12.305/2010, conhecida como Política Nacional de Resíduos Sólidos (PNRS), é o marco legal que estabelece diretrizes para a gestão adequada dos resíduos, incluindo a logística reversa. Este dispositivo legal promove a responsabilidade compartilhada pelo ciclo de vida dos produtos, impondo obrigações tanto aos fabricantes quanto aos consumidores, com o objetivo de minimizar o impacto ambiental gerado pelos resíduos. \n  \n  \n  \n  \n  \n ",
+    'content': "A logística reversa é um componente essencial na gestão sustentável dos resíduos sólidos, com implicações significativas no âmbito do direito dos resíduos. No Brasil, a Lei nº 12.305/2010, conhecida como Política Nacional de Resíduos Sólidos (PNRS), é o marco legal que estabelece diretrizes para a gestão adequada dos resíduos, incluindo a logística reversa. Este dispositivo legal promove a responsabilidade compartilhada pelo ciclo de vida dos produtos, impondo obrigações tanto aos fabricantes quanto aos consumidores, com o objetivo de minimizar o impacto ambiental gerado pelos resíduos. \n  \n  \n  \n  \n  \n ",
 
     'subtitle2': "",
     'content2': "",
@@ -85,16 +85,16 @@ export const postList = [
     'content5': "A fiscalização e a aplicação de penalidades são mecanismos essenciais para garantir o cumprimento da legislação. A PNRS prevê sanções administrativas, como multas e embargo de atividades, para os agentes que descumprirem as obrigações estabelecidas. Além disso, a legislação permite a responsabilização civil e criminal em casos de danos ambientais causados por práticas inadequadas de gestão de resíduos.",
 
     'subtitle6': "",
-    'content6': "Neste sentido, a auditoria de terceira parte desempenha um papel crucial na garantia da segurança e eficácia dos sistemas de logística reversa de embalagens. Essa prática envolve a avaliação independente realizada pela CR3 auditoria, sem nenhum conflito de interesse, com o objetivo de verificar se os processos e procedimentos estão em conformidade com normas e regulamentações em vigor.",
+    'content6': "Neste sentido, a auditoria de terceira parte desempenha um papel crucial na garantia da segurança e eficácia dos sistemas de logística reversa. Essa prática envolve a avaliação independente realizada pela CR3 auditoria, sem nenhum conflito de interesse, com o objetivo de verificar se os processos e procedimentos estão em conformidade com normas e regulamentações em vigor.",
 
     'subtitle7': "",
-    'content7': "Portanto, a logística reversa de embalagens no âmbito do direito dos resíduos, regulamentada pela Lei 12.305/2010, representa um avanço significativo na gestão ambiental e na promoção da sustentabilidade. Ao estabelecer a responsabilidade compartilhada e criar instrumentos para a gestão adequada dos resíduos, a legislação busca promover a transição para uma economia mais circular e menos impactante para o meio ambiente, contribuindo para a preservação dos recursos naturais e a mitigação dos efeitos das mudanças climáticas.",
+    'content7': "Portanto, a logística reversa no âmbito do direito dos resíduos, regulamentada pela Lei 12.305/2010, representa um avanço significativo na gestão ambiental e na promoção da sustentabilidade. Ao estabelecer a responsabilidade compartilhada e criar instrumentos para a gestão adequada dos resíduos, a legislação busca promover a transição para uma economia mais circular e menos impactante para o meio ambiente, contribuindo para a preservação dos recursos naturais e a mitigação dos efeitos das mudanças climáticas.",
   },
 
   // NOTICIA 4
   {
     'id': '4',
-    'image': 'https://source.unsplash.com/OypnYfdiQgg',
+    'image': '/assets/posts/post4-min.jpg',
 
     'references': 'Sebrae - Auditoria ambiental agrega valor a sua sempresa',
     'moreInfo': 'https://sebrae.com.br/sites/PortalSebrae/artigos/auditoria-ambiental-agrega-valor-a-sua-empresa,66c90e59d0257810VgnVCM1000001b00320aRCRD',
@@ -117,7 +117,7 @@ export const postList = [
   // NOTICIA 5
   {
     'id': '5',
-    'image': 'https://source.unsplash.com/rB1sQc98i4U',
+    'image': '/assets/posts/post5-min.jpg',
 
     // 'references': 'SOLER, F.D. RIBEIRO, F.M. XXIX Congresso Nacional do CONPEDI, 2022.',
 
@@ -143,7 +143,7 @@ export const postList = [
   // NOTICIA 6
   {
     'id': '6',
-    'image': 'https://source.unsplash.com/um-edificio-alto-com-um-ceu-ao-fundo--43PQCSljfc',
+    'image': '/assets/posts/post6-min.jpg',
 
     'references': 'Procenge.com.br - Tudo sobre auditoria',
     'moreInfo': 'https://procenge.com.br/blog/tudo-sobre-auditoria/#:~:text=Com%20a%20auditoria%2C%20torna%2Dse,fazem%20parte%20da%20rotina%20dela.',
@@ -176,7 +176,7 @@ export const postList = [
   // NOTICIA 7
   {
     'id': '7',
-    'image': 'https://source.unsplash.com/vWchRczcQwM',
+    'image': '/assets/posts/post7-min.png',
 
     'title': 'COMO IMPLEMENTAR A ISO 9001 PODE AJUDAR A SUA EMPRESA',
     'shortDescription': 'A implementação da ISO 9001 pode trazer diversos benefícios significativos para uma empresa. ',
@@ -227,7 +227,7 @@ export const postList = [
   // NOTICIA 8
   {
     'id': '8',
-    'image': 'https://source.unsplash.com/OTDyDgPoJ_0',
+    'image': '/assets/posts/post8-min.png',
 
     'title': 'COMO IMPLEMENTAR A ISO 14001 PODE AJUDAR UMA EMPRESA?',
     'shortDescription': 'A implementação da ISO 14001 pode trazer vários benefícios para uma empresa, especialmente em termos de gestão ambiental. ',
@@ -281,7 +281,7 @@ export const postList = [
   // NOTICIA 9
   {
     'id': '9',
-    'image': 'https://source.unsplash.com/Ass0DusYDk4',
+    'image': '/assets/posts/post9-min.png',
 
     'title': 'COMO IMPLEMENTAR A ISO 45001 PODE AJUDAR UMA EMPRESA?',
     'shortDescription': 'A implementação da ISO 45001 pode trazer vários benefícios para uma empresa em termos de saúde e segurança ocupacional. ',
@@ -335,7 +335,7 @@ export const postList = [
   // NOTICIA 10
   {
     'id': '10',
-    'image': 'https://source.unsplash.com/gp8BLyaTaA0',
+    'image': '/assets/posts/post10-min.jpg',
 
     'title': 'COMO IMPLEMENTAR UM SISTEMA DE GESTÃO INTEGRADO ISO PODE AJUDAR UMA EMPRESA',
     'shortDescription': 'A implementação de um Sistema de Gestão Integrado (SGI) pode trazer uma série de benefícios para uma empresa.',

@@ -5,7 +5,30 @@
         "**/.hg": true,
         "**/CVS": true,
         "**/.DS_Store": true,
-        "**/Thumbs.db": true
+        "**/Thumbs.db": true,
+        "tsconfig.json": true,
+        "to-do.md": true,
+        "README.md": true,
+        "postcss.config.js": true,
+        "package-lock.json": true,
+        "next-env.d.ts": true,
+        "node_modules": true,
+        "src/app/favicon.ico": true,
+        "src/app/globals.css": true,
+        "src/app/manifest.ts": true,
+        ".vscode": true
     },
-    "hide-files.files": []
+    "hide-files.files": [
+        "tsconfig.json",
+        "to-do.md",
+        "README.md",
+        "postcss.config.js",
+        "package-lock.json",
+        "next-env.d.ts",
+        "node_modules",
+        "src/app/favicon.ico",
+        "src/app/globals.css",
+        "src/app/manifest.ts",
+        ".vscode"
+    ]
 }

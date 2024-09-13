@@ -25,6 +25,7 @@ export default function ModalMenu(
                 <NavLink onClose={onClose} pathName="/" text="Inicio" />
                 <NavLink onClose={onClose} pathName="/about" text="Sobre" />
                 <NavLink onClose={onClose} pathName="/audit" text="Auditoria de Terceira Parte" />
+                <NavLink onClose={onClose} pathName="/manufacturers" text="Auditoria de Fabricantes e Importadores" />
                 <NavLink onClose={onClose} pathName="/iso" text="Consultoria ISO" />
                 <NavLink onClose={onClose} pathName="/news" text="Conteúdo" />
                 <NavLink onClose={onClose} pathName="/faq" text="Perguntas Frequentes" />

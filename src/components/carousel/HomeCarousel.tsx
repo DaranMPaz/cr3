@@ -9,22 +9,31 @@ export default function HomeCarousel() {
 
   const slides = [
     { url:'/banner/banner-9.jpg' },
+    { url:'/assets/home/banner-manufacurers-image.png' },
     { url:'/banner/banner-2.jpg' },
   ]
 
   const ctas = [
     {
       emphasis:'Auditoria de terceira parte',
-      title: 'para sistemas de logística reversa de embalagens',
+      title: 'para sistemas de logística reversa',
       paragraph: 'Especializada em logística reversa, a CR3 auditoria é pioneira em promover a conformidade no mercado de logística reversa e créditos de reciclagem do Brasil.',
       hasCta: true,
       route: '/audit',
       cta: 'SAIBA MAIS'
     },
     {
-      emphasis:'Auditoria ISO ',
+      emphasis:'Auditoria ',
+      title: 'para fabricantes e importadores',
+      paragraph: 'Ajudamos a sua empresa a calcular as embalagens colocadas no mercado, trazendo mais segurança e confiabilidade para a sua Autodeclaração de Embalagens.',
+      hasCta: true,
+      route: '/manufacturers',
+      cta: 'SAIBA MAIS'
+    },
+    {
+      emphasis:'Consultoria ISO ',
       title: 'Organização Internacional de Normalização',
-      paragraph: 'A certificação ISO é altamente valorizada e muitas vezes é um requisito para fazer negócios em mercados internacionais. A CR3 está sempre empenhada em proporcionar soluções de excelência para seus clientes, e estamos empolgados em anunciar que em breve estaremos oferecendo um novo serviço de Auditoria ISO.',
+      paragraph: 'A certificação ISO é altamente valorizada e muitas vezes é um requisito para fazer negócios em mercados internacionais. A CR3 está sempre empenhada em proporcionar soluções de excelência para seus clientes, e estamos empolgados em anunciar que em breve estaremos oferecendo um novo serviço de Consultoria ISO.',
       hasCta: true,
       route: '/iso',
       cta: 'SAIBA MAIS'
@@ -70,7 +79,7 @@ export default function HomeCarousel() {
             />
           </motion.div>
         }
-        {currentIndex === 1 && 
+        {currentIndex === 2 && 
           <motion.div 
             initial={{ opacity: 0, scale: 1 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -83,6 +92,22 @@ export default function HomeCarousel() {
               cta={`${ctas[1].cta}`}
               paragraph={`${ctas[1].paragraph}`}
               route={`${ctas[1].route}`} 
+            />
+          </motion.div>
+        }
+        {currentIndex === 1 && 
+          <motion.div 
+            initial={{ opacity: 0, scale: 1 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5 }}
+          >
+            <Image src={`${slides[2].url}`} alt='CR3 Auditoria' width={1600} height={900} className='object-cover w-full h-[640px] md:h-[720px] absolute top-0 left-0 -z-0' />
+            <Cta
+              emphasis={`${ctas[2].emphasis}`}
+              title={`${ctas[2].title}`}
+              cta={`${ctas[2].cta}`}
+              paragraph={`${ctas[2].paragraph}`}
+              route={`${ctas[2].route}`} 
             />
           </motion.div>
         }

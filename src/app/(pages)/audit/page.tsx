@@ -11,6 +11,7 @@ import { HiDocumentSearch } from 'react-icons/hi'
 import Audit2Img from '../../../../public/audit-2-img.jpg'
 import person6 from '../../../../public/person/person-5.png'
 import Benefit from '../../../components/benefit/BenefitComponent'
+import SocialProofSection from '@/components/SocialProofSection'
 
 export default function Audit() {
   return (
@@ -31,7 +32,7 @@ export default function Audit() {
           br
           title1="Pioneirismo"
           title2=" em Auditorias de Terceira Parte"
-          paragraph="Somos pioneiros na condução de auditorias de terceira parte para sistemas de logística reversa de embalagens, impulsionando a conformidade, a eficiência e a responsabilidade ambiental."
+          paragraph="Somos pioneiros na condução de auditorias de terceira parte para sistemas de logística reversa, impulsionando a conformidade, a eficiência e a responsabilidade ambiental."
         />
         <ImageBlock onLeft image={person6} alt="Mulher segurando uma pasta" color="bg-theme-red-500">
           <HiDocumentSearch />
@@ -40,16 +41,20 @@ export default function Audit() {
 
       <BoxSection
         image={Audit2Img}
-        alt='Auditoria para sistemas de logística reversa de embalagens'
+        alt='Auditoria para sistemas de logística reversa'
         emphasis='para sistemas de'
-        title='logística reversa de embalagens'
-        paragraph='Realizamos auditorias minuciosas nas entidades gestoras e modelos individuais de logística reversa de embalagens para avaliar se estão em conformidade com os requisitos definidos nas legislações vigentes.'
+        title='logística reversa'
+        paragraph='Realizamos auditorias minuciosas nas entidades gestoras e modelos individuais de logística reversa para avaliar se estão em conformidade com os requisitos definidos nas legislações vigentes.'
         complement='O processo de auditoria também contempla as empresas aderentes, verificando se estão reportando de maneira precisa e transparente a quantidade real de embalagens colocadas no mercado brasileiro.'
         finaly='Essa abordagem assegura a confiabilidade das informações e promove a integridade do ciclo de logística reversa.'
       />
 
       <Metodology />
-      <Benefit />
+      <Benefit 
+        title='Como Beneficia Você?'
+        content='Você garante a conformidade com as legislações, fortalece a transparência e a confiança com as partes interessadas, e contribui para o desenvolvimento sustentável.'
+      />
+      <SocialProofSection/>
       <BannerComponent banner={2} />
       <ContactComponent />
     </div>
