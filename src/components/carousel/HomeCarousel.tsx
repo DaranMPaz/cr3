@@ -31,9 +31,9 @@ export default function HomeCarousel() {
       cta: 'SAIBA MAIS'
     },
     {
-      emphasis:'Consultoria ISO ',
-      title: 'Organização Internacional de Normalização',
-      paragraph: 'A certificação ISO é altamente valorizada e muitas vezes é um requisito para fazer negócios em mercados internacionais. A CR3 está sempre empenhada em proporcionar soluções de excelência para seus clientes, e estamos empolgados em anunciar que em breve estaremos oferecendo um novo serviço de Consultoria ISO.',
+      emphasis:'Consultoria ',
+      title: "ISO's 9001, 14001 E 45001.",
+      paragraph: 'A certificação ISO (Organização Internacional de Normalização) é altamente valorizada e muitas vezes é um requisito para fazer negócios em mercados internacionais.',
       hasCta: true,
       route: '/iso',
       cta: 'SAIBA MAIS'

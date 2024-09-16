@@ -111,7 +111,7 @@ export default function Manufacturers() {
             color="text-theme-red-500"
             titleType="subheading"
             title1="Cálculo Final"
-            paragraph="Além da garantia da empresa estar contribuindo com o meio ambiente, recuperando a quantidade exata de embalagens que colocou no mercado durante o ano-base analisado, este serviço traz segurança e confiabilidade para a autodeclaração de embalagens, proteção contra alegações de greenwashing, proteção à reputação das marcas e da empresa."
+            paragraph="Após coletar todas as informações necessárias, nós realizamos o cálculo, com precisão, da correta quantidade de embalagens colocadas no mercado durante o ano-base analisado, em cada unidade da federação."
             extraStyle="px-6 md:px-0 mt-12"
           />
         </Container>

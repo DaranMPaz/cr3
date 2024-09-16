@@ -53,7 +53,7 @@ export default function Home() {
           titleType='heading'
           title1='Nova PORTARIA'
           title2=' IMASUL, DE 21 DE AGOSTO DE 2024.'
-          paragraph='Estamos em conformidade com todos os requisitos da nova PORTARIA IMASUL N. 1447, que define as diretrizes para a auditoria de terceira parte, inclusive já tendo relatórios aprovados no estado.'
+          paragraph='Estamos em conformidade com todos os requisitos da nova Portaria IMASUL nº 1.447, que define as diretrizes para a auditoria de terceira parte, não podendo mais ser realizada pelo Verificador de Resultados. A CR3 já possui relatórios aprovados no estado. '
         />
       </Container>
 
