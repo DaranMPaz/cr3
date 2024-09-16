@@ -44,7 +44,7 @@ export default function Home() {
       {/* SESSÃO PORTARIA */}
       <Container padding='large' reverse>
         <div className="relative animate-idle-slow">
-          <Image src={PortariaCross} alt='Mais' width={180} height={180} quality={100} priority className='absolute bottom-32 left-4 animate-idle'/>
+          <Image src={PortariaCross} alt='Mais' width={180} height={180} quality={100} priority className='absolute bottom-4 -left-8 animate-idle'/>
           <Image src={PortariaImage} alt='Nova Portaria' width={512} height={512} quality={100} priority/>
         </div>
         <TextContent
