@@ -13,11 +13,11 @@ export default function SocialProofSection() {
 
         <div className='flex justify-evenly w-full gap-8 max-w-[1248px] flex-col md:flex-row'>
 
-          <div className='absolute top-[202px] -left-[25rem] md:opacity-20 opacity-0 hidden md:block'>
+          <div className='absolute top-[202px] -left-[25rem] md:opacity-10 opacity-0 hidden md:block'>
             <SocialProofCard
               avatar={Avatar2}
               name='Ana Pereira'
-              comment={`excelente serviço prestado durante nossa auditoria de terceira parte. O trabalho realizado foi essencial para garantir a conformidade com as normas aplicáveis, ajudando-nos a identificar pontos de melhoria e assegurar a qualidade de nossos processos. \n
+              comment={`Excelente serviço prestado durante nossa auditoria de terceira parte. O trabalho realizado foi essencial para garantir a conformidade com as normas aplicáveis, ajudando-nos a identificar pontos de melhoria e assegurar a qualidade de nossos processos. \n
               O conhecimento profundo da equipe sobre a legislação e a atenção aos detalhes nos proporcionaram resultados sólidos. Estamos confiantes em continuar essa parceria e contar com o suporte da CR3 em futuras auditorias.`}
             />
           </div>
@@ -40,13 +40,12 @@ export default function SocialProofSection() {
 
           <SocialProofCard
             avatar={Avatar3}
-            name='João Costa'
-            comment={`Equipe dedicada e com excelente suporte oferecido no cumprimento das auditorias obrigatórias que a nossa organização deve seguir. O atendimento às exigências estabelecidas foi realizado de forma precisa e eficiente. \n
-            O sucesso dos resultados obtidos reflete a excelência do trabalho realizado por todos os envolvidos. \n 
-            Estamos confiantes e esperamos continuar essa parceria na entrega de relatórios futuros aos órgãos competentes, garantindo a conformidade com todas as exigências normativas.`}
+            name='Sigma'
+            comment={`Trabalhar em parceria com a CR3 Auditoria foi uma experiência extremamente positiva. O Raphael demonstrou alto nível de profissionalismo, competência técnica e comprometimento com a entrega do trabalho. \n
+            A colaboração foi fluida e eficiente, contribuindo significativamente para o sucesso do projeto. Espero que essa parceria se estenda por bastante tempo.`}
           />
 
-          <div className='absolute top-[202px] -right-[25rem] md:opacity-20 opacity-0 hidden md:block'>
+          <div className='absolute top-[202px] -right-[25rem] md:opacity-10 opacity-0 hidden md:block'>
             <SocialProofCard
               avatar={Avatar1}
               name='Maria Silva'
